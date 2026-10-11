@@ -2,6 +2,9 @@ import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
 import { ProtectedRoute } from './components/ProtectedRoute';
+import { useAuthStore } from './store/authStore';
+import { useAuthApi } from './hooks/useAuthApi';
+
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
@@ -11,8 +14,10 @@ import { PlacementTest } from './pages/PlacementTest';
 import { Lessons } from './pages/Lessons';
 import { LessonDetails } from './pages/LessonDetails';
 import { Games } from './pages/Games';
-import { useAuthStore } from './store/authStore';
-import { useAuthApi } from './hooks/useAuthApi';
+import { AdminUsers } from './pages/AdminUsers';
+import { TeacherDashboard } from './pages/TeacherDashboard';
+
+const NotFound = () => <div className="container mt-5 text-center"><h1>404 Not Found</h1></div>;
 
 function App() {
   const { fetchUser } = useAuthApi();
@@ -37,6 +42,8 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/alphabet" element={<Alphabet />} />
           <Route path="/placement-test" element={<PlacementTest />} />
+          
+          {/* Protected Routes */}
           <Route path="/lessons" element={
             <ProtectedRoute>
               <Lessons />
@@ -57,6 +64,20 @@ function App() {
               <Dashboard />
             </ProtectedRoute>
           } />
+
+          {/* Role-Protected Admin & Teacher Routes */}
+          <Route path="/admin/users" element={
+            <ProtectedRoute allowedRoles={['admin']}>
+              <AdminUsers />
+            </ProtectedRoute>
+          } />
+          <Route path="/teacher" element={
+            <ProtectedRoute allowedRoles={['teacher', 'admin']}>
+              <TeacherDashboard />
+            </ProtectedRoute>
+          } />
+
+          <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
     </div>

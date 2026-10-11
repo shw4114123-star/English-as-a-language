@@ -1,6 +1,7 @@
 import {
     createUserDAL,
-    getUserByEmailDAL
+    getUserByEmailDAL,
+    getUserByIdDAL
 } from "../DAL/users.dal.js";
 import { comparePassword, passwordHash } from "../utils/bcryptPassword.js";
 import { createError } from "../utils/errorHandler.js";
@@ -40,4 +41,13 @@ export const login = async (req, res) => {
     
     delete existsUser.password;
     res.json({ success: true, data: { user: existsUser, token } });
+};
+
+export const getMe = async (req, res) => {
+    const userId = req.user.userId;
+    const user = await getUserByIdDAL(userId);
+    if (!user) throw new createError("User not found", 404);
+    
+    delete user.password;
+    res.json({ success: true, data: user });
 };

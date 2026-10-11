@@ -17,3 +17,9 @@ export async function getUserByEmailDAL(email) {
     });
     return res;
 }
+
+export async function getUserByIdDAL(id) {
+    const users = db.collection("users");
+    const res = await users.findOne({ _id: new ObjectId(id) });
+    return res;
+}

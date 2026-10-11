@@ -150,7 +150,7 @@ export const LessonDetails = () => {
                                                 className="btn btn-outline-info btn-sm rounded-pill"
                                                 onClick={() => handleInspectWord(w.word)}
                                             >
-                                                Dictionary
+                                                📖 Translate
                                             </button>
                                         </div>
                                     </div>
@@ -167,25 +167,62 @@ export const LessonDetails = () => {
                         ))}
                     </div>
 
-                    {/* Word Dictionary Modal / Box */}
+                    {/* Word Dictionary & Translation Modal / Box */}
                     {inspectedWord && (
-                        <div className="card border-primary-subtle bg-light shadow-sm rounded-4 p-4 mb-4">
-                            <div className="d-flex justify-content-between align-items-center mb-2">
-                                <h5 className="fw-bold text-primary mb-0">
-                                    Dictionary details for: "{inspectedWord}"
-                                </h5>
+                        <div className="card border-primary shadow-sm rounded-4 p-4 mb-4 bg-white">
+                            <div className="d-flex justify-content-between align-items-center mb-3 border-bottom pb-2">
+                                <div className="d-flex align-items-center gap-2">
+                                    <h5 className="fw-bold text-primary mb-0">
+                                        "{inspectedWord}"
+                                    </h5>
+                                    <button
+                                        className="btn btn-outline-primary btn-sm rounded-circle py-0 px-2"
+                                        onClick={() => handlePronounce(inspectedWord)}
+                                        title="Listen to pronunciation"
+                                    >
+                                        🔊
+                                    </button>
+                                </div>
                                 <button className="btn-close" onClick={() => setInspectedWord(null)}></button>
                             </div>
                             {wordLoading ? (
-                                <div className="spinner-border text-primary spinner-border-sm" role="status"></div>
+                                <div className="d-flex align-items-center gap-2 text-primary py-2">
+                                    <div className="spinner-border spinner-border-sm" role="status"></div>
+                                    <span>מתרגם ומחפש מידע...</span>
+                                </div>
                             ) : wordData ? (
-                                <div>
-                                    <p className="mb-1 text-muted"><strong>Phonetic:</strong> {wordData.phonetic || 'N/A'}</p>
-                                    <p className="mb-1"><strong>Part of Speech:</strong> {wordData.partOfSpeech || 'noun/verb'}</p>
-                                    <p className="mb-0"><strong>Definition:</strong> {wordData.definition || 'No full definition available.'}</p>
+                                <div className="row g-3">
+                                    {wordData.translation && (
+                                        <div className="col-12">
+                                            <div className="p-3 bg-primary-subtle rounded-3">
+                                                <span className="text-muted small d-block">תרגום לעברית:</span>
+                                                <strong className="fs-5 text-primary">{wordData.translation}</strong>
+                                            </div>
+                                        </div>
+                                    )}
+                                    {wordData.phonetic && (
+                                        <div className="col-md-6">
+                                            <span className="text-muted small d-block">הגייה פונטית (Phonetic):</span>
+                                            <span className="fw-semibold text-dark">{wordData.phonetic}</span>
+                                        </div>
+                                    )}
+                                    {wordData.partOfSpeech && (
+                                        <div className="col-md-6">
+                                            <span className="text-muted small d-block">חלק דיבר (Part of Speech):</span>
+                                            <span className="badge bg-secondary-subtle text-secondary px-2 py-1">
+                                                {wordData.partOfSpeech}
+                                            </span>
+                                        </div>
+                                    )}
+                                    {wordData.definition && (
+                                        <div className="col-12">
+                                            <span className="text-muted small d-block">הגדרה באנגלית (English Definition):</span>
+                                            <p className="mb-0 text-secondary">{wordData.definition}</p>
+                                        </div>
+                                    )}
                                 </div>
                             ) : (
-                                <p className="text-muted mb-0">No external dictionary data found.</p>
+                                <p className="text-muted mb-0">לא נמצא מידע עבור מילה זו.</p>
                             )}
                         </div>
                     )}

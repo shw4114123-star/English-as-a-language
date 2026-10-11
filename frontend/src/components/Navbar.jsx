@@ -1,76 +1,111 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
 
 export const Navbar = () => {
     const { isAuthenticated, currentUser, logout } = useAuthStore();
     const navigate = useNavigate();
+    const location = useLocation();
 
     const handleLogout = () => {
         logout();
         navigate('/login');
     };
 
+    const navItems = [
+        { label: 'Home', path: '/' },
+        { label: 'Alphabet', path: '/alphabet' },
+        { label: 'Lessons', path: '/lessons' },
+        { label: 'Games', path: '/games' },
+        { label: 'Placement Test', path: '/placement-test' },
+        { label: 'Dashboard', path: '/dashboard' },
+    ];
+
+    if (currentUser?.role === 'teacher' || currentUser?.role === 'admin') {
+        navItems.push({ label: 'Teacher', path: '/teacher' });
+    }
+
+    if (currentUser?.role === 'admin') {
+        navItems.push({ label: 'Admin', path: '/admin/users' });
+    }
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-primary shadow-sm">
-            <div className="container">
-                <span className="navbar-brand fw-bold" style={{ cursor: 'pointer' }} onClick={() => navigate('/')}>English-as-a-language</span>
-                
-                {/* 
-                  This is the Hamburger Menu button for mobile devices (Bootstrap).
-                  When the screen is small, this button appears and lets you click it to open/close the navigation menu.
-                */}
-                <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                    <span className="navbar-toggler-icon"></span>
-                </button>
-                
-                <div className="collapse navbar-collapse" id="navbarNav">
-                    <ul className="navbar-nav me-auto">
-                        <li className="nav-item">
-                            <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/alphabet')}>Alphabet</span>
-                        </li>
-                        <li className="nav-item">
-                            <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/placement-test')}>Placement Test</span>
-                        </li>
-                        {isAuthenticated && (
-                            <>
-                                <li className="nav-item">
-                                    <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/lessons')}>Lessons</span>
-                                </li>
-                                <li className="nav-item">
-                                    <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/games')}>Games</span>
-                                </li>
-                                <li className="nav-item">
-                                    <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/dashboard')}>Dashboard</span>
-                                </li>
-                            </>
-                        )}
-                        {currentUser?.role === 'admin' && (
-                            <li className="nav-item">
-                                <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/admin/users')}>Admin</span>
-                            </li>
-                        )}
-                        {currentUser?.role === 'teacher' && (
-                            <li className="nav-item">
-                                <span className="nav-link" style={{ cursor: 'pointer' }} onClick={() => navigate('/teacher')}>Teacher</span>
-                            </li>
-                        )}
-                    </ul>
-                    <div className="d-flex">
-                        {isAuthenticated ? (
-                            <>
-                                <span className="navbar-text text-white me-3">
-                                    Hi, {currentUser.userName}
-                                </span>
-                                <button className="btn btn-light btn-sm" onClick={handleLogout}>Logout</button>
-                            </>
-                        ) : (
-                            <>
-                                <button className="btn btn-outline-light me-2" onClick={() => navigate('/login')}>Login</button>
-                                <button className="btn btn-warning text-dark" onClick={() => navigate('/register')}>Register</button>
-                            </>
-                        )}
-                    </div>
+        <nav className="navbar navbar-dark bg-primary shadow-sm sticky-top py-2 px-3">
+            <div className="container-fluid d-flex flex-wrap align-items-center justify-content-between gap-3">
+                {/* Brand Logo & Name */}
+                <span
+                    className="navbar-brand fw-bold m-0"
+                    style={{ cursor: 'pointer', fontSize: '1.25rem' }}
+                    onClick={() => navigate('/')}
+                >
+                    English-as-a-language
+                </span>
+
+                {/* Always visible navigation buttons */}
+                <div className="d-flex flex-wrap align-items-center gap-2">
+                    {navItems.map((item) => {
+                        const isActive = location.pathname === item.path;
+                        return (
+                            <button
+                                key={item.path}
+                                type="button"
+                                onClick={() => navigate(item.path)}
+                                className={`btn btn-sm rounded-pill px-3 py-1 fw-semibold ${
+                                    isActive
+                                        ? 'btn-light text-primary shadow-sm'
+                                        : 'btn-outline-light'
+                                }`}
+                                style={{
+                                    borderWidth: '1.5px',
+                                    whiteSpace: 'nowrap',
+                                    transition: 'all 0.15s ease-in-out',
+                                }}
+                            >
+                                {item.label}
+                            </button>
+                        );
+                    })}
+                </div>
+
+                {/* Auth Actions (Login / Register / User / Logout) */}
+                <div className="d-flex align-items-center gap-2 flex-wrap">
+                    {isAuthenticated ? (
+                        <>
+                            <span className="badge bg-white text-primary px-3 py-2 rounded-pill fw-semibold shadow-sm">
+                                {currentUser?.userName || 'User'}
+                                {currentUser?.role && currentUser.role !== 'student' && (
+                                    <span className="ms-1 text-muted small">({currentUser.role})</span>
+                                )}
+                            </span>
+                            <button
+                                className="btn btn-outline-warning btn-sm rounded-pill px-3 py-1 fw-bold"
+                                style={{ borderWidth: '1.5px' }}
+                                onClick={handleLogout}
+                            >
+                                Logout
+                            </button>
+                        </>
+                    ) : (
+                        <>
+                            <button
+                                className={`btn btn-sm rounded-pill px-3 py-1 fw-semibold ${
+                                    location.pathname === '/login'
+                                        ? 'btn-light text-primary shadow-sm'
+                                        : 'btn-outline-light'
+                                }`}
+                                style={{ borderWidth: '1.5px' }}
+                                onClick={() => navigate('/login')}
+                            >
+                                Login
+                            </button>
+                            <button
+                                className="btn btn-warning text-dark btn-sm rounded-pill px-3 py-1 fw-bold shadow-sm"
+                                onClick={() => navigate('/register')}
+                            >
+                                Register
+                            </button>
+                        </>
+                    )}
                 </div>
             </div>
         </nav>

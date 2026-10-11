@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react';
 import { Routes, Route } from 'react-router-dom';
 import { Navbar } from './components/Navbar';
+import { ProtectedRoute } from './components/ProtectedRoute';
 import { Home } from './pages/Home';
 import { Login } from './pages/Login';
 import { Register } from './pages/Register';
 import { Alphabet } from './pages/Alphabet';
+import { Dashboard } from './pages/Dashboard';
 import { useAuthStore } from './store/authStore';
 import { useAuthApi } from './hooks/useAuthApi';
 
@@ -30,6 +32,11 @@ function App() {
           <Route path="/login" element={<Login />} />
           <Route path="/register" element={<Register />} />
           <Route path="/alphabet" element={<Alphabet />} />
+          <Route path="/dashboard" element={
+            <ProtectedRoute>
+              <Dashboard />
+            </ProtectedRoute>
+          } />
         </Routes>
       </main>
     </div>

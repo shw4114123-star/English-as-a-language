@@ -1,10 +1,13 @@
 import { MongoClient } from 'mongodb';
+import "dotenv/config"
 
 let db;
 
+const MONGODB_URI = process.env.MONGODB_URI
+
 export async function connectToDb() {
   try {
-    const client = await MongoClient.connect(process.env.MONGO_URI || 'mongodb://localhost:27017/englishquest');
+    const client = await MongoClient.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017');
     db = client.db();
     console.log('Connected to MongoDB');
   } catch (err) {

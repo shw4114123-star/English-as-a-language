@@ -9,6 +9,7 @@ import { Alphabet } from './pages/Alphabet';
 import { Dashboard } from './pages/Dashboard';
 import { PlacementTest } from './pages/PlacementTest';
 import { Lessons } from './pages/Lessons';
+import { LessonDetails } from './pages/LessonDetails';
 import { useAuthStore } from './store/authStore';
 import { useAuthApi } from './hooks/useAuthApi';
 
@@ -38,6 +39,11 @@ function App() {
           <Route path="/lessons" element={
             <ProtectedRoute>
               <Lessons />
+            </ProtectedRoute>
+          } />
+          <Route path="/lessons/:id" element={
+            <ProtectedRoute>
+              <LessonDetails />
             </ProtectedRoute>
           } />
           <Route path="/dashboard" element={

@@ -2,12 +2,15 @@ import express from 'express';
 import cors from 'cors';
 import helmet from 'helmet';
 import { errorMiddleware } from './middleware/error.middleware.js';
+import userRoutes from './routes/users.routes.js';
 
 const app = express();
 
 app.use(helmet());
 app.use(cors({ origin: '*' }));
 app.use(express.json());
+
+app.use('/api/users', userRoutes);
 
 app.get('/', (req, res) => {
   res.send('English-as-a-language API is running...');

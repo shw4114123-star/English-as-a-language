@@ -17,32 +17,3 @@ export async function getUserByEmailDAL(email) {
     });
     return res;
 }
-
-export async function getUserByIdDAL(id) {
-    const users = db.collection("users");
-    const res = await users.findOne({ _id: new ObjectId(id) });
-    return res;
-}
-
-export async function getAllUsersDAL() {
-    const users = db.collection("users");
-    const res = await users.find({}, { projection: { password: 0 } }).toArray();
-    return res;
-}
-
-export async function deleteUserByIdDAL(id) {
-    const users = db.collection("users");
-    const res = await users.findOneAndDelete({ _id: new ObjectId(id) });
-    return res;
-}
-
-export async function updateUserByIdDAL(id, updateData) {
-    const users = db.collection("users");
-    updateData.updatedAt = new Date();
-    const res = await users.findOneAndUpdate(
-        { _id: new ObjectId(id) },
-        { $set: updateData },
-        { returnDocument: 'after', projection: { password: 0 } }
-    );
-    return res;
-}

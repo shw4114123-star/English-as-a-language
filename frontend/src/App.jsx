@@ -8,6 +8,7 @@ import { Register } from './pages/Register';
 import { Alphabet } from './pages/Alphabet';
 import { Dashboard } from './pages/Dashboard';
 import { PlacementTest } from './pages/PlacementTest';
+import { Lessons } from './pages/Lessons';
 import { useAuthStore } from './store/authStore';
 import { useAuthApi } from './hooks/useAuthApi';
 
@@ -34,6 +35,11 @@ function App() {
           <Route path="/register" element={<Register />} />
           <Route path="/alphabet" element={<Alphabet />} />
           <Route path="/placement-test" element={<PlacementTest />} />
+          <Route path="/lessons" element={
+            <ProtectedRoute>
+              <Lessons />
+            </ProtectedRoute>
+          } />
           <Route path="/dashboard" element={
             <ProtectedRoute>
               <Dashboard />

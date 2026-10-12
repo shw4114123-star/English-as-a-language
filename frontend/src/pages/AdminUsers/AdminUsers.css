@@ -1,0 +1,59 @@
+/* AdminUsers high-tech purple styles */
+.admin-table-card {
+  background: #140d36;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 1.25rem;
+  overflow: hidden;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.admin-table {
+  width: 100%;
+  border-collapse: collapse;
+  color: #f1f0fb;
+}
+
+.admin-table th {
+  background: rgba(30, 19, 74, 0.85);
+  color: #c4b5fd;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+  letter-spacing: 0.05em;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.admin-table td {
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid rgba(168, 85, 247, 0.1);
+}
+
+.admin-table tr:hover td {
+  background: rgba(126, 34, 206, 0.1);
+}
+
+.admin-select {
+  background: #19123f;
+  color: #f1f0fb;
+  border: 1px solid rgba(168, 85, 247, 0.3);
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.5rem;
+}
+
+.admin-delete-btn {
+  border: 1px solid rgba(239, 68, 68, 0.5);
+  background: rgba(239, 68, 68, 0.15);
+  color: #fca5a5;
+  padding: 0.35rem 0.9rem;
+  border-radius: 9999px;
+  font-size: 0.85rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.admin-delete-btn:hover:not(:disabled) {
+  background: rgba(239, 68, 68, 0.85);
+  color: #ffffff;
+  box-shadow: 0 0 10px rgba(239, 68, 68, 0.5);
+}

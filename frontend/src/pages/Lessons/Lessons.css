@@ -1,0 +1,108 @@
+/* Lessons styling in cosmic techno purple */
+.lessons-title {
+  font-size: 2.25rem;
+  font-weight: 800;
+  background: linear-gradient(135deg, #ffffff 0%, #d8b4fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.lessons-filter-btn {
+  padding: 0.4rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  border: 1px solid rgba(168, 85, 247, 0.4);
+  background: rgba(30, 19, 74, 0.6);
+  color: #e9d5ff;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.lessons-filter-btn:first-child {
+  border-top-left-radius: 9999px;
+  border-bottom-left-radius: 9999px;
+}
+
+.lessons-filter-btn:last-child {
+  border-top-right-radius: 9999px;
+  border-bottom-right-radius: 9999px;
+}
+
+.lessons-filter-btn-active {
+  background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
+  border-color: #c084fc;
+  color: #ffffff;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+}
+
+.lesson-card {
+  background: #140d36;
+  border: 1px solid rgba(147, 51, 234, 0.25);
+  border-radius: 1.25rem;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  height: 100%;
+}
+
+.lesson-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(168, 85, 247, 0.6);
+  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.7), 0 0 20px rgba(168, 85, 247, 0.25);
+}
+
+.badge-beginner {
+  background: rgba(16, 185, 129, 0.2);
+  color: #6ee7b7;
+  border: 1px solid rgba(16, 185, 129, 0.4);
+}
+
+.badge-intermediate {
+  background: rgba(245, 158, 11, 0.2);
+  color: #fcd34d;
+  border: 1px solid rgba(245, 158, 11, 0.4);
+}
+
+.badge-advanced {
+  background: rgba(239, 68, 68, 0.2);
+  color: #fca5a5;
+  border: 1px solid rgba(239, 68, 68, 0.4);
+}
+
+.badge-completed {
+  background: rgba(16, 185, 129, 0.85);
+  color: #ffffff;
+}
+
+.btn-start-lesson {
+  padding: 0.4rem 1.15rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  font-size: 0.875rem;
+  border: none;
+  background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%);
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.4);
+  transition: all 0.2s ease;
+}
+
+.btn-start-lesson:hover {
+  filter: brightness(1.15);
+  box-shadow: 0 0 18px rgba(168, 85, 247, 0.6);
+}
+
+.btn-review-lesson {
+  padding: 0.4rem 1.15rem;
+  border-radius: 9999px;
+  font-weight: 600;
+  font-size: 0.875rem;
+  border: 1px solid rgba(168, 85, 247, 0.5);
+  background: rgba(30, 19, 74, 0.6);
+  color: #e9d5ff;
+  cursor: pointer;
+}
+
+.btn-review-lesson:hover {
+  border-color: #c084fc;
+  color: #ffffff;
+}

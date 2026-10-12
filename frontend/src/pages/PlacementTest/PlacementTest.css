@@ -1,0 +1,70 @@
+/* PlacementTest styling in techno-purple aesthetic */
+.test-card {
+  background: #140d36;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 1.5rem;
+  padding: 2.5rem;
+  box-shadow: 0 20px 35px -10px rgba(0, 0, 0, 0.6);
+}
+
+.test-progress-bar {
+  background: rgba(30, 19, 74, 0.8);
+  height: 8px;
+  border-radius: 9999px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  border: 1px solid rgba(168, 85, 247, 0.2);
+}
+
+.test-progress-fill {
+  background: linear-gradient(90deg, #7c3aed 0%, #ec4899 100%);
+  height: 100%;
+  transition: width 0.3s ease;
+  box-shadow: 0 0 10px rgba(168, 85, 247, 0.5);
+}
+
+.test-option-btn {
+  width: 100%;
+  text-align: left;
+  padding: 1rem 1.25rem;
+  border-radius: 0.85rem;
+  border: 1.5px solid rgba(168, 85, 247, 0.3);
+  background: #19123f;
+  color: #f1f0fb;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  margin-bottom: 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.test-option-btn:hover {
+  border-color: #a855f7;
+  background: rgba(126, 34, 206, 0.2);
+}
+
+.test-option-selected {
+  border-color: #c084fc;
+  background: linear-gradient(135deg, rgba(124, 58, 237, 0.4) 0%, rgba(168, 85, 247, 0.4) 100%);
+  color: #ffffff;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.test-submit-btn {
+  padding: 0.65rem 1.75rem;
+  border-radius: 9999px;
+  font-weight: 700;
+  background: linear-gradient(135deg, #9333ea 0%, #ec4899 100%);
+  color: #ffffff;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+  transition: all 0.2s ease;
+}
+
+.test-submit-btn:disabled {
+  opacity: 0.4;
+  cursor: not-allowed;
+  box-shadow: none;
+}

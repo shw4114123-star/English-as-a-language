@@ -35,13 +35,14 @@ export const Lessons: React.FC = () => {
         return Boolean(progress?.completedLessons?.some((id: string) => String(id) === String(lessonId)));
     };
 
-    const completedCount = lessons.filter(l => isCompleted(l._id)).length;
-    const progressPercent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
+    const typedLessons = (lessons as Lesson[]) || [];
+    const completedCount = typedLessons.filter(l => isCompleted(l._id)).length;
+    const progressPercent = typedLessons.length > 0 ? Math.round((completedCount / typedLessons.length) * 100) : 0;
 
     return (
         <div className="container py-5 fade-in">
             {/* Overall Course Progress Banner */}
-            {lessons.length > 0 && (
+            {typedLessons.length > 0 && (
                 <div className="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)' }}>
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
                         <div>
@@ -50,7 +51,7 @@ export const Lessons: React.FC = () => {
                                 <h5 className="fw-bold mb-0">Course Completion Progress</h5>
                             </div>
                             <p className="text-white-50 mb-0 small">
-                                You have completed <strong className="text-white">{completedCount}</strong> of <strong className="text-white">{lessons.length}</strong> lessons ({progressPercent}%)
+                                You have completed <strong className="text-white">{completedCount}</strong> of <strong className="text-white">{typedLessons.length}</strong> lessons ({progressPercent}%)
                             </p>
                         </div>
                         <div className="d-flex align-items-center gap-3" style={{ minWidth: '220px' }}>
@@ -60,8 +61,8 @@ export const Lessons: React.FC = () => {
                                     role="progressbar"
                                     style={{ width: `${progressPercent}%` }}
                                     aria-valuenow={progressPercent}
-                                    aria-valuemin="0"
-                                    aria-valuemax="100"
+                                    aria-valuemin={0}
+                                    aria-valuemax={100}
                                 ></div>
                             </div>
                             <span className="fw-bold text-warning">{progressPercent}%</span>

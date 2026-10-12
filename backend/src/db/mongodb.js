@@ -3,7 +3,7 @@ import "dotenv/config"
 
 let db;
 
-const MONGO_URI = process.env.MONGO_URI
+const MONGO_URI = process.env.MONGO_URI || "mongodb://127.0.0.1:27017";
 
 export async function connectToDb() {
   try {

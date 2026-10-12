@@ -8,13 +8,24 @@
   font-size: clamp(2rem, 4vw, 3rem);
   font-weight: 800;
   margin-bottom: 0.5rem;
-  background: linear-gradient(135deg, #ffffff 0%, #d8b4fe 100%);
+  background: linear-gradient(135deg, #ffffff 0%, #6014c3 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+
+.alphabet-title:hover {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #6014c3  0%, #ffffff 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
 
 .alphabet-subtitle {
   color: #c4b5fd;
+  text-shadow: 1px 2px 10px rgb(241, 117, 255);
   font-size: 1.125rem;
 }
 

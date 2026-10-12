@@ -14,7 +14,7 @@ export const Home: React.FC = () => {
                 <div className="home-hero-glow"></div>
                 <div className="container py-4 relative z-10">
                     <span className="hero-pill-badge">
-                        🚀 Master English from Scratch
+                        Master English from Scratch
                     </span>
                     <h1 className="hero-title">
                         English-as-a-language

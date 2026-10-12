@@ -33,16 +33,27 @@
   box-shadow: 0 0 15px rgba(168, 85, 247, 0.25);
   margin-bottom: 1.5rem;
 }
-
 .hero-title {
   font-size: clamp(2.5rem, 6vw, 4.5rem);
   font-weight: 800;
-  line-height: 1.1;
-  margin-bottom: 1.25rem;
-  background: linear-gradient(135deg, #ffffff 0%, #e9d5ff 40%, #c084fc 100%);
+  line-height: 1.4;
+
+  padding: 0.1em 0.05em 0.2em;
+  margin: 0 0 1.25rem;
+
+  background: linear-gradient(
+    135deg,
+    #ffffff 0%,
+    #e9d5ff 40%,
+    #c084fc 100%
+  );
+
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  letter-spacing: -0.02em;
+  background-clip: text;
+
+  letter-spacing: normal;
+  overflow: visible;
 }
 
 .hero-subtitle {

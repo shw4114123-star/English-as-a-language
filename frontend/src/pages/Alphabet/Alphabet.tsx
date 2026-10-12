@@ -48,7 +48,7 @@ export const Alphabet: React.FC = () => {
             <div className="alphabet-grid">
                 {ALPHABET_DATA.map((item, index) => (
                     <div key={item.letter} style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}>
-                        <LetterCard 
+                        <LetterCard
                             letter={item.letter} 
                             word={item.word} 
                             imageSrc={item.imageSrc} 

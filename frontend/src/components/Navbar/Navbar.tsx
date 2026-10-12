@@ -1,9 +1,15 @@
 import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
-import { useAuthStore } from '../store/authStore';
-import { useProgressApi } from '../hooks/useProgressApi';
+import { useAuthStore } from '../../store/authStore';
+import { useProgressApi } from '../../hooks/useProgressApi';
+import './Navbar.css';
 
-export const Navbar = () => {
+interface NavItem {
+    label: string;
+    path: string;
+}
+
+export const Navbar: React.FC = () => {
     const { isAuthenticated, currentUser, logout } = useAuthStore();
     const { progress, fetchProgress } = useProgressApi();
     const navigate = useNavigate();
@@ -20,7 +26,7 @@ export const Navbar = () => {
         navigate('/login');
     };
 
-    const navItems = [
+    const navItems: NavItem[] = [
         { label: 'Home', path: '/' },
         { label: 'Alphabet', path: '/alphabet' },
         { label: 'Lessons', path: '/lessons' },
@@ -38,19 +44,18 @@ export const Navbar = () => {
     }
 
     return (
-        <nav className="navbar navbar-dark bg-primary shadow-sm sticky-top py-2 px-3">
-            <div className="container-fluid d-flex flex-wrap align-items-center justify-content-between gap-3">
+        <nav className="navbar">
+            <div className="navbar-container">
                 {/* Brand Logo & Name */}
                 <span
-                    className="navbar-brand fw-bold m-0"
-                    style={{ cursor: 'pointer', fontSize: '1.25rem' }}
+                    className="navbar-brand"
                     onClick={() => navigate('/')}
                 >
                     English-as-a-language
                 </span>
 
-                {/* Always visible navigation buttons */}
-                <div className="d-flex flex-wrap align-items-center gap-2">
+                {/* Navigation Links */}
+                <div className="navbar-links">
                     {navItems.map((item) => {
                         const isActive = location.pathname === item.path;
                         return (
@@ -58,16 +63,7 @@ export const Navbar = () => {
                                 key={item.path}
                                 type="button"
                                 onClick={() => navigate(item.path)}
-                                className={`btn btn-sm rounded-pill px-3 py-1 fw-semibold ${
-                                    isActive
-                                        ? 'btn-light text-primary shadow-sm'
-                                        : 'btn-outline-light'
-                                }`}
-                                style={{
-                                    borderWidth: '1.5px',
-                                    whiteSpace: 'nowrap',
-                                    transition: 'all 0.15s ease-in-out',
-                                }}
+                                className={`navbar-button ${isActive ? 'navbar-button-active' : ''}`}
                             >
                                 {item.label}
                             </button>
@@ -75,29 +71,27 @@ export const Navbar = () => {
                     })}
                 </div>
 
-                {/* Auth Actions (Login / Register / User / Logout) */}
-                <div className="d-flex align-items-center gap-2 flex-wrap">
+                {/* Authentication & User Actions */}
+                <div className="navbar-actions">
                     {isAuthenticated ? (
                         <>
                             {progress && (
                                 <span
                                     onClick={() => navigate('/dashboard')}
-                                    className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold shadow-sm"
-                                    style={{ cursor: 'pointer' }}
+                                    className="navbar-xp-badge"
                                     title="View My Dashboard Progress"
                                 >
                                     ⭐ {progress.xp || 0} XP
                                 </span>
                             )}
-                            <span className="badge bg-white text-primary px-3 py-2 rounded-pill fw-semibold shadow-sm">
+                            <span className="navbar-user-badge">
                                 {currentUser?.userName || 'User'}
                                 {currentUser?.role && currentUser.role !== 'student' && (
-                                    <span className="ms-1 text-muted small">({currentUser.role})</span>
+                                    <span className="user-role-tag">({currentUser.role})</span>
                                 )}
                             </span>
                             <button
-                                className="btn btn-outline-warning btn-sm rounded-pill px-3 py-1 fw-bold"
-                                style={{ borderWidth: '1.5px' }}
+                                className="button button-warning button-sm button-pill"
                                 onClick={handleLogout}
                             >
                                 Logout
@@ -106,18 +100,13 @@ export const Navbar = () => {
                     ) : (
                         <>
                             <button
-                                className={`btn btn-sm rounded-pill px-3 py-1 fw-semibold ${
-                                    location.pathname === '/login'
-                                        ? 'btn-light text-primary shadow-sm'
-                                        : 'btn-outline-light'
-                                }`}
-                                style={{ borderWidth: '1.5px' }}
+                                className={`button button-outline button-sm button-pill ${location.pathname === '/login' ? 'button-active' : ''}`}
                                 onClick={() => navigate('/login')}
                             >
                                 Login
                             </button>
                             <button
-                                className="btn btn-warning text-dark btn-sm rounded-pill px-3 py-1 fw-bold shadow-sm"
+                                className="button button-primary button-sm button-pill"
                                 onClick={() => navigate('/register')}
                             >
                                 Register
@@ -129,3 +118,4 @@ export const Navbar = () => {
         </nav>
     );
 };
+export default Navbar;

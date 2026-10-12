@@ -1,0 +1,23 @@
+/* ProtectedRoute loading styles */
+.protected-route-loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 1rem;
+  color: #c4b5fd;
+  font-size: 1.125rem;
+}
+
+.protected-spinner {
+  width: 2.5rem;
+  height: 2.5rem;
+  border: 3px solid rgba(168, 85, 247, 0.2);
+  border-top-color: #a855f7;
+  border-radius: 50%;
+  animation: spin 0.8s linear infinite;
+  margin-right: 0.75rem;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

@@ -1,29 +1,38 @@
 import React, { useEffect, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { useLessonsApi } from '../hooks/useLessonsApi';
-import { useProgressApi } from '../hooks/useProgressApi';
+import { useLessonsApi } from '../../hooks/useLessonsApi';
+import { useProgressApi } from '../../hooks/useProgressApi';
+import { UserProgress } from '../../types/progress';
+import './Lessons.css';
 
-export const Lessons = () => {
+interface Lesson {
+    _id: string;
+    title: string;
+    description?: string;
+    level: string;
+    words?: unknown[];
+    questions?: unknown[];
+}
+
+export const Lessons: React.FC = () => {
     const navigate = useNavigate();
     const { lessons, fetchAllLessons, loading, error } = useLessonsApi();
-    const { progress, fetchProgress } = useProgressApi();
+    const { progress: rawProgress, fetchProgress } = useProgressApi();
+    const progress = rawProgress as UserProgress | null;
 
-    // סטייט לסינון לפי רמה
-    const [selectedLevel, setSelectedLevel] = useState('All');
+    const [selectedLevel, setSelectedLevel] = useState<string>('All');
 
     useEffect(() => {
         fetchAllLessons();
         fetchProgress();
     }, []);
 
-    // סינון שיעורים לפי הרמה שנבחרה
-    const filteredLessons = selectedLevel === 'All'
-        ? lessons
-        : lessons.filter(l => l.level === selectedLevel);
+    const filteredLessons: Lesson[] = selectedLevel === 'All'
+        ? ((lessons as Lesson[]) || [])
+        : ((lessons as Lesson[]) || []).filter((l: Lesson) => l.level === selectedLevel);
 
-    // בדיקה האם שיעור מסוים כבר הושלם על ידי המשתמש
-    const isCompleted = (lessonId) => {
-        return Boolean(progress?.completedLessons?.some(id => String(id) === String(lessonId)));
+    const isCompleted = (lessonId: string) => {
+        return Boolean(progress?.completedLessons?.some((id: string) => String(id) === String(lessonId)));
     };
 
     const completedCount = lessons.filter(l => isCompleted(l._id)).length;
@@ -63,17 +72,16 @@ export const Lessons = () => {
 
             <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
                 <div>
-                    <h2 className="fw-bold text-dark mb-1">Interactive Lessons</h2>
-                    <p className="text-muted mb-0">Learn vocabulary, grammar rules, and complete practice exercises.</p>
+                    <h2 className="lessons-title mb-1">Interactive Lessons</h2>
+                    <p style={{ color: '#c4b5fd', marginBottom: 0 }}>Learn vocabulary, grammar rules, and complete practice exercises.</p>
                 </div>
 
-                {/* כפתורי סינון לפי רמה */}
-                <div className="btn-group shadow-sm" role="group">
+                <div style={{ display: 'inline-flex' }} role="group">
                     {['All', 'Beginner', 'Intermediate', 'Advanced'].map((lvl) => (
                         <button
                             key={lvl}
                             type="button"
-                            className={`btn ${selectedLevel === lvl ? 'btn-primary' : 'btn-outline-primary'}`}
+                            className={`lessons-filter-btn ${selectedLevel === lvl ? 'lessons-filter-btn-active' : ''}`}
                             onClick={() => setSelectedLevel(lvl)}
                         >
                             {lvl}
@@ -84,7 +92,7 @@ export const Lessons = () => {
 
             {loading && (
                 <div className="text-center py-5">
-                    <div className="spinner-border text-primary" role="status"></div>
+                    <div style={{ color: '#c4b5fd', fontSize: '1.2rem' }}>Loading Lessons...</div>
                 </div>
             )}
 
@@ -93,10 +101,10 @@ export const Lessons = () => {
             )}
 
             {!loading && filteredLessons.length === 0 && (
-                <div className="card border-0 shadow-sm rounded-4 p-5 text-center text-muted">
-                    <div className="text-5xl mb-3"></div>
-                    <h4>No lessons found for this level</h4>
-                    <p>New lessons will be added soon by teachers!</p>
+                <div className="card p-5 text-center text-muted" style={{ background: '#140d36' }}>
+                    <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📚</div>
+                    <h4 style={{ color: '#ffffff' }}>No lessons found for this level</h4>
+                    <p style={{ color: '#c4b5fd' }}>New lessons will be added soon by teachers!</p>
                 </div>
             )}
 
@@ -105,35 +113,35 @@ export const Lessons = () => {
                     const completed = isCompleted(lesson._id);
                     return (
                         <div key={lesson._id} className="col-md-6 col-lg-4">
-                            <div className="card h-100 border-0 shadow-sm rounded-4 overflow-hidden transition-all hover:shadow-md">
-                                <div className="card-body p-4 d-flex flex-col">
+                            <div className="lesson-card">
+                                <div className="card-body p-4 d-flex flex-column h-100">
                                     <div className="d-flex justify-content-between align-items-center mb-3">
-                                        <span className={`badge ${
-                                            lesson.level === 'Beginner' ? 'bg-success-subtle text-success' :
-                                            lesson.level === 'Intermediate' ? 'bg-warning-subtle text-warning' :
-                                            'bg-danger-subtle text-danger'
-                                        } px-3 py-1 rounded-pill fw-semibold`}>
+                                        <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
+                                            lesson.level === 'Beginner' ? 'badge-beginner' :
+                                            lesson.level === 'Intermediate' ? 'badge-intermediate' :
+                                            'badge-advanced'
+                                        }`}>
                                             {lesson.level}
                                         </span>
                                         {completed && (
-                                            <span className="badge bg-success text-white px-2 py-1 rounded-pill">
+                                            <span className="badge-completed px-2 py-1 rounded-full text-xs font-semibold">
                                                 ✓ Completed
                                             </span>
                                         )}
                                     </div>
 
-                                    <h4 className="fw-bold text-dark mb-2">{lesson.title}</h4>
-                                    <p className="text-muted flex-grow text-sm mb-4">
+                                    <h4 className="fw-bold mb-2 text-white" style={{ fontSize: '1.25rem' }}>{lesson.title}</h4>
+                                    <p style={{ color: '#c4b5fd', flexGrow: 1, fontSize: '0.9rem', marginBottom: '1.5rem' }}>
                                         {lesson.description || 'Step-by-step English exercises with words and practice quiz.'}
                                     </p>
 
-                                    <div className="d-flex justify-content-between align-items-center pt-3 border-top">
-                                        <span className="text-muted text-sm">
+                                    <div className="d-flex justify-content-between align-items-center pt-3" style={{ borderTop: '1px solid rgba(168, 85, 247, 0.2)' }}>
+                                        <span style={{ color: '#a78bfa', fontSize: '0.85rem' }}>
                                             {lesson.words?.length || 0} Words • {lesson.questions?.length || 0} Questions
                                         </span>
                                         <button
                                             onClick={() => navigate(`/lessons/${lesson._id}`)}
-                                            className={`btn btn-sm ${completed ? 'btn-outline-primary' : 'btn-primary'} px-3 rounded-pill`}
+                                            className={completed ? 'btn-review-lesson' : 'btn-start-lesson'}
                                         >
                                             {completed ? 'Review' : 'Start Lesson'}
                                         </button>
@@ -147,3 +155,4 @@ export const Lessons = () => {
         </div>
     );
 };
+export default Lessons;

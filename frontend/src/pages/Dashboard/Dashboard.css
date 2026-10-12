@@ -1,0 +1,67 @@
+/* Dashboard techno-purple styling */
+.dashboard-level-badge {
+  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
+  color: #ffffff;
+  font-size: 1.1rem;
+  font-weight: 700;
+  padding: 0.5rem 1.5rem;
+  border-radius: 9999px;
+  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+}
+
+.dashboard-stat-card {
+  border-radius: 1.25rem;
+  height: 100%;
+  padding: 1.75rem 1.25rem;
+  text-align: center;
+  color: #ffffff;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: transform 0.25s ease;
+}
+
+.dashboard-stat-card:hover {
+  transform: translateY(-4px);
+}
+
+.stat-xp {
+  background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
+  box-shadow: 0 0 20px rgba(124, 58, 237, 0.35);
+}
+
+.stat-lessons {
+  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
+  box-shadow: 0 0 20px rgba(5, 150, 105, 0.35);
+}
+
+.stat-games {
+  background: linear-gradient(135deg, #db2777 0%, #9333ea 100%);
+  box-shadow: 0 0 20px rgba(219, 39, 119, 0.35);
+}
+
+.stat-score {
+  background: linear-gradient(135deg, #d97706 0%, #ca8a04 100%);
+  box-shadow: 0 0 20px rgba(217, 119, 6, 0.35);
+}
+
+.stat-title {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.stat-value {
+  font-size: 2.75rem;
+  font-weight: 800;
+  line-height: 1;
+}
+
+.recent-activity-card {
+  background: #140d36;
+  border: 1px solid rgba(168, 85, 247, 0.25);
+  border-radius: 1.25rem;
+  padding: 2rem;
+  text-align: center;
+  color: #c4b5fd;
+}

@@ -1,7 +1,14 @@
 import React from 'react';
-import { LetterCard } from '../components/LetterCard';
+import { LetterCard } from '../../components/LetterCard/LetterCard';
+import './Alphabet.css';
 
-const ALPHABET_DATA = [
+interface AlphabetItem {
+    letter: string;
+    word: string;
+    imageSrc: string;
+}
+
+const ALPHABET_DATA: AlphabetItem[] = [
     { letter: 'A', word: 'Apple', imageSrc: '/assets/A.png' },
     { letter: 'B', word: 'Bear', imageSrc: '/assets/B.png' },
     { letter: 'C', word: 'Cat', imageSrc: '/assets/C.png' },
@@ -30,17 +37,17 @@ const ALPHABET_DATA = [
     { letter: 'Z', word: 'Zebra', imageSrc: '/assets/Z.png' }
 ];
 
-export const Alphabet = () => {
+export const Alphabet: React.FC = () => {
     return (
         <div className="container py-5 fade-in">
-            <div className="text-center mb-5">
-                <h1 className="display-4 fw-bold text-primary">The English Alphabet</h1>
-                <p className="lead text-secondary">Click on the speaker icon to hear the pronunciation!</p>
+            <div className="alphabet-header">
+                <h1 className="alphabet-title">The English Alphabet</h1>
+                <p className="alphabet-subtitle">Click on the speaker icon to hear the pronunciation!</p>
             </div>
             
-            <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4">
+            <div className="alphabet-grid">
                 {ALPHABET_DATA.map((item, index) => (
-                    <div className="col" key={item.letter} style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}>
+                    <div key={item.letter} style={{ animationDelay: `${index * 50}ms`, animationFillMode: 'both' }}>
                         <LetterCard 
                             letter={item.letter} 
                             word={item.word} 
@@ -52,3 +59,4 @@ export const Alphabet = () => {
         </div>
     );
 };
+export default Alphabet;

@@ -1,0 +1,3368 @@
+[
+  {
+    "word": "Deep",
+    "meaning": "עָמוֹק",
+    "phonetic": "דִּיפּ",
+    "visual": "🌊",
+    "exp": "מתאר עומק פיזי (כמו מים) או מטאפורי (רעיון או שיחה).",
+    "engEx": "The ocean is very deep here, so be careful.",
+    "hebEx": "האוקיינוס עמוק מאוד כאן, אז היזהר."
+  },
+  {
+    "word": "Auction",
+    "meaning": "מְכִירָה פּוּמְבִּית",
+    "phonetic": "אוֹקְשֶׁן",
+    "visual": "🔨",
+    "exp": "אירוע שבו פריטים נמכרים למי שמציע את המחיר הגבוה ביותר.",
+    "engEx": "He bought the rare painting at an art auction.",
+    "hebEx": "הוא קנה את הציור הנדיר במכירה פומבית של אמנות."
+  },
+  {
+    "word": "Purchase",
+    "meaning": "קְנִיָּה / לִרְכּוֹשׁ",
+    "phonetic": "פֶּרְצֶ'ס",
+    "visual": "🛒",
+    "exp": "מילה רשמית ומקצועית יותר ל-Buy.",
+    "engEx": "She decided to purchase a new laptop for work.",
+    "hebEx": "היא החליטה לרכוש מחשב נייד חדש לעבודה."
+  },
+  {
+    "word": "Minority",
+    "meaning": "מִיעוּט",
+    "phonetic": "מַיְינוֹרִיטִי",
+    "visual": "📊",
+    "exp": "החלק הקטן יותר מתוך קבוצה שלמה (ההפך מרוב - Majority).",
+    "engEx": "Only a small minority voted against the new law.",
+    "hebEx": "רק מיעוט קטן הצביע נגד החוק החדש."
+  },
+  {
+    "word": "Lowest",
+    "meaning": "הֲנָמוּךְ בְּיוֹתֵר",
+    "phonetic": "לוֹאֶסְט",
+    "visual": "📉",
+    "exp": "בתחתית הרשימה, המחיר או הסקאלה.",
+    "engEx": "This store offers the lowest prices in town.",
+    "hebEx": "החנות הזו מציעה את המחירים הנמוכים בעיר."
+  },
+  {
+    "word": "Appliances",
+    "meaning": "מַכְשִׁירֵי חַשְׁמַל",
+    "phonetic": "אַפְּלַאיֶינְסֶס",
+    "visual": "🔌",
+    "exp": "ציוד חשמ��י ביתי כמו מקרר, מיקרוגל, או תנור.",
+    "engEx": "We need to buy new kitchen appliances for the house.",
+    "hebEx": "אנחנו צריכים לקנות מכשירי מטבח חשמליים חדשים לבית."
+  },
+  {
+    "word": "Collectibles",
+    "meaning": "פְּרִיטֵי אַסְפָנוּת",
+    "phonetic": "קוֹלֶקְטִיבֶּלְס",
+    "visual": "🏺",
+    "exp": "חפצים שאנשים אוספים בשל ערכם, גילם או נדירותם.",
+    "engEx": "His room is full of rare vintage collectibles.",
+    "hebEx": "החדר שלו מלא בפריטי אספנות וינטג' נדירים."
+  },
+  {
+    "word": "Jewelry",
+    "meaning": "תַּכְשִׁיטִים",
+    "phonetic": "ג'וּלְרִי",
+    "visual": "💎",
+    "exp": "פריטי נוי אישיים כמו טבעות, שרשראות וצמידים.",
+    "engEx": "She keeps her expensive jewelry in a secure safe.",
+    "hebEx": "היא שומרת את התכשיטים היקרים שלה בכספת מאובטחת."
+  },
+  {
+    "word": "Earrings and Chains",
+    "meaning": "עֲגִילִים וְשַׁרְשְׁרָאוֹת",
+    "phonetic": "אִיר-רִינְגְס...",
+    "visual": "📿",
+    "exp": "סוגים נפוצים של תכשיטים. Earrings = עגילים, Chains = שרשראות.",
+    "engEx": "She wore beautiful silver earrings and matching chains.",
+    "hebEx": "היא ענדה עגילי כסף יפים ושרשראות תואמות."
+  },
+  {
+    "word": "Ridiculously",
+    "meaning": "בְּצוּרָה מְגֻחֶכֶת",
+    "phonetic": "רִידִיקְיוּלֶסְלִ��",
+    "visual": "🤡",
+    "exp": "תיאור של משהו שהוא מוגזם, לא הגיוני או מצחיק.",
+    "engEx": "The designer car was ridiculously expensive.",
+    "hebEx": "מכונית המעצבים הייתה יקרה בצורה מגוחכת."
+  },
+  {
+    "word": "Perhaps",
+    "meaning": "יִתָּכֵן / אוּלַי",
+    "phonetic": "פֶּרְהַאפְּס",
+    "visual": "🤔",
+    "exp": "חלופה קצת יותר רשמית או מנומסת למילה Maybe.",
+    "engEx": "Perhaps we should leave a bit earlier to avoid traffic.",
+    "hebEx": "אולי כדאי שנצא קצת יותר מוקדם כדי להימנע מהפקקים."
+  },
+  {
+    "word": "Habits",
+    "meaning": "הֶרְגֵּלִים",
+    "phonetic": "הַאבִּיטְס",
+    "visual": "🔁",
+    "exp": "פעולות קבועות שאדם עושה לעיתים קרובות באופן כמעט אוטומטי.",
+    "engEx": "Reading before bed is one of my best daily habits.",
+    "hebEx": "קריאה לפני השינה היא אחד מההרגלים היומיים הטובים ביותר שלי."
+  },
+  {
+    "word": "Obsession",
+    "meaning": "אוֹבְּסֶסְיָה / קִבָּעוֹן",
+    "phonetic": "אוֹבְּסֶשֶׁן",
+    "visual": "🧟‍♂️",
+    "exp": "מחשבה, רעיון או פעולה שאי אפשר להפסיק לחשוב עליהם.",
+    "engEx": "His hobby slowly turned into a dangerous obsession.",
+    "hebEx": "התחביב שלו הפך לאט לאט לאו��ססיה מסוכנת."
+  },
+  {
+    "word": "Addiction",
+    "meaning": "הִתְמַכְּרוּת",
+    "phonetic": "אַדִיקְשֶׁן",
+    "visual": "📱",
+    "exp": "צורך פיזי או נפשי חזק במשהו, שקשה מאוד להפסיק.",
+    "engEx": "Smartphone addiction is becoming a serious problem today.",
+    "hebEx": "התמכרות לסמארטפונים הופכת לבעיה רצינית כיום."
+  },
+  {
+    "word": "Resist",
+    "meaning": "לְהִתְנַגֵּד",
+    "phonetic": "רֶזִיסְט",
+    "visual": "🛑",
+    "exp": "היכולת לסרב או לא להיכנע למשהו מושך.",
+    "engEx": "I just couldn't resist buying that chocolate cake.",
+    "hebEx": "פשוט לא יכולתי להתנגד ולקנות את עוגת השוקולד ההיא."
+  },
+  {
+    "word": "Opportunity",
+    "meaning": "הִזְדַּמְּנוּת",
+    "phonetic": "אוֹפֶּרְטְיוּנִיטִי",
+    "visual": "🚪",
+    "exp": "מצב מאפשר או חלון זמן נוח לביצוע פעולה כדאית.",
+    "engEx": "This job is a great opportunity for your career.",
+    "hebEx": "העבודה הזו היא הזדמנות מצוינת לקריירה שלך."
+  },
+  {
+    "word": "Brand",
+    "meaning": "מוּתָג",
+    "phonetic": "בְּרַאנְד",
+    "visual": "🏷️",
+    "exp": "שם, עיצוב או סמל המזהים חברה מסחרית.",
+    "engEx": "She only buys clothes from her favorite luxury brand.",
+    "hebEx": "היא קונה בגדים רק ממותג היוקרה האהוב עליה."
+  },
+  {
+    "word": "Wonder",
+    "meaning": "לִתְהוֹת / פֶּלֶא",
+    "phonetic": "וּוַאנְדֶר",
+    "visual": "🌌",
+    "exp": "לחשוב על משהו מתוך סקרנות, או לתאר דבר מדהים (כמו פלא תבל).",
+    "engEx": "I wonder what the weather will be like tomorrow.",
+    "hebEx": "אני תוהה איך יהיה מזג האוויר מחר."
+  },
+  {
+    "word": "Faithful",
+    "meaning": "נֶאֱמָן",
+    "phonetic": "פֵיְיתְ'פוּל",
+    "visual": "🐕",
+    "exp": "אדם או בעל חיים שאפשר לסמוך עליו, שנשאר מסור לאורך זמן.",
+    "engEx": "The dog has been a faithful companion to him for years.",
+    "hebEx": "הכלב היה בן לוויה נאמן עבורו במשך שנים."
+  },
+  {
+    "word": "Attendees",
+    "meaning": "מִשְׁתַּתְּפִים",
+    "phonetic": "אַטֶנְדִיז",
+    "visual": "👥",
+    "exp": "אנשים שנוכחים באופן פעיל באירוע, פגישה או כנס.",
+    "engEx": "The tech conference had over five hundred attendees.",
+    "hebEx": "בכנס הטכנולוגיה היו מעל חמש מאות משתתפים."
+  },
+  {
+    "word": "Bulging",
+    "meaning": "בּוֹלֵט / תָּפוּחַ",
+    "phonetic": "בּוֹלְגִ'ינְג",
+    "visual": "👁️",
+    "exp": "מתאר משהו שמתנפח כלפי חוץ, כמו שרירים או תיק מלא.",
+    "engEx": "His pockets were bulging with the stolen money.",
+    "hebEx": "הכיסים שלו היו תפוחים מהכסף הגנוב."
+  },
+  {
+    "word": "Antique",
+    "meaning": "עַתִּיק",
+    "phonetic": "אַנְטִיק",
+    "visual": "🕰️",
+    "exp": "חפץ או פריט ריהוט ישן מאוד, לרוב בעל ערך רב בשל גילו.",
+    "engEx": "They bought a beautiful antique clock for their living room.",
+    "hebEx": "הם קנו שעון עתיק ויפה לסלון שלהם."
+  },
+  {
+    "word": "Furniture",
+    "meaning": "רָהִיטִים",
+    "phonetic": "פֶרְנִיצֶ'ר",
+    "visual": "🛋️",
+    "exp": "ציוד ביתי כמו ספות ושולחנות. חשוב: מילה זו לא מקבלת S ברבים!",
+    "engEx": "The new apartment comes with all the furniture included.",
+    "hebEx": "הדירה החדשה מגיעה עם כל הרהיטים כלולים."
+  },
+  {
+    "word": "Odds and ends",
+    "meaning": "שְׁאֵרִיּוֹת",
+    "phonetic": "אוֹדְז אֶנְד אֶנְדְס",
+    "visual": "🗃️",
+    "exp": "אוסף של פריטים קטנים ושונים ללא קטגוריה ברורה.",
+    "engEx": "I just need to pack a few odds and ends before we leave.",
+    "hebEx": "אני רק צריך לארוז כמה פיצ'יפקס לפני שנצא."
+  },
+  {
+    "word": "Nowadays",
+    "meaning": "כַּיּוֹם",
+    "phonetic": "נַאוּ-אַ-דֵיְיז",
+    "visual": "📅",
+    "exp": "מתייחס לתקופה הנוכחית בהשוואה למה שהיה נהוג בעבר.",
+    "engEx": "Nowadays, almost everyone has a smartphone in their pocket.",
+    "hebEx": "כיום, לכמעט כולם יש סמארטפון בכיס."
+  },
+  {
+    "word": "Bid",
+    "meaning": "הַצָּעַת מְחִיר",
+    "phonetic": "בִּיד",
+    "visual": "🙋‍♂️",
+    "exp": "הסכום שמציעים לשלם על פריט במכרז או מכירה פומבית.",
+    "engEx": "He placed the highest bid and finally won the painting.",
+    "hebEx": "הוא הגיש את הצעת המחיר הגבוהה ביותר ולבסוף זכה בציור."
+  },
+  {
+    "word": "Literally",
+    "meaning": "פְּשׁוּטוֹ כְּמַשְׁמָעוֹ",
+    "phonetic": "לִיטֶרֶלִי",
+    "visual": "💯",
+    "exp": "משמש לציון שהדבר נאמר במדויק, ללא הגזמה מטאפורית.",
+    "engEx": "I was literally freezing while waiting for the bus in the snow.",
+    "hebEx": "אני פשוטו כמשמעו קפאתי מקור כשחיכיתי לאוטובוס בשלג."
+  },
+  {
+    "word": "Items",
+    "meaning": "פְּרִיטִים",
+    "phonetic": "אַיְיטֶמְס",
+    "visual": "📋",
+    "exp": "אובייקטים בודדים בתוך קבוצה, רשימה או אוסף.",
+    "engEx": "Please remember to bring all the required items to the test.",
+    "hebEx": "אנא זכור להביא את כל הפריטים הנדרשים למבחן."
+  },
+  {
+    "word": "Barrier",
+    "meaning": "מַחְסוֹם",
+    "phonetic": "בֶּרִי-אֶר",
+    "visual": "🚧",
+    "exp": "מכשול פיזי (כמו גדר) או מנטלי (כמו מחסום שפה) שמונע מעבר.",
+    "engEx": "The language barrier made it very hard for them to communicate.",
+    "hebEx": "מחסום השפה הקשה עליהם מאוד לתקשר."
+  },
+  {
+    "word": "Exists",
+    "meaning": "קַיָּם",
+    "phonetic": "אֶגְזִיסְטְס",
+    "visual": "🌍",
+    "exp": "מתאר משהו שיש לו מציאות או נוכחות ממשית בעולם.",
+    "engEx": "Nobody knows for sure if life exists on other planets.",
+    "hebEx": "אף אחד לא יודע בוודאות אם קיימים חיים בכוכבי לכת אחרים."
+  },
+  {
+    "word": "Unfortunate",
+    "meaning": "מְצַעֵר",
+    "phonetic": "אַנְפוֹרְצְ'יוּנֵט",
+    "visual": "🌧️",
+    "exp": "מתאר אירוע שקרה באופן לא רצוי או אדם שאין לו מזל.",
+    "engEx": "It was an unfortunate mistake that cost us the game.",
+    "hebEx": "זו הייתה טעות מצערת שעלתה לנו במשחק."
+  },
+  {
+    "word": "Receive",
+    "meaning": "לְקַבֵּל",
+    "phonetic": "רִיסִיב",
+    "visual": "📥",
+    "exp": "פעולת קבלת דבר מה. זו מילה רשמית ופורמלית יותר מ-Get.",
+    "engEx": "You will receive an email confirming your hotel reservation.",
+    "hebEx": "אתה תקבל אימייל המאשר את הזמנת המלון שלך."
+  },
+  {
+    "word": "Unscrupulous",
+    "meaning": "חֲסַר מַצְפּוּן",
+    "phonetic": "אַנְסְקְרוּפִּילוֹס",
+    "visual": "😈",
+    "exp": "אדם או התנהגות שאינם מוסריים ולא בוחלים באמצעים.",
+    "engEx": "The unscrupulous salesman tricked her into signing the contract.",
+    "hebEx": "איש המכירות חסר המצפון הערים עליה לחתום על החוזה."
+  },
+  {
+    "word": "Customer",
+    "meaning": "לָקוֹחַ",
+    "phonetic": "קַסְטוֹמֶר",
+    "visual": "🛍️",
+    "exp": "אדם שקונה מוצר או שירות מחברה או חנות.",
+    "engEx": "We try to give every customer the best service possible.",
+    "hebEx": "אנחנו משתדלים לתת לכל לקוח את השירות הטוב ביותר שאפשר."
+  },
+  {
+    "word": "Consequently",
+    "meaning": "כְּתוֹצָאָה מִכָּךְ",
+    "phonetic": "קוֹנְסֶקְווֶנְטְלִי",
+    "visual": "➡️",
+    "exp": "מילת קישור גבוהה המציינת שדבר קרה בגלל דבר אחר.",
+    "engEx": "He didn't study at all; consequently, he failed the exam.",
+    "hebEx": "הוא לא למד כלל; כתוצאה מכך, הוא נכשל במבחן."
+  },
+  {
+    "word": "Proceed",
+    "meaning": "לְהַמְשִׁיךְ",
+    "phonetic": "פְּרוֹסִיד",
+    "visual": "🚶‍♂️",
+    "exp": "להתקדם בפעולה או להמשיך הלאה (לדוגמה לאחר הפסקה).",
+    "engEx": "Please proceed to the boarding gate immediately.",
+    "hebEx": "אנא התקדם לשער העלייה למטוס באופן מיידי."
+  },
+  {
+    "word": "Due",
+    "meaning": "רָאוּי / נָאוֹת",
+    "phonetic": "דְיוּ",
+    "visual": "⏳",
+    "exp": "מתאר כבוד ראוי, או זמן/תאריך שבו משהו אמור להתרחש או להיות מוגש.",
+    "engEx": "The project assignment is due next Monday.",
+    "hebEx": "מטלת הפרויקט צריכה להיות מוגשת ביום שני הבא."
+  },
+  {
+    "word": "Arise",
+    "meaning": "לָצוּץ / לְהִתְעוֹרֵר",
+    "phonetic": "אֶרַאיְיז",
+    "visual": "⚠️",
+    "exp": "מתייחס בדרך כלל לבעיה, קושי או הזדמנות שמופיעים לפתע.",
+    "engEx": "Should any problems arise, please contact technical support.",
+    "hebEx": "במידה ויצוצו בעיות כלשהן, אנא פנה לתמיכה טכנית."
+  },
+  {
+    "word": "Instructed",
+    "meaning": "מֻנְחֶה",
+    "phonetic": "אִינְסְטְרַקְטֶד",
+    "visual": "👨‍🏫",
+    "exp": "אדם שקיבל הכוונה, הדרכה או פקודה לבצע משהו.",
+    "engEx": "He did exactly as he was instructed by the manager.",
+    "hebEx": "הוא עשה בדיוק כפי שהונחה על ידי המנהל."
+  },
+  {
+    "word": "Sum up",
+    "meaning": "לְסַכֵּם",
+    "phonetic": "סַאם אַפּ",
+    "visual": "📝",
+    "exp": "פעולת הקיצור והסיכום של דברים שנאמרו או קרו.",
+    "engEx": "Let me sum up the main points of our discussion.",
+    "hebEx": "תן לי לסכם את הנקודות העיקריות של הדיון שלנו."
+  },
+  {
+    "word": "Kneading",
+    "meaning": "לִישָׁה",
+    "phonetic": "נִי-דִינְג",
+    "visual": "👐",
+    "exp": "משמש לתיאור פעולת עיבוד פיזית, לרוב של בצק, חימר או בוץ. האות K שותקת.",
+    "engEx": "The worker spent hours kneading the wet mud to shape the bricks.",
+    "hebEx": "העובד בילה שעות בלישת הבוץ הרטוב כדי לעצב את הלבנים."
+  },
+  {
+    "word": "Mud",
+    "meaning": "בּוֹץ / רֶפֶשׁ",
+    "phonetic": "מַאד",
+    "visual": "🟤",
+    "exp": "אדמה רטובה ודביקה.",
+    "engEx": "The heavy rain turned the dirt road into thick mud.",
+    "hebEx": "הגשם הכבד הפך את דרך העפר לבוץ סמיך."
+  },
+  {
+    "word": "Tiny",
+    "meaning": "זָעִיר",
+    "phonetic": "טַיְינִי",
+    "visual": "🔬",
+    "exp": "תיאור למשהו קטן במיוחד, קטן יותר מ-Small.",
+    "engEx": "The microscope revealed tiny organisms in the water.",
+    "hebEx": "המיקרוסקופ חשף אורגניזמים זעירים במים."
+  },
+  {
+    "word": "Shape",
+    "meaning": "צוּרָה / לְעַצֵּב",
+    "phonetic": "שֵׁייפּ",
+    "visual": "🔺",
+    "exp": "יכול לשמש כשם עצם (צורה) או כפועל (לעצב משהו).",
+    "engEx": "You can shape the clay into a beautiful bowl.",
+    "hebEx": "אתה יכול לעצב את החימר לקערה יפה."
+  },
+  {
+    "word": "Bricks",
+    "meaning": "לְבֵנִים",
+    "phonetic": "בְּרִיקְס",
+    "visual": "🧱",
+    "exp": "חומר בנייה בסיסי העשוי לרוב מחימר שרוף.",
+    "engEx": "The old house was built using red bricks.",
+    "hebEx": "הבית הישן נבנה באמצעות לבנים אדומות."
+  },
+  {
+    "word": "Advance",
+    "meaning": "לְקַדֵּם / מִקְדָּמָה",
+    "phonetic": "אַדְבַאנְס",
+    "visual": "⏩",
+    "exp": "לנוע קדימה, או בהקשר כספי: תשלום הניתן לפני המועד.",
+    "engEx": "He asked his manager for an advance on his wages.",
+    "hebEx": "הוא ביקש ממנהלו מקדמה על משכורתו."
+  },
+  {
+    "word": "Wages",
+    "meaning": "מַשְׂכֹּרֶת",
+    "phonetic": "וֵוייגֶ'ס",
+    "visual": "💵",
+    "exp": "תשלום הניתן לעובד עבור עבודתו, לרוב מחושב לפי שעות או ימים.",
+    "engEx": "The factory workers demanded higher wages.",
+    "hebEx": "פועלי המפעל דרשו משכורות גבוהות יותר."
+  },
+  {
+    "word": "Kiln",
+    "meaning": "כִּבְשָׁן",
+    "phonetic": "קִילְן",
+    "visual": "🔥",
+    "exp": "תנור תעשייתי לוהט לשריפת לבנים או קרמיקה. ה-n כמעט שותקת.",
+    "engEx": "The tiny clay bricks were left in the hot kiln overnight to harden.",
+    "hebEx": "לבני החימר הזעירות הושארו בכבשן החם למשך הלילה כדי להתקשות."
+  },
+  {
+    "word": "Debt",
+    "meaning": "חוֹב",
+    "phonetic": "דֶט",
+    "visual": "💳",
+    "exp": "מצב פיננסי בו אדם חייב כסף. האות b שותקת לחלוטין!",
+    "engEx": "Taking out another loan will only increase their massive debt.",
+    "hebEx": "לקיחת הלוואה נוספת רק תגדיל את החוב העצום שלהם."
+  },
+  {
+    "word": "Surveys",
+    "meaning": "סְקָרִים",
+    "phonetic": "סֶרְבֵייז",
+    "visual": "📋",
+    "exp": "איסוף נתונים או דעות מקבוצת אנשים.",
+    "engEx": "Recent surveys show a change in consumer habits.",
+    "hebEx": "סקרים אחרונים מראים שינוי בהרגלי הצרכנים."
+  },
+  {
+    "word": "Loan",
+    "meaning": "הַלְוָאָה",
+    "phonetic": "לוֹאוּן",
+    "visual": "🏦",
+    "exp": "כסף שניתן בהשאלה ולרוב דורש החזר עם ריבית.",
+    "engEx": "He applied for a loan to buy a new car.",
+    "hebEx": "הוא הגיש בקשה להלוואה כדי לקנות מכונית חדשה."
+  },
+  {
+    "word": "Refugees",
+    "meaning": "פְּלִיטִים",
+    "phonetic": "רֶפְיוּ-ג'ִיז",
+    "visual": "⛺",
+    "exp": "אנשים שנאלצו לעזוב את ארצם עקב מלחמה או רדיפה.",
+    "engEx": "The international committee must provide proper conditions for the war refugees.",
+    "hebEx": "על הוועדה הבינלאומית לספק תנאים נאותים לפליטי המלחמה."
+  },
+  {
+    "word": "Reduce",
+    "meaning": "לְצַמְצֵם",
+    "phonetic": "רִי-דְיוּס",
+    "visual": "🔽",
+    "exp": "הקטנת כמות, גודל או חשיבות של משהו.",
+    "engEx": "We need to reduce our daily expenses.",
+    "hebEx": "אנחנו צריכים לצמצם את ההוצאות היומיות שלנו."
+  },
+  {
+    "word": "Amount",
+    "meaning": "כַּמּוּת / סְכוּם",
+    "phonetic": "אֶ-מַאוּנְט",
+    "visual": "⚖️",
+    "exp": "מתייחס לכמות של משהו שאינו ספיר בקלות (כמו מים או כסף).",
+    "engEx": "The recipe requires a small amount of sugar.",
+    "hebEx": "המתכון דורש כמות קטנה של סוכר."
+  },
+  {
+    "word": "Permission",
+    "meaning": "הַרְשָׁאָה",
+    "phonetic": "פֶּר-מִי-שֶׁן",
+    "visual": "🛂",
+    "exp": "אישור רשמי לעשות משהו.",
+    "engEx": "You need special permission to enter this building.",
+    "hebEx": "אתה צריך הרשאה מיוחדת כדי להיכנס לבניין הזה."
+  },
+  {
+    "word": "Accusations",
+    "meaning": "הַאֲשָׁמוֹת",
+    "phonetic": "אֶקְיוּ-זֵיי-שֶׁנְס",
+    "visual": "☝️",
+    "exp": "טענות רשמיות על כך שאדם ביצע מעשה פסול.",
+    "engEx": "The manager faced serious accusations regarding the poor conditions.",
+    "hebEx": "המנהל עמד בפני האשמות חמורות בנוגע לתנאים הירודים."
+  },
+  {
+    "word": "Reject",
+    "meaning": "לִדְחוֹת",
+    "phonetic": "רִי-ג'ֶ'קְט",
+    "visual": "❌",
+    "exp": "סירוב לקבל, לאשר או להסכים למשהו.",
+    "engEx": "The bank decided to reject his request for a loan.",
+    "hebEx": "הבנק החליט לדחות את בקשתו להלוואה."
+  },
+  {
+    "word": "Proper",
+    "meaning": "נָאוֹת / רָאוּי",
+    "phonetic": "פְּרוֹ-פֶּר",
+    "visual": "✔️",
+    "exp": "משהו שהוא הולם, נכון או מתאים לסיטואציה.",
+    "engEx": "Please ensure you are wearing the proper uniform.",
+    "hebEx": "אנא ודא שאתה לובש את המדים הנאותים."
+  },
+  {
+    "word": "Conditions",
+    "meaning": "תְּנָאִים",
+    "phonetic": "קוֹן-דִי-שֶׁנְס",
+    "visual": "📝",
+    "exp": "מצב סביבתי או דרישות שצריך לעמוד בהן.",
+    "engEx": "The workers complained about the terrible working conditions.",
+    "hebEx": "העובדים התלוננו על תנאי העבודה הנוראיים."
+  },
+  {
+    "word": "Provided",
+    "meaning": "בִּתְנַאי שֶׁ...",
+    "phonetic": "פְּרוֹ-וַויי-דֶד",
+    "visual": "🤝",
+    "exp": "מילת מפתח אקדמית! משמשת כמילת תנאי לוגית המחליפה את 'If'.",
+    "engEx": "We will accept the agreement, provided that all conditions are met.",
+    "hebEx": "אנו נקבל את ההסכם, בתנאי שכל התנאים יתקיימו."
+  },
+  {
+    "word": "Ceremonies",
+    "meaning": "טְקָסִים",
+    "phonetic": "סֶ-רֶ-מוֹ-נִיז",
+    "visual": "🎊",
+    "exp": "אירועים פורמליים, לרוב מסורתיים או ציבוריים.",
+    "engEx": "Traditional ceremonies were held in the village.",
+    "hebEx": "טקסים מסורתיים נערכו בכפר."
+  },
+  {
+    "word": "Treatment",
+    "meaning": "טִיפּוּל",
+    "phonetic": "טְרִיט-מֶנְט",
+    "visual": "🩺",
+    "exp": "האופן בו מתנהגים או מטפלים במישהו, רפואית או חברתית.",
+    "engEx": "The patient responded well to the new medical treatment.",
+    "hebEx": "המטופל הגיב היטב לטיפול הרפואי החדש."
+  },
+  {
+    "word": "Requirement",
+    "meaning": "דְּרִישָׁה",
+    "phonetic": "רִי-קְוַוייר-מֶנְט",
+    "visual": "❗",
+    "exp": "משהו שהכרחי או נדרש (תנאי קבלה).",
+    "engEx": "Passing the test is a strict requirement for the job.",
+    "hebEx": "מעבר המבחן הוא דרישה נוקשה לתפקיד."
+  },
+  {
+    "word": "Illegal",
+    "meaning": "לֹא חֻקִּי",
+    "phonetic": "אִיל-לִי-גַאל",
+    "visual": "🚫",
+    "exp": "מנוגד לחוק או לכללים.",
+    "engEx": "Parking in this zone is strictly illegal.",
+    "hebEx": "חניה באזור זה היא בלתי חוקית לחלוטין."
+  },
+  {
+    "word": "Exaggeration",
+    "meaning": "הַגְזָמָה",
+    "phonetic": "אֶגְ-זַה-גֶ'רֵיי-שֶׁן",
+    "visual": "📈",
+    "exp": "תיאור של מצב כגדול או גרוע ממה שהוא באמת.",
+    "engEx": "To say that the new requirement is completely illegal is a massive exaggeration.",
+    "hebEx": "לומר שהדרישה החדשה היא בלתי חוקית לחלוטין זו הגזמה עצומה."
+  },
+  {
+    "word": "Trade-Unions",
+    "meaning": "אִגּוּדֵי עוֹבְדִים",
+    "phonetic": "טְרֵייד יוּנְיוֹנְס",
+    "visual": "✊",
+    "exp": "ארגונים המאגדים עובדים להגנה על זכויותיהם.",
+    "engEx": "The trade-unions stepped in to solve the crisis.",
+    "hebEx": "איגודי העובדים התערבו כדי לפתור את המשבר."
+  },
+  {
+    "word": "Trapped",
+    "meaning": "לִלְכּוֹד",
+    "phonetic": "טְרַאפְּט",
+    "visual": "🕸️",
+    "exp": "תחושה של אדם התקוע במצב בעייתי ללא יכולת השתחררות.",
+    "engEx": "Despite his promises, many workers still felt trapped in the system.",
+    "hebEx": "למרות הבטחותיו, עובדים רבים עדיין הרגישו לכודים במערכת."
+  },
+  {
+    "word": "Commissioner",
+    "meaning": "נָצִיב",
+    "phonetic": "קוֹ-מִי-שֶׁ-נֶר",
+    "visual": "👮‍♂️",
+    "exp": "בעל תפקיד בכיר הממונה על תחום או ועדה (למשל במשטרה).",
+    "engEx": "The police commissioner held a press conference.",
+    "hebEx": "נציב המשטרה ערך מסיבת עיתונאים."
+  },
+  {
+    "word": "Solve",
+    "meaning": "לִפְתּוֹר",
+    "phonetic": "סוֹלְב",
+    "visual": "🧩",
+    "exp": "מציאת פתרון לבעיה או תעלומה.",
+    "engEx": "The detective managed to solve the complicated mystery.",
+    "hebEx": "הבלש הצליח לפתור את התעלומה המסובכת."
+  },
+  {
+    "word": "Denies",
+    "meaning": "מַכְחִישׁ",
+    "phonetic": "דִי-נַאייז",
+    "visual": "🙅‍♂️",
+    "exp": "לסרב להודות באמת או לדחות טענה.",
+    "engEx": "The suspect still denies all the allegations against him.",
+    "hebEx": "החשוד עדיין מכחיש את כל ההאשמות נגדו."
+  },
+  {
+    "word": "Insist",
+    "meaning": "לְהִתְעַקֵּשׁ",
+    "phonetic": "אִין-סִיסְט",
+    "visual": "😤",
+    "exp": "לדרוש משהו בתקיפות ולא לוותר.",
+    "engEx": "I insist that you stay for dinner.",
+    "hebEx": "אני מתעקש שתישאר לארוחת ערב."
+  },
+  {
+    "word": "Poisonous",
+    "meaning": "רָעִיל",
+    "phonetic": "פּוֹיְ-זְ-נַס",
+    "visual": "☠️",
+    "exp": "חומר או אורגניזם שיכול לגרום למוות או נזק.",
+    "engEx": "Be careful, some of these mushrooms are poisonous.",
+    "hebEx": "היזהר, חלק מהפטריות האלה רעילות."
+  },
+  {
+    "word": "Barefoot",
+    "meaning": "יָחֵף",
+    "phonetic": "בֶּר-פוּט",
+    "visual": "🦶",
+    "exp": "הליכה ללא נעליים או גרביים.",
+    "engEx": "The children loved running barefoot on the grass.",
+    "hebEx": "הילדים אהבו לרוץ יחפים על הדשא."
+  },
+  {
+    "word": "Convince",
+    "meaning": "לְשַׁכְנֵעַ",
+    "phonetic": "קוֹן-בִינְס",
+    "visual": "🗣️",
+    "exp": "לגרום למישהו לאמץ דעה באמצעות טיעונים.",
+    "engEx": "In some instances, it is difficult to convince people to change their harsh tone.",
+    "hebEx": "בחלק מהמקרים, קשה לשכנע אנשים לשנות את הטון הנוקשה שלהם."
+  },
+  {
+    "word": "Waive",
+    "meaning": "לְוַתֵּר עַל",
+    "phonetic": "וֵוייב",
+    "visual": "🗑️",
+    "exp": "ויתור רשמי על זכות, דרישה או תשלום.",
+    "engEx": "The company decided to waive the cancellation fee.",
+    "hebEx": "החברה החליטה לוותר על דמי הביטול."
+  },
+  {
+    "word": "Instances",
+    "meaning": "מִקְרִים",
+    "phonetic": "אִין-סְטַנְסֶס",
+    "visual": "📁",
+    "exp": "דוגמאות או אירועים ספציפיים.",
+    "engEx": "There were several instances of fraud reported.",
+    "hebEx": "דווחו מספר מקרים של הונאה."
+  },
+  {
+    "word": "Mentioned",
+    "meaning": "מוּזְכָּר",
+    "phonetic": "מֶנ-שֶׁנְד",
+    "visual": "💬",
+    "exp": "משהו שהתייחסו אליו בשיחה או בכתב.",
+    "engEx": "She mentioned your name during the meeting.",
+    "hebEx": "היא הזכירה את שמך במהלך הפגישה."
+  },
+  {
+    "word": "Tone",
+    "meaning": "טוֹן / צְלִיל",
+    "phonetic": "טוֹן",
+    "visual": "🎵",
+    "exp": "אופי הצליל או נימת הקול (שיכולה להעיד על מצב רוח).",
+    "engEx": "His aggressive tone made everyone uncomfortable.",
+    "hebEx": "הטון האגרסיבי שלו גרם לכולם להרגיש לא בנוח."
+  },
+  {
+    "word": "Biased",
+    "meaning": "מְשֻׁחָד",
+    "phonetic": "בַּאיְ-יֶסְט",
+    "visual": "⚖️",
+    "exp": "חוסר אובייקטיביות, נטייה לא הוגנת לטובת צד מסוים.",
+    "engEx": "The investigation proved that the reporter was highly biased.",
+    "hebEx": "החקירה הוכיחה שהכתב היה משוחד מאוד."
+  },
+  {
+    "word": "Exposed",
+    "meaning": "חָשׂוּף",
+    "phonetic": "אֶקְס-פּוֹזְד",
+    "visual": "🔦",
+    "exp": "גילוי או הוצאה לאור של משהו שהיה נסתר.",
+    "engEx": "The scandal exposed the corruption in the organization.",
+    "hebEx": "השערורייה חשפה את השחיתות בארגון."
+  },
+  {
+    "word": "Perform",
+    "meaning": "לְבַצֵּעַ",
+    "phonetic": "פֶּרְפוֹרְם",
+    "visual": "🎭",
+    "exp": "לבצע משימה, פעולה או הופעה.",
+    "engEx": "The surgeon will perform the operation tomorrow.",
+    "hebEx": "המנתח יבצע את הניתוח מחר."
+  },
+  {
+    "word": "Paralyzed",
+    "meaning": "מְשֻׁתָּק",
+    "phonetic": "פַּרָלַיְזְד",
+    "visual": "🦽",
+    "exp": "אדם שאינו מסוגל להזיז חלק מגופו, או מצב של חוסר יכולת לפעול.",
+    "engEx": "The accident left him paralyzed from the waist down.",
+    "hebEx": "התאונה הותירה אותו משותק מהמותניים ומטה."
+  },
+  {
+    "word": "Arm(s)",
+    "meaning": "זְרוֹעַ / זְרוֹעוֹת",
+    "phonetic": "אָרְם/ס",
+    "visual": "💪",
+    "exp": "גפה עליונה של גוף האדם, או זרוע של מכונה.",
+    "engEx": "He carried the heavy box in his arms.",
+    "hebEx": "הוא נשא את הקופסה הכבדה בזרועותיו."
+  },
+  {
+    "word": "Fetch",
+    "meaning": "לְהָבִיא",
+    "phonetic": "פֶצ'",
+    "visual": "🐕",
+    "exp": "ללכת להביא משהו ולחזור איתו.",
+    "engEx": "Please fetch me a glass of water.",
+    "hebEx": "אנא הבא לי כוס מים."
+  },
+  {
+    "word": "Scratch Itches",
+    "meaning": "לְגָרֵד",
+    "phonetic": "סְקְרַאצ' אִיצֶ'ס",
+    "visual": "💅",
+    "exp": "להעביר ציפורניים על העור כדי להקל על תחושת גירוד.",
+    "engEx": "The dog used its back leg to scratch itches.",
+    "hebEx": "הכלב השתמש ברגלו האחורית כדי לגרד."
+  },
+  {
+    "word": "Plenty",
+    "meaning": "שֶׁפַע",
+    "phonetic": "פְּלֶנְטִי",
+    "visual": "🧺",
+    "exp": "כמות גדולה ומספקת של משהו.",
+    "engEx": "We have plenty of time before the train leaves.",
+    "hebEx": "יש לנו שפע של זמן לפני שהרכבת עוזבת."
+  },
+  {
+    "word": "Comb",
+    "meaning": "לְסָרֵק",
+    "phonetic": "קוֹם",
+    "visual": "🪮",
+    "exp": "סידור השיער באמצעות מסרק. האות b שותקת.",
+    "engEx": "She needs to comb her hair before the meeting.",
+    "hebEx": "היא צריכה לסרק את שערה לפני הפגישה."
+  },
+  {
+    "word": "Hair",
+    "meaning": "שֵׂעָר",
+    "phonetic": "הֶר",
+    "visual": "💇‍♀️",
+    "exp": "צומח מקרקפת הראש.",
+    "engEx": "Her hair is naturally curly and very long.",
+    "hebEx": "השיער שלה מתולתל באופן טבעי וארוך מאוד."
+  },
+  {
+    "word": "Independent",
+    "meaning": "עַצְמָאִי",
+    "phonetic": "אִינְדִיפֶּנְדֶנְט",
+    "visual": "🦅",
+    "exp": "אדם או גוף שאינו תלוי באחרים ופועל בכוחות עצמו.",
+    "engEx": "After college, he became financially independent.",
+    "hebEx": "לאחר המכללה, הוא הפך לעצמאי כלכלית."
+  },
+  {
+    "word": "Forced",
+    "meaning": "כָּפוּי / הוּכְרַח",
+    "phonetic": "פוֹרְסְד",
+    "visual": "⛓️",
+    "exp": "פעולה שנעשתה בניגוד לרצון החופשי, תחת לחץ.",
+    "engEx": "They were forced to leave their homes due to the storm.",
+    "hebEx": "הם הוכרחו לעזוב את בתיהם עקב הסופה."
+  },
+  {
+    "word": "Nursing",
+    "meaning": "טִיפּוּל / סִיעוּד",
+    "phonetic": "נֶרְסִינְג",
+    "visual": "🧑‍⚕️",
+    "exp": "מקצוע או פעולת הטיפול בחולים ופצועים.",
+    "engEx": "She chose a career in nursing to help people.",
+    "hebEx": "היא בחרה בקריירה בסיעוד כדי לעזור לאנשים."
+  },
+  {
+    "word": "Despair",
+    "meaning": "יֵאוּשׁ",
+    "phonetic": "דִיסְפֶּר",
+    "visual": "🥀",
+    "exp": "אובדן מוחלט של תקווה.",
+    "engEx": "Don't give up in moments of despair.",
+    "hebEx": "אל תרים ידיים ברגעי ייאוש."
+  },
+  {
+    "word": "Helplessness",
+    "meaning": "חוֹסֶר אוֹנִים",
+    "phonetic": "הֶלְפְּלֶסְנֶס",
+    "visual": "🪫",
+    "exp": "תחושה שאין ביכולתך לעשות דבר כדי לשנות את המצב.",
+    "engEx": "He felt a deep sense of helplessness when he lost his job.",
+    "hebEx": "הוא חש תחושה עמוקה של חוסר אונים כשאיבד את עבודתו."
+  },
+  {
+    "word": "Dormitories",
+    "meaning": "מְעוֹנוֹת",
+    "phonetic": "דּוֹרְמִיטוֹרִיז",
+    "visual": "🏢",
+    "exp": "מגורי סטודנטים במוסד חינוכי.",
+    "engEx": "Many first-year students live in the college dormitories.",
+    "hebEx": "הרבה סטודנטים שנה ראשונה גרים במעונות המכללה."
+  },
+  {
+    "word": "Raising",
+    "meaning": "הֲרָמָה / לְגַדֵּל",
+    "phonetic": "רֵיְיזִינְג",
+    "visual": "🏗️",
+    "exp": "פעולה של הגבהת משהו, או גידול ילדים ובעלי חיים.",
+    "engEx": "They are raising funds for the new hospital.",
+    "hebEx": "הם מגייסים כספים לבית החולים החדש."
+  },
+  {
+    "word": "Laser beam",
+    "meaning": "קֶרֶן לֵיְיזֶר",
+    "phonetic": "לֵיְזֶר בִּים",
+    "visual": "🔦",
+    "exp": "אלומת אור ממוקדת וחזקה.",
+    "engEx": "The security system uses an invisible laser beam.",
+    "hebEx": "מערכת האבטחה משתמשת בקרן לייזר בלתי נראית."
+  },
+  {
+    "word": "Respond",
+    "meaning": "תְּגוּבָה / לְהָגִיב",
+    "phonetic": "רִיסְפּוֹנְד",
+    "visual": "💬",
+    "exp": "מתן מענה לשאלה, מצב או פעולה.",
+    "engEx": "It took him a few minutes to respond to the message.",
+    "hebEx": "לקח לו כמה דקות להגיב להודעה."
+  },
+  {
+    "word": "Institutions",
+    "meaning": "מוֹסָדוֹת",
+    "phonetic": "אִינְסְטִיטְיוּשֶׁנְס",
+    "visual": "🏛️",
+    "exp": "ארגונים רשמיים, כמו מוסדות חינוך, ממשלה או פיננסים.",
+    "engEx": "Banks are important financial institutions.",
+    "hebEx": "בנקים הם מוסדות פיננסיים חשובים."
+  },
+  {
+    "word": "Applications",
+    "meaning": "יִישּׂוּמִים / בַּקָּשׁוֹת",
+    "phonetic": "אַפְּלִיקֵיְישֶׁנְס",
+    "visual": "📱",
+    "exp": "שימושים מעשיים לטכנולוגיה, או טפסי הרשמה.",
+    "engEx": "This software has many practical applications.",
+    "hebEx": "לתוכנה זו יש יישומים מעשיים רבים."
+  },
+  {
+    "word": "Significance",
+    "meaning": "מַשְׁמָעוּת",
+    "phonetic": "סִיגְנִיפִיקֶנְס",
+    "visual": "🌟",
+    "exp": "החשיבות או המשמעות העמוקה של דבר מה.",
+    "engEx": "Do you understand the significance of this decision?",
+    "hebEx": "האם אתה מבין את המשמעות של ההחלטה הזו?"
+  },
+  {
+    "word": "Graduating",
+    "meaning": "סִיּוּם לִימּוּדִים",
+    "phonetic": "גְרַאגְ'יוּאֵיְטִינְג",
+    "visual": "🎓",
+    "exp": "קבלת תואר אקדמי או סיום שלב חינוכי.",
+    "engEx": "She is graduating from university with top honors.",
+    "hebEx": "היא מסיימת את לימודיה באוניברסיטה בהצטיינות יתרה."
+  },
+  {
+    "word": "Immense",
+    "meaning": "עָצוּם",
+    "phonetic": "אִימֶנְס",
+    "visual": "🐘",
+    "exp": "משהו גדול מאוד בגודלו או בהיקפו.",
+    "engEx": "The new project requires an immense amount of money.",
+    "hebEx": "הפרויקט החדש דורש כמות עצומה של כסף."
+  },
+  {
+    "word": "Amusing",
+    "meaning": "מְשַׁעֲשֵׁעַ",
+    "phonetic": "אֶמְיוּזִינְג",
+    "visual": "🤣",
+    "exp": "משהו שגורם לצחוק, חיוך או בידור קל.",
+    "engEx": "I found his story highly amusing.",
+    "hebEx": "מצאתי את הסיפור שלו מאוד משעשע."
+  },
+  {
+    "word": "Contributors",
+    "meaning": "תּוֹרְמִים",
+    "phonetic": "קוֹנְטְרִיבְּיוּטוֹרְס",
+    "visual": "🤝",
+    "exp": "אנשים שמעניקים זמן, כסף או מאמץ למען מטרה משותפת.",
+    "engEx": "We thank all the contributors for their generous donations.",
+    "hebEx": "אנו מודים לכל התורמים על תרומותיהם הנדיבות."
+  },
+  {
+    "word": "Approximately",
+    "meaning": "בְּעֵרֶךְ",
+    "phonetic": "אַפְּרוֹקְסִימֶטְלִי",
+    "visual": "⚖️",
+    "exp": "הערכה קרובה למדד מסוים, לא מדוייק במאת האחוזים.",
+    "engEx": "The journey will take approximately two hours.",
+    "hebEx": "המסע ייקח בערך שעתיים."
+  },
+  {
+    "word": "Companion",
+    "meaning": "בֶּן לִוְיָה",
+    "phonetic": "קוֹמְפֶּנְיוֹן",
+    "visual": "🚶‍♂️",
+    "exp": "מישהו שמבלה זמן רב איתך או מלווה אותך במסע.",
+    "engEx": "His dog is his most loyal companion.",
+    "hebEx": "הכלב שלו הוא בן הלוויה הנאמן ביותר שלו."
+  },
+  {
+    "word": "Pair",
+    "meaning": "זוּג",
+    "phonetic": "פֶּר",
+    "visual": "🧦",
+    "exp": "שני פריטים מאותו סוג שמשמשים יחד.",
+    "engEx": "I need to buy a new pair of shoes.",
+    "hebEx": "אני צריך לקנות זוג נעליים חדש."
+  },
+  {
+    "word": "Capable",
+    "meaning": "מְסוּגָּל",
+    "phonetic": "קֵיְיפָּבֶּל",
+    "visual": "🦸‍♂️",
+    "exp": "אדם שיש לו את הכישורים הנדרשים לבצע משימה.",
+    "engEx": "She is a highly capable manager.",
+    "hebEx": "היא מנהלת בעלת יכולות גבוהות."
+  },
+  {
+    "word": "Runs It",
+    "meaning": "מְנַהֵל אֶת זֶה",
+    "phonetic": "רַאנְס אִיט",
+    "visual": "🏃‍♂️",
+    "exp": "מנהל או מתפעל עסק או מערכת (ולא רק 'לרוץ').",
+    "engEx": "My father owns the shop and runs it himself.",
+    "hebEx": "אבא שלי הוא הבעלים של החנות ומנהל אותה בעצמו."
+  },
+  {
+    "word": "Phrases",
+    "meaning": "בִּיטּוּיִים",
+    "phonetic": "פְרֵיְיזֶס",
+    "visual": "🗣️",
+    "exp": "קבוצת מילים המהווה יחידה בעלת משמעות בתוך משפט.",
+    "engEx": "You need to learn some useful English phrases for the trip.",
+    "hebEx": "אתה צריך ללמוד כמה ביטויים שימושיים באנגלית לקראת הטיול."
+  },
+  {
+    "word": "Spent",
+    "meaning": "לְבַזְבֵּז / הוֹצִיא",
+    "phonetic": "סְפֶּנְט",
+    "visual": "💸",
+    "exp": "צורת העבר של Spend, להוציא כסף או להעביר זמן.",
+    "engEx": "I spent all my money on a new computer.",
+    "hebEx": "בזבזתי את כל כספי על מחשב חדש."
+  },
+  {
+    "word": "Organization",
+    "meaning": "אִרְגּוּן",
+    "phonetic": "אוֹרְגַּנִיזֵיְישֶׁן",
+    "visual": "🏢",
+    "exp": "קבוצת אנשים הפועלת יחד למטרה מוגדרת.",
+    "engEx": "The charity is a non-profit organization.",
+    "hebEx": "עמותת החסד היא ארגון ללא מטרות רווח."
+  },
+  {
+    "word": "Owners",
+    "meaning": "בְּעָלִים",
+    "phonetic": "אוֹנֶרְס",
+    "visual": "🔑",
+    "exp": "האנשים להם שייך רכוש, עסק או חיה.",
+    "engEx": "The restaurant owners decided to renovate the place.",
+    "hebEx": "בעלי המסעדה החליטו לשפץ את המקום."
+  },
+  {
+    "word": "Task",
+    "meaning": "מְלָאכָה / מְשִׂימָה",
+    "phonetic": "טַאסְק",
+    "visual": "✅",
+    "exp": "עבודה מוגדרת שצריך לבצע.",
+    "engEx": "Writing this report is a difficult task.",
+    "hebEx": "כתיבת הדוח הזה היא משימה קשה."
+  },
+  {
+    "word": "Idea",
+    "meaning": "רַעְיוֹן",
+    "phonetic": "אַיְידִיָּה",
+    "visual": "💡",
+    "exp": "מחשבה, תוכנית או הצעה הנוצרת בראש.",
+    "engEx": "That's a brilliant idea for the new project!",
+    "hebEx": "זה רעיון גאוני לפרויקט החדש."
+  },
+  {
+    "word": "College",
+    "meaning": "מִכְלָלָה",
+    "phonetic": "קוֹלֶג'",
+    "visual": "🏫",
+    "exp": "מוסד להשכלה גבוהה.",
+    "engEx": "He is studying engineering at the local college.",
+    "hebEx": "הוא לומד הנדסה במכללה המקומית."
+  },
+  {
+    "word": "Program",
+    "meaning": "תָּכְנִית",
+    "phonetic": "פְּרוֹגְרַם",
+    "visual": "📅",
+    "exp": "מערך פעולות מתוכנן, או תוכנית מחשב/טלוויזיה.",
+    "engEx": "We are launching a new training program for employees.",
+    "hebEx": "אנו משיקים תוכנית הכשרה חדשה לעובדים."
+  },
+  {
+    "word": "Human",
+    "meaning": "אָדָם",
+    "phonetic": "הְיוּמֶן",
+    "visual": "🧍‍♂️",
+    "exp": "יצור אנושי, בניגוד לחיה או מכונה.",
+    "engEx": "To err is human; everyone makes mistakes.",
+    "hebEx": "לטעות זה אנושי; כולם עושים טעויות."
+  },
+  {
+    "word": "Accident",
+    "meaning": "תְּאוּנָה",
+    "phonetic": "אַקְסִידֶנְט",
+    "visual": "💥",
+    "exp": "אירוע בלתי צפוי שנגרם לרוב עם נזק או פציעה.",
+    "engEx": "Luckily, no one was hurt in the car accident.",
+    "hebEx": "למרבה המזל, איש לא נפגע בתאונת הדרכים."
+  },
+  {
+    "word": "Objects",
+    "meaning": "חֲפָצִים",
+    "phonetic": "אוֹבְּגֶ'קְטְס",
+    "visual": "🎲",
+    "exp": "דברים מוחשיים שניתן לראות ולגעת בהם.",
+    "engEx": "The room was filled with strange metallic objects.",
+    "hebEx": "החדר היה מלא בחפצי מתכת מוזרים."
+  },
+  {
+    "word": "Thirds",
+    "meaning": "שליש / שלישים",
+    "phonetic": "תֶ'רְדְס",
+    "visual": "🍕",
+    "exp": "חלוקה ל-3 חלקים שווים.",
+    "engEx": "Two thirds of the class passed the exam.",
+    "hebEx": "שני שלישים מהכיתה עברו את המבחן."
+  },
+  {
+    "word": "Ranging",
+    "meaning": "נע בין / טווח",
+    "phonetic": "רֵיְינְגִ'ינְג",
+    "visual": "📏",
+    "exp": "מתאר גבולות של סקאלה כלשהי.",
+    "engEx": "Prices are ranging from 10 to 50 dollars.",
+    "hebEx": "המחירים נעים בין 10 ל-50 דולר."
+  },
+  {
+    "word": "Purely",
+    "meaning": "באופן טהור / בלבד",
+    "phonetic": "פְּיוּרְלִי",
+    "visual": "🕊️",
+    "exp": "באופן מוחלט וללא תוספות.",
+    "engEx": "Her decision was purely based on logic.",
+    "hebEx": "ההחלטה שלה התבססה אך ורק על היגיון."
+  },
+  {
+    "word": "View",
+    "meaning": "נוף / מבט / השקפה",
+    "phonetic": "וְיוּ",
+    "visual": "🖼️",
+    "exp": "צורת הסתכלות על דברים או נוף פיזי.",
+    "engEx": "We have a beautiful sea view from the window.",
+    "hebEx": "יש לנו נוף יפה לים מהחלון."
+  },
+  {
+    "word": "Certainly",
+    "meaning": "מסוים / בוודאי",
+    "phonetic": "סֶרְטֶנְלִי",
+    "visual": "👍",
+    "exp": "ביטוי של ביטחון והסכמה.",
+    "engEx": "I will certainly attend the meeting tomorrow.",
+    "hebEx": "אני בהחלט אשתתף בפגישה מחר."
+  },
+  {
+    "word": "Sense",
+    "meaning": "חוש / מובן",
+    "phonetic": "סֶנְס",
+    "visual": "🧠",
+    "exp": "היגיון של דבר, או חוש פיזי.",
+    "engEx": "This explanation makes perfect sense.",
+    "hebEx": "ההסבר הזה הגיוני לחלוטין."
+  },
+  {
+    "word": "Extremely",
+    "meaning": "מאוד / באופן קיצוני",
+    "phonetic": "אֶקְסְטְרִימְלִי",
+    "visual": "🌶️",
+    "exp": "באופן קיצוני או ברמה גבוהה מאוד.",
+    "engEx": "The weather is extremely hot today.",
+    "hebEx": "מזג האוויר חם בצורה קיצונית היום."
+  },
+  {
+    "word": "Opposed",
+    "meaning": "התנגד / מנוגד",
+    "phonetic": "אוֹפּוֹזְד",
+    "visual": "⚔️",
+    "exp": "שני דברים העומדים בניגוד אחד לשני.",
+    "engEx": "He was completely opposed to the new plan.",
+    "hebEx": "הוא היה מנוגד לחלוטין לתוכנית החדשה."
+  },
+  {
+    "word": "Confusion",
+    "meaning": "בלבול",
+    "phonetic": "קוֹנְפְיוּזֶ'ן",
+    "visual": "😵‍💫",
+    "exp": "מצב של חוסר ודאות או חוסר הבנה.",
+    "engEx": "There was a lot of confusion regarding the new rules.",
+    "hebEx": "היה הרבה בלבול בנוגע לכללים החדשים."
+  },
+  {
+    "word": "Proven",
+    "meaning": "מוכח / הוכח",
+    "phonetic": "פְּרוּבֶן",
+    "visual": "🔬",
+    "exp": "דבר שהוכיחו את האמיתות שלו.",
+    "engEx": "It is a proven fact that smoking is bad for you.",
+    "hebEx": "זו עובדה מוכחת שעישון מזיק לך."
+  },
+  {
+    "word": "Convinced",
+    "meaning": "משוכנע / שוכנע",
+    "phonetic": "קוֹנְוִוינְסְט",
+    "visual": "🤝",
+    "exp": "מישהו שגרמו לו להאמין במשהו.",
+    "engEx": "I am completely convinced that we will win.",
+    "hebEx": "אני משוכנע לחלוטין שאנחנו ננצח."
+  },
+  {
+    "word": "Badly",
+    "meaning": "באופן גרוע / קשות",
+    "phonetic": "בַּאדְלִי",
+    "visual": "👎",
+    "exp": "באופן שלילי או באופן עז.",
+    "engEx": "The car was badly damaged in the crash.",
+    "hebEx": "המכונית ניזוקה קשות בתאונה."
+  },
+  {
+    "word": "Designed",
+    "meaning": "מעוצב / מתוכנן",
+    "phonetic": "דִיזַאיְנְד",
+    "visual": "📐",
+    "exp": "נבנה תוכנן ועוצב מראש למטרה כלשהי.",
+    "engEx": "The app is designed for young children.",
+    "hebEx": "האפליקציה מעוצבת ומתוכננת לילדים צעירים."
+  },
+  {
+    "word": "Pre-prejudiced",
+    "meaning": "דעות קדומות",
+    "phonetic": "פְּרִי-פְּרֶג'וּדִיסְט",
+    "visual": "🙈",
+    "exp": "לשפוט מראש לפני שיודעים את העובדות.",
+    "engEx": "She had pre-prejudiced views about the country.",
+    "hebEx": "היו לה דעות קדומות לגבי המדינה."
+  },
+  {
+    "word": "Split",
+    "meaning": "לפצל / לחלק",
+    "phonetic": "סְפְּלִיט",
+    "visual": "✂️",
+    "exp": "לחתוך או להפריד דבר לחלקים.",
+    "engEx": "Let's split the bill between us.",
+    "hebEx": "בואו נפצל את החשבון בינינו."
+  },
+  {
+    "word": "Weak",
+    "meaning": "חלש",
+    "phonetic": "וִויק",
+    "visual": "🥀",
+    "exp": "חסר כוח פיזי או רעוע.",
+    "engEx": "He felt too weak to walk after the illness.",
+    "hebEx": "הוא הרגיש חלש מדי ללכת אחרי המחלה."
+  },
+  {
+    "word": "Fluently",
+    "meaning": "ברהיטות / באופן שוטף",
+    "phonetic": "פְלוּאֶנְטְלִי",
+    "visual": "🗣️",
+    "exp": "לדבר שפה באופן רציף וטבעי.",
+    "engEx": "She speaks three languages fluently.",
+    "hebEx": "היא מדברת שלוש שפות ברהיטות."
+  },
+  {
+    "word": "Rather than",
+    "meaning": "מאשר / במקום",
+    "phonetic": "רַאדֶ'ר דֶ'ן",
+    "visual": "🔄",
+    "exp": "העדפה של דבר אחד על פני אחר.",
+    "engEx": "I would like tea rather than coffee.",
+    "hebEx": "הייתי רוצה תה במקום קפה."
+  },
+  {
+    "word": "Instance",
+    "meaning": "דוגמה / מופע",
+    "phonetic": "אִינְסְטַנְס",
+    "visual": "🔍",
+    "exp": "מקרה בודד או דוגמה למשהו.",
+    "engEx": "Give me one instance where I was wrong.",
+    "hebEx": "תן לי דוגמה אחת שבה טעיתי."
+  },
+  {
+    "word": "Flexibility",
+    "meaning": "גמישות",
+    "phonetic": "פְלֶקְסִיבִּילִיטִי",
+    "visual": "🤸",
+    "exp": "היכולת להשתנות ולהתאים למצבים חדשים.",
+    "engEx": "Yoga improves your physical flexibility.",
+    "hebEx": "יוגה משפרת את הגמישות הפיזית שלך."
+  },
+  {
+    "word": "Processes",
+    "meaning": "תהליכים",
+    "phonetic": "פְּרוֹסֶסֶס",
+    "visual": "⚙️",
+    "exp": "סדרה של פעולות המובילות לתוצאה מסוימת.",
+    "engEx": "We need to improve our working processes.",
+    "hebEx": "אנחנו צריכים לשפר את תהליכי העבודה שלנו."
+  },
+  {
+    "word": "Addition",
+    "meaning": "תוספת / בנוסף",
+    "phonetic": "אֶדִישֶׁן",
+    "visual": "➕",
+    "exp": "דבר שנוסף, או פעולת החיבור בחשבון.",
+    "engEx": "The new baby is a wonderful addition to the family.",
+    "hebEx": "התינוק החדש הוא תוספת נפלאה למשפחה."
+  },
+  {
+    "word": "Rushing",
+    "meaning": "ממהר / למהר",
+    "phonetic": "רַאשִׁינְג",
+    "visual": "🏃",
+    "exp": "תנועה במהירות רבה, לרוב מתוך לחץ.",
+    "engEx": "He was rushing to catch the morning train.",
+    "hebEx": "הוא מיהר כדי לתפוס את רכבת הבוקר."
+  },
+  {
+    "word": "Rightfully",
+    "meaning": "בצדק",
+    "phonetic": "רַאיְיטְפוּלִי",
+    "visual": "⚖️",
+    "exp": "פעולה שנעשית בזכות או על פי הצדק.",
+    "engEx": "He rightfully earned the first place prize.",
+    "hebEx": "הוא הרוויח בצדק את פרס המקום הראשון."
+  },
+  {
+    "word": "Acquire",
+    "meaning": "לרכוש / להשיג",
+    "phonetic": "אֶקְו��ואיֶיר",
+    "visual": "🛍️",
+    "exp": "השגה או קבלה של ידע, נכס או מיומנות.",
+    "engEx": "It takes years to acquire this level of skill.",
+    "hebEx": "לוקח שנים לרכוש רמה כזו של מיומנות."
+  },
+  {
+    "word": "Attitude",
+    "meaning": "גישה / יחס",
+    "phonetic": "אַטִיטְיוּד",
+    "visual": "✨",
+    "exp": "צורת חשיבה והתנהגות כלפי אנשים או מצבים.",
+    "engEx": "She has a very positive attitude toward life.",
+    "hebEx": "יש לה גישה מאוד חיובית לחיים."
+  },
+  {
+    "word": "Somewhat",
+    "meaning": "במידת מה / כלשהו",
+    "phonetic": "סַאמְוַואט",
+    "visual": "🤏",
+    "exp": "במידה מסוימת, לא לחלוטין.",
+    "engEx": "The test was somewhat difficult, but I passed.",
+    "hebEx": "המבחן היה קשה במידת מה, אבל עברתי."
+  },
+  {
+    "word": "Apply",
+    "meaning": "להגיש (בקשה) / ליישם",
+    "phonetic": "אַפְּלַאי",
+    "visual": "📝",
+    "exp": "שימוש בידע לפעולה, או הגשת מועמדות.",
+    "engEx": "You should apply for that job opening.",
+    "hebEx": "אתה צריך להגיש מועמדות למשרה הפנויה ההיא."
+  },
+  {
+    "word": "Languages",
+    "meaning": "שפות",
+    "phonetic": "לַנְגְוִויגֶ'ס",
+    "visual": "🌐",
+    "exp": "מערכות תקשורת של מילים וצלילים.",
+    "engEx": "Learning new languages opens many doors.",
+    "hebEx": "לימוד שפות חדשות פותח דלתות רבות."
+  },
+  {
+    "word": "Population",
+    "meaning": "אוכלוסיה",
+    "phonetic": "פופְּיוּלֵיְישֶׁן",
+    "visual": "👨‍👩‍👧‍👦",
+    "exp": "כלל האנשים החיים באזור או במדינה.",
+    "engEx": "The population of the city is growing fast.",
+    "hebEx": "אוכלוסיית העיר גדלה במהירות."
+  },
+  {
+    "word": "Adulthood",
+    "meaning": "בגרות",
+    "phonetic": "אַדוּלְטְהוּד",
+    "visual": "🧑‍💼",
+    "exp": "התקופה בחיים שבה אדם נחשב בוגר.",
+    "engEx": "Moving out of home is a step into adulthood.",
+    "hebEx": "עזיבת הבית היא צעד לתוך הבגרות."
+  },
+  {
+    "word": "Studies",
+    "meaning": "מחקרים / לימודים",
+    "phonetic": "סְטַאדִיז",
+    "visual": "📚",
+    "exp": "תהליך של למידה או קבוצת מחקרים מדעיים.",
+    "engEx": "Recent studies show the importance of good sleep.",
+    "hebEx": "מחקרים אחרונים מראים את החשיבות של שינה טובה."
+  },
+  {
+    "word": "Actually",
+    "meaning": "למעשה",
+    "phonetic": "אַקְשׁוּאֶלִי",
+    "visual": "🎯",
+    "exp": "מילה המשמשת להדגשת האמת או סתירת טעות.",
+    "engEx": "I didn't forget; I actually bought you a gift!",
+    "hebEx": "לא שכחתי; למעשה קניתי לך מתנה!"
+  },
+  {
+    "word": "Fade",
+    "meaning": "לדהות / להתפוגג",
+    "phonetic": "פֵיְיד",
+    "visual": "🌫️",
+    "exp": "לאבד צבע, עוצמה או בהירות בהדרגה.",
+    "engEx": "The colors of the painting started to fade in the sun.",
+    "hebEx": "צבעי הציור התחילו לדהות בשמש."
+  },
+  {
+    "word": "Suggest",
+    "meaning": "להציע",
+    "phonetic": "סַגְ'זֶ'סְט",
+    "visual": "🙋",
+    "exp": "הבעת רעיון או תוכנית פעולה להתחשבות.",
+    "engEx": "I suggest we take a short break now.",
+    "hebEx": "אני מציע שניקח הפסקה קצרה עכשיו."
+  },
+  {
+    "word": "Influences",
+    "meaning": "השפעות / משפיע",
+    "phonetic": "אִינְפְלוּאֶנְסֶס",
+    "visual": "📡",
+    "exp": "כוחות או גורמים המשנים התנהגות או תוצאה.",
+    "engEx": "Social media powerfully influences modern society.",
+    "hebEx": "המדיה החברתית משפיעה בעוצמה על החברה המודרנית."
+  },
+  {
+    "word": "Participants",
+    "meaning": "משתתפים",
+    "phonetic": "פַּרְטִיסִיפֶּנְטְס",
+    "visual": "🙋‍♂️",
+    "exp": "אנשים שלוקחים חלק בפעילות, ניסוי או אירוע.",
+    "engEx": "All participants will receive a certificate.",
+    "hebEx": "כל המשתתפים יקבלו תעודה."
+  },
+  {
+    "word": "Bilingualism",
+    "meaning": "דו-לשוניות",
+    "phonetic": "בַּיי-לִינְגְוָולִיזֶם",
+    "visual": "💬",
+    "exp": "היכולת לדבר שתי שפות ברמת שפת אם.",
+    "engEx": "Bilingualism gives children a cognitive advantage.",
+    "hebEx": "דו-לשוניות נותנת לילדים יתרון קוגניטיבי."
+  },
+  {
+    "word": "Protect",
+    "meaning": "להגן",
+    "phonetic": "פְּרוֹטֶקְט",
+    "visual": "🛡️",
+    "exp": "שמירה על מישהו או משהו מפני פגיעה.",
+    "engEx": "Sunscreen will protect your skin from the sun.",
+    "hebEx": "קרם הגנה יגן על עורך מהשמש."
+  },
+  {
+    "word": "Operating",
+    "meaning": "הַפְעָלָה",
+    "phonetic": "אוֹפֶּרֵיְיטִינְג",
+    "visual": "⚙️",
+    "exp": "מתייחס להפעלה או תפעול של מערכת או מכונה.",
+    "engEx": "The Operating System serves as the bridge between the user and the hardware.",
+    "hebEx": "מערכת ההפעלה משמשת כגשר בין המשתמש לחומרה."
+  },
+  {
+    "word": "Bridge",
+    "meaning": "גֶּשֶׁר",
+    "phonetic": "בְּרִידְג'",
+    "visual": "🌉",
+    "exp": "מבנה המחבר בין שני צדדים, פיזי או מטאפורי.",
+    "engEx": "The OS serves as the bridge between the user and the computer's hardware.",
+    "hebEx": "מערכת ההפעלה משמשת כגשר בין המשתמש לחומרת המחשב."
+  },
+  {
+    "word": "Hardware",
+    "meaning": "חוּמְרָה",
+    "phonetic": "הָארְדְוֶוֶר",
+    "visual": "🖥️",
+    "exp": "הרכיבים הפיזיים של המחשב כמו מעבד, זיכרון ומסך.",
+    "engEx": "The operating system communicates with the computer's hardware.",
+    "hebEx": "מערכת ההפעלה מתקשרת עם חומרת המחשב."
+  },
+  {
+    "word": "Software",
+    "meaning": "תּוֹכְנָה",
+    "phonetic": "סוֹפְטְוֶוֶר",
+    "visual": "💿",
+    "exp": "תוכניות ויישומים הפועלים על המחשב, בניגוד לחומרה.",
+    "engEx": "Most people use computers without thinking about the software that makes them work.",
+    "hebEx": "רוב האנשים משתמשים במחשבים מבלי לחשוב על התוכנה שגורמת להם לעבוד."
+  },
+  {
+    "word": "Coordinate",
+    "meaning": "לְתַאֵם",
+    "phonetic": "קוֹ-אוֹרְדִינֵייט",
+    "visual": "🤝",
+    "exp": "לארגן פעולות שונות כך שיעבדו יחד בהרמוניה.",
+    "engEx": "There is a complex system working behind the scenes to coordinate all activities.",
+    "hebEx": "ישנה מערכת מורכבת הפועלת מאחורי הקלעים לתאם את כל הפעילויות."
+  },
+  {
+    "word": "Complex",
+    "meaning": "מוּרְכָּב",
+    "phonetic": "קוֹמְפְּלֶקְס",
+    "visual": "🧩",
+    "exp": "דבר המורכב מחלקים רבים ומסובך להבנה.",
+    "engEx": "There is a complex system working behind the scenes.",
+    "hebEx": "ישנה מערכת מורכבת שפועלת מאחורי הקלעים."
+  },
+  {
+    "word": "Behind the scenes",
+    "meaning": "מֵאֲחוֹרֵי הַקְּלָעִים",
+    "phonetic": "בִּיהָאיְנְד דָּה סִינְס",
+    "visual": "🎬",
+    "exp": "ביטוי המתאר דברים שקורים ברקע, מבלי שרואים אותם.",
+    "engEx": "The OS works behind the scenes to manage all processes.",
+    "hebEx": "מערכת ההפעלה פועלת מאחורי הקלעים לניהול כל התהליכים."
+  },
+  {
+    "word": "Manage",
+    "meaning": "לְנַהֵל",
+    "phonetic": "מַנֵּג'",
+    "visual": "📋",
+    "exp": "לשלוט, לארגן ולפקח על משהו.",
+    "engEx": "The OS must manage processes, memory, files, and devices.",
+    "hebEx": "מערכת ההפעלה חייבת לנהל תהליכים, זיכרון, קבצים והתקנים."
+  },
+  {
+    "word": "Schedule",
+    "meaning": "לְתַזְמֵן / לוּחַ זְמַנִּים",
+    "phonetic": "סְקֶדְיוּל",
+    "visual": "📅",
+    "exp": "לקבוע סדר פעולות לפי זמן, או לוח זמנים מאורגן.",
+    "engEx": "The scheduler ensures that all programs run smoothly.",
+    "hebEx": "המתזמן מבטיח שכל התוכניות פועלות בצורה חלקה."
+  },
+  {
+    "word": "Processor",
+    "meaning": "מְעַבֵּד",
+    "phonetic": "פְּרוֹסֶסוֹר",
+    "visual": "🧠",
+    "exp": "הרכיב המרכזי במחשב שמבצע את כל החישובים.",
+    "engEx": "The OS decides how much processor time each process receives.",
+    "hebEx": "מערכת ההפעלה מחליטה כמה זמן מעבד כל תהליך מקבל."
+  },
+  {
+    "word": "Technique",
+    "meaning": "טֶכְנִיקָה / שִׁיטָה",
+    "phonetic": "טֶכְנִיק",
+    "visual": "🔧",
+    "exp": "דרך או שיטה מסוימת לביצוע משהו.",
+    "engEx": "Virtual memory is a technique that allows programs to use more memory.",
+    "hebEx": "זיכרון וירטואלי הוא טכניקה המאפשרת לתוכניות להשתמש ביותר זיכרון."
+  },
+  {
+    "word": "Temporarily",
+    "meaning": "בְּאוֹפֶן זְמַנִּי",
+    "phonetic": "טֶמְפּוֹרֶרִילִי",
+    "visual": "⏳",
+    "exp": "למשך זמן קצר ומוגבל, לא לצמיתות.",
+    "engEx": "Data is temporarily stored on a storage device.",
+    "hebEx": "הנתונים מאוחסנים באופן זמני במכשיר אחסון."
+  },
+  {
+    "word": "Device",
+    "meaning": "מַכְשִׁיר / הַתְקֵן",
+    "phonetic": "דִיוַוייס",
+    "visual": "📱",
+    "exp": "כלי או מכשיר אלקטרוני בעל תפקיד מסוים.",
+    "engEx": "The operating system communicates with devices through device drivers.",
+    "hebEx": "מערכת ההפעלה מתקשרת עם התקנים באמצעות מנהלי התקנים."
+  },
+  {
+    "word": "Instructions",
+    "meaning": "הוֹרָאוֹת",
+    "phonetic": "אִינְסְטְרַקְשֶׁנְס",
+    "visual": "📜",
+    "exp": "פקודות או הנחיות שיש לבצע.",
+    "engEx": "Drivers allow the OS to send instructions to hardware.",
+    "hebEx": "דרייברים מאפשרים למערכת ההפעלה לשלוח הוראות לחומרה."
+  },
+  {
+    "word": "Component",
+    "meaning": "רְכִיב",
+    "phonetic": "קוֹמְפּוֹנֶנְט",
+    "visual": "🔩",
+    "exp": "חלק בודד בתוך מערכת גדולה יותר.",
+    "engEx": "Computers contain many hardware components such as keyboards and printers.",
+    "hebEx": "מחשבים מכילים רכיבי חומרה רבים כגון מקלדות ומדפסות."
+  },
+  {
+    "word": "Digital",
+    "meaning": "דִּיגִיטָלִי",
+    "phonetic": "דִיגִיטָלִי",
+    "visual": "💻",
+    "exp": "קשור לטכנולוגיה ומחשבים, בניגוד לאנלוגי.",
+    "engEx": "The evolution of operating systems shaped the digital world we know today.",
+    "hebEx": "התפתחות מערכות ההפעלה עיצבה את העולם הדיגיטלי שאנו מכירים היום."
+  },
+  {
+    "word": "Evolution",
+    "meaning": "הִתְפַּתְּחוּת",
+    "phonetic": "אֶבוֹלוּשֶׁן",
+    "visual": "🔄",
+    "exp": "תהליך שינוי והתפתחות הדרגתי לאורך זמן.",
+    "engEx": "The evolution of operating systems has played a crucial role in computing.",
+    "hebEx": "ההתפתחות של מערכות הפעלה מילאה תפקיד מכריע במחשוב."
+  },
+  {
+    "word": "Crucial",
+    "meaning": "מַכְרִיעַ / קְרִיטִי",
+    "phonetic": "קְרוּשָׁל",
+    "visual": "⭐",
+    "exp": "חשוב ביותר, בעל השפעה מכרעת.",
+    "engEx": "Operating systems have played a crucial role in shaping the digital world.",
+    "hebEx": "למערכות הפעלה היה תפקיד מכריע בעיצוב העולם הדיגיטלי."
+  },
+  {
+    "word": "Launched",
+    "meaning": "הוּשַׁק / הוּפְעַל",
+    "phonetic": "לוֹנְצְ'ד",
+    "visual": "🚀",
+    "exp": "הפעלה ראשונית של מוצר, פרויקט או מערכת.",
+    "engEx": "Their work led to the creation of Unix, which later launched a computing revolution.",
+    "hebEx": "עבודתם הובילה ליצירת יוניקס, שלימים השיקה מהפכת מחשוב."
+  },
+  {
+    "word": "Researcher",
+    "meaning": "חוֹקֵר",
+    "phonetic": "רִיסֶרְצֶ'ר",
+    "visual": "👨‍🔬",
+    "exp": "אדם שעוסק במחקר מדעי או אקדמי.",
+    "engEx": "Researchers at Bell Labs wanted to create a simple and efficient operating system.",
+    "hebEx": "חוקרים במעבדות בל רצו ליצור מערכת הפעלה פשוטה ויעילה."
+  },
+  {
+    "word": "Foundation",
+    "meaning": "בָּסִיס / יְסוֹד",
+    "phonetic": "פַאוּנְדֵיְישֶׁן",
+    "visual": "🏗️",
+    "exp": "הבסיס שעליו בנוי משהו, פיזי או רעיוני.",
+    "engEx": "Operating systems are the foundation of modern computing.",
+    "hebEx": "מערכות הפעלה הן הבסיס למחשוב מודרני."
+  },
+  {
+    "word": "Allocate",
+    "meaning": "לְהַקְצוֹת",
+    "phonetic": "אַלוֹקֵייט",
+    "visual": "📊",
+    "exp": "לחלק משאבים באופן מתוכנן ויעיל.",
+    "engEx": "The operating system must allocate memory efficiently.",
+    "hebEx": "מערכת ההפעלה חייבת להקצות זיכרון ביעילות."
+  },
+  {
+    "word": "Efficiently",
+    "meaning": "בְּיָעִילוּת",
+    "phonetic": "אֶפִישֶׁנְטְלִי",
+    "visual": "⚡",
+    "exp": "באופן שמשיג תוצאות טובות בזמן ובמשאבים מינימליים.",
+    "engEx": "The OS must allocate memory efficiently among running programs.",
+    "hebEx": "מערכת ההפעלה חייבת להקצות זיכרון ביעילות בין תוכניות פועלות."
+  },
+  {
+    "word": "Organize",
+    "meaning": "לְאַרְגֵּן",
+    "phonetic": "אוֹרְגַנַאיְז",
+    "visual": "🗂️",
+    "exp": "לסדר דברים בצורה מסודרת ושיטתית.",
+    "engEx": "The OS organizes files into directories or folders.",
+    "hebEx": "מערכת ההפעלה מארגנת קבצים לספריות או תיקיות."
+  },
+  {
+    "word": "Directory",
+    "meaning": "סִפְרִיָּה / תִיקִיָּה",
+    "phonetic": "דִירֶקְטוֹרִי",
+    "visual": "📂",
+    "exp": "מבנה לאחסון וארגון קבצים במחשב.",
+    "engEx": "The OS organizes files into directories or folders.",
+    "hebEx": "מערכת ההפעלה מארגנת קבצים לספריות או תיקיות."
+  },
+  {
+    "word": "Detect",
+    "meaning": "לְזַהוֹת / לְגַלּוֹת",
+    "phonetic": "דִיטֶקְט",
+    "visual": "🔍",
+    "exp": "למצוא או לזהות משהו שלא היה גלוי.",
+    "engEx": "The operating system can detect new hardware components when connected.",
+    "hebEx": "מערכת ההפעלה יכולה לזהות רכיבי חומרה חדשים כשהם מחוברים."
+  },
+  {
+    "word": "Authentication",
+    "meaning": "אִימוּת",
+    "phonetic": "אוֹתֶנְטִיקֵיְישֶׁן",
+    "visual": "🔑",
+    "exp": "תהליך אימות זהות המשתמש, כמו הזנת סיסמה.",
+    "engEx": "User authentication helps protect sensitive information from unauthorized access.",
+    "hebEx": "אימות משתמש עוזר להגן על מידע רגיש מפני גישה לא מורשית."
+  },
+  {
+    "word": "Encrypt",
+    "meaning": "לְהַצְפִּין",
+    "phonetic": "אֶנְקְרִיפְּט",
+    "visual": "🔐",
+    "exp": "להמיר מידע לקוד סודי כך שרק מורשים יוכלו לקרוא אותו.",
+    "engEx": "Encryption helps protect sensitive information from unauthorized access.",
+    "hebEx": "הצפנה עוזרת להגן על מידע רגיש מפני גישה לא מורשית."
+  },
+  {
+    "word": "Cyberattack",
+    "meaning": "מַתְקֶפֶת סַייְבֶּר",
+    "phonetic": "סַייְבֶּרְאַטַאק",
+    "visual": "⚔️",
+    "exp": "התקפה דיגיטלית על מערכות מחשב כדי לגנוב או להזיק.",
+    "engEx": "As cyberattacks become more sophisticated, operating systems evolve.",
+    "hebEx": "ככל שמתקפות סייבר הופכות מתוחכמות יותר, מערכות ההפעלה מתפתחות."
+  },
+  {
+    "word": "Malicious",
+    "meaning": "זְדוֹנִי",
+    "phonetic": "מַלִישֶׁס",
+    "visual": "😈",
+    "exp": "פעולה או תוכנה שנועדה לגרום נזק בכוונה.",
+    "engEx": "The OS provides protection against malicious software.",
+    "hebEx": "מערכת ההפעלה מספקת הגנה מפני תוכנות זדוניות."
+  },
+  {
+    "word": "Consumption",
+    "meaning": "צְרִיכָה",
+    "phonetic": "קוֹנְסַאמְפְּשֶׁן",
+    "visual": "🔋",
+    "exp": "כמות המשאב שנצרכת, כמו חשמל או דלק.",
+    "engEx": "Mobile OS were designed for devices with limited power consumption.",
+    "hebEx": "מערכות הפעלה ניידות נועדו למכשירים בעלי צריכת חשמל מוגבלת."
+  },
+  {
+    "word": "Server",
+    "meaning": "שָׁרָת",
+    "phonetic": "סֶרְבֶר",
+    "visual": "🖧",
+    "exp": "מחשב חזק המספק שירותים למחשבים אחרים ברשת.",
+    "engEx": "Operating systems also run on cloud servers around the world.",
+    "hebEx": "מערכות הפעלה פועלות גם על שרתי ענן ברחבי העולם."
+  },
+  {
+    "word": "Significant",
+    "meaning": "מַשְׁמָעוּתִי",
+    "phonetic": "סִיגְנִיפִיקֶנְט",
+    "visual": "📌",
+    "exp": "חשוב, בעל השפעה ניכרת.",
+    "engEx": "Unix had a significant influence on computing history.",
+    "hebEx": "ליוניקס הייתה השפעה משמעותית על היסטוריית המחשוב."
+  },
+  {
+    "word": "Infrastructure",
+    "meaning": "תַּשְׁתִּית",
+    "phonetic": "אִינְפְרַסְטְרַקְצֶ'ר",
+    "visual": "🏗️",
+    "exp": "המבנה הבסיסי שעליו בנויה מערכת גדולה.",
+    "engEx": "Operating systems form the infrastructure of modern computing.",
+    "hebEx": "מערכות הפעלה מהוות את התשתית של המחשוב המודרני."
+  },
+  {
+    "word": "Resource",
+    "meaning": "מַשְׁאָב",
+    "phonetic": "רִיסוֹרְס",
+    "visual": "💎",
+    "exp": "דבר שימושי שניתן לנצל, כמו זמן, כסף או חומרה.",
+    "engEx": "The OS must allocate computer resources efficiently.",
+    "hebEx": "מערכת ההפעלה חייבת להקצות משאבי מחשב ביעילות."
+  },
+  {
+    "word": "Simultaneously",
+    "meaning": "בּוֹ-זְמַנִּית",
+    "phonetic": "סִימַלְטֵיְינִיאַסְלִי",
+    "visual": "⏯️",
+    "exp": "מספר דברים שקורים באותו הזמן בדיוק.",
+    "engEx": "Modern computers run dozens of processes simultaneously.",
+    "hebEx": "מחשבים מודרניים מריצים עשרות תהליכים בו-זמנית."
+  },
+  {
+    "word": "Portable",
+    "meaning": "נָיָיד",
+    "phonetic": "פּוֹרְטַבֶּל",
+    "visual": "💼",
+    "exp": "דבר שניתן להעביר ולהשתמש בו במקומות שונים.",
+    "engEx": "The researchers wanted to create an OS that would be portable.",
+    "hebEx": "החוקרים רצו ליצור מערכת הפעלה שתהיה ניידת."
+  },
+  {
+    "word": "Sophisticated",
+    "meaning": "מְתוּחְכָּם",
+    "phonetic": "סוֹפִיסְטִיקֵיְיטֶד",
+    "visual": "🎩",
+    "exp": "מורכב ומפותח ברמה גבוהה.",
+    "engEx": "As cyberattacks become more sophisticated, security must improve.",
+    "hebEx": "ככל שמתקפות סייבר הופכות מתוחכמות יותר, האבטחה חייבת להשתפר."
+  },
+  {
+    "word": "Monopolize",
+    "meaning": "לַעֲשׂוֹת מוֹנוֹפּוֹל",
+    "phonetic": "מוֹנוֹפּוֹלַאיְז",
+    "visual": "👑",
+    "exp": "לשלוט לבד במשאב ולא לאפשר לאחרים להשתמש בו.",
+    "engEx": "The scheduler ensures no single process monopolizes the CPU.",
+    "hebEx": "המתזמן מבטיח ששום תהליך בודד לא יעשה מונופול על המעבד."
+  },
+  {
+    "word": "Interact",
+    "meaning": "לְקַיֵּם אִינְטֶרַאקְצִיָּה",
+    "phonetic": "אִינְטֶרַאקְט",
+    "visual": "🤲",
+    "exp": "לפעול הדדית עם מישהו או משהו.",
+    "engEx": "Billions of people interact with operating systems daily.",
+    "hebEx": "מיליארדי אנשים מקיימים אינטראקציה עם מערכות הפעלה מדי יום."
+  },
+  {
+    "word": "Confidentiality",
+    "meaning": "סוֹדִיּוּת",
+    "phonetic": "קוֹנְפִידֶנְשִׁיאַלִיטִי",
+    "visual": "🤫",
+    "exp": "עיקרון האבטחה שמבטיח שמידע נגיש רק למורשים.",
+    "engEx": "Confidentiality means information should only be accessible to authorized people.",
+    "hebEx": "סודיות פירושה שמידע צריך להיות נגיש רק לאנשים מורשים."
+  },
+  {
+    "word": "Integrity",
+    "meaning": "שְׁלֵמוּת",
+    "phonetic": "אִינְטֶגְרִיטִי",
+    "visual": "✅",
+    "exp": "עיקרון המבטיח שמידע נשאר מדויק ואמין ללא שינוי לא מורשה.",
+    "engEx": "Integrity refers to the accuracy and reliability of information.",
+    "hebEx": "שלמות מתייחסת לדיוק ואמינות המידע."
+  },
+  {
+    "word": "Availability",
+    "meaning": "זְמִינוּת",
+    "phonetic": "אַוֵויְלַבִּילִיטִי",
+    "visual": "🟢",
+    "exp": "עיקרון המבטיח שמידע נגיש למשתמשים מורשים בכל עת.",
+    "engEx": "Information is only useful if authorized users can access it when they need it.",
+    "hebEx": "מידע מועיל רק אם משתמשים מורשים יכולים לגשת אליו כשהם זקוקים לו."
+  },
+  {
+    "word": "Triad",
+    "meaning": "שְׁלִישִׁיָּה / מְשׁוּלָּשׁ",
+    "phonetic": "טְרַאיֶיאַד",
+    "visual": "🔺",
+    "exp": "קבוצה של שלושה דברים הקשורים זה בזה.",
+    "engEx": "The CIA Triad consists of Confidentiality, Integrity, and Availability.",
+    "hebEx": "משולש ה-CIA מורכב מסודיות, שלמות וזמינות."
+  },
+  {
+    "word": "Cybersecurity",
+    "meaning": "אַבְטַחַת סַייְבֶּר",
+    "phonetic": "סַייְבֶּרְסֶקְיוּרִיטִי",
+    "visual": "🛡️",
+    "exp": "התחום העוסק בהגנה על מערכות מחשב ומידע מפני איומים.",
+    "engEx": "Cybersecurity professionals rely on the CIA Triad model.",
+    "hebEx": "אנשי אבטחת סייבר מסתמכים על מודל משולש ה-CIA."
+  },
+  {
+    "word": "Framework",
+    "meaning": "מִסְגֶּרֶת",
+    "phonetic": "פְרֵיְימְוּוֶרְק",
+    "visual": "🏗️",
+    "exp": "מבנה בסיסי שמשמש כתשתית לעבודה או לתכנון.",
+    "engEx": "The CIA Triad is a framework that helps organizations secure their information.",
+    "hebEx": "משולש ה-CIA הוא מסגרת שעוזרת לארגונים לאבטח את המידע שלהם."
+  },
+  {
+    "word": "Sensitive",
+    "meaning": "רָגִישׁ",
+    "phonetic": "סֶנְסִיטִיב",
+    "visual": "⚠️",
+    "exp": "מידע שדורש הגנה מיוחדת בגלל אופיו הפרטי או החשוב.",
+    "engEx": "Encryption helps protect sensitive data from unauthorized access.",
+    "hebEx": "הצפנה עוזרת להגן על נתונים רגישים מפני גישה לא מורשית."
+  },
+  {
+    "word": "Unauthorized",
+    "meaning": "לֹא מוּרְשֶׁה",
+    "phonetic": "אַנְאוֹתוֹרַאיְזְד",
+    "visual": "🚫",
+    "exp": "ללא הרשאה או אישור חוקי לבצע פעולה.",
+    "engEx": "Passwords prevent unauthorized users from viewing data.",
+    "hebEx": "סיסמאות מונעות ממשתמשים לא מורשים לצפות בנתונים."
+  },
+  {
+    "word": "Breach",
+    "meaning": "פְּרִיצָה / הֲפָרָה",
+    "phonetic": "בְּרִיצ'",
+    "visual": "💥",
+    "exp": "חדירה לא מורשית למערכת או הפרת כללי אבטחה.",
+    "engEx": "A security breach can expose confidential customer data.",
+    "hebEx": "פריצת אבטחה יכולה לחשוף נתוני לקוחות סודיים."
+  },
+  {
+    "word": "Phishing",
+    "meaning": "דִּיּוּג",
+    "phonetic": "פִישִׁינְג",
+    "visual": "🎣",
+    "exp": "מתקפת הונאה בה שולחים הודעות מזויפות כדי לגנוב מידע.",
+    "engEx": "The email was actually part of a phishing attack.",
+    "hebEx": "האימייל היה למעשה חלק ממתקפת פישינג (דיוג)."
+  },
+  {
+    "word": "Ransomware",
+    "meaning": "תּוֹכְנַת כּוֹפֶר",
+    "phonetic": "רַנְסוֹמְוֶוֶר",
+    "visual": "💸",
+    "exp": "תוכנה זדונית שנועלת קבצים ודורשת כופר כדי לשחררם.",
+    "engEx": "The attacker launched ransomware that encrypted many files.",
+    "hebEx": "התוקף הפעיל תוכנת כופר שהצפינה קבצים רבים."
+  },
+  {
+    "word": "Encryption",
+    "meaning": "הַצְפָּנָה",
+    "phonetic": "אֶנְקְרִיפְּשֶׁן",
+    "visual": "🔒",
+    "exp": "תהליך המרת מידע לקוד סודי כדי להגן עליו.",
+    "engEx": "Companies use encryption to prevent unauthorized users from viewing data.",
+    "hebEx": "חברות משתמשות בהצפנה כדי למנוע ממשתמשים לא מורשים לצפות בנתונים."
+  },
+  {
+    "word": "Signature",
+    "meaning": "חֲתִימָה",
+    "phonetic": "סִיגְנֶצֶ'ר",
+    "visual": "✍️",
+    "exp": "חתימה דיגיטלית המאמתת את מקור המידע ושלמותו.",
+    "engEx": "Organizations use digital signatures to ensure data integrity.",
+    "hebEx": "ארגונים משתמשים בחתימות דיגיטליות כדי להבטיח את שלמות הנתונים."
+  },
+  {
+    "word": "Audit",
+    "meaning": "בִּיקוֹרֶת",
+    "phonetic": "אוֹדִיט",
+    "visual": "📋",
+    "exp": "בדיקה שיטתית ומקיפה של מערכת, חשבונות או תהליכים.",
+    "engEx": "Audit logs help organizations track changes to important data.",
+    "hebEx": "יומני ביקורת עוזרים לארגונים לעקוב אחר שינויים בנתונים חשובים."
+  },
+  {
+    "word": "Hash",
+    "meaning": "גִּיבּוּב",
+    "phonetic": "הַאשׁ",
+    "visual": "#️⃣",
+    "exp": "פונקציה שממירה מידע לקוד ייחודי קבוע לצורך אימות.",
+    "engEx": "Hash functions are used to verify data integrity.",
+    "hebEx": "פונקציות גיבוב משמשות לאימות שלמות הנתונים."
+  },
+  {
+    "word": "Legitimate",
+    "meaning": "לְגִיטִימִי / חוּקִי",
+    "phonetic": "לְגִיטִימֵייט",
+    "visual": "✔️",
+    "exp": "דבר שהוא חוקי, תקין ומוכר על ידי הרשויות.",
+    "engEx": "Since the email seemed legitimate, Daniel clicked the link.",
+    "hebEx": "מכיוון שהאימייל נראה לגיטימי, דניאל לחץ על הקישור."
+  },
+  {
+    "word": "Employee",
+    "meaning": "עוֹבֵד",
+    "phonetic": "אֶמְפְּלוֹיִי",
+    "visual": "👨‍💼",
+    "exp": "אדם שעובד עבור חברה או ארגון תמורת שכר.",
+    "engEx": "An employee named Daniel received a suspicious email.",
+    "hebEx": "עובד בשם דניאל קיבל אימייל חשוד."
+  },
+  {
+    "word": "Suspicious",
+    "meaning": "חֲשׁוּד",
+    "phonetic": "סַסְפִּישֶׁס",
+    "visual": "🧐",
+    "exp": "דבר שמעורר חשד או תחושה שמשהו לא בסדר.",
+    "engEx": "Employees should report any suspicious emails to the IT department.",
+    "hebEx": "עובדים צריכים לדווח על כל אימייל חשוד למחלקת ה-IT."
+  },
+  {
+    "word": "Compromise",
+    "meaning": "לִפְגּוֹעַ / פְּשָׁרָה",
+    "phonetic": "קוֹמְפְּרוֹמַאיְז",
+    "visual": "⚠️",
+    "exp": "בהקשר אבטחה: פגיעה במערכת או חשיפת מידע. בהקשר כללי: הסכמה הדדית.",
+    "engEx": "If confidentiality has been compromised, sensitive data may be exposed.",
+    "hebEx": "אם הסודיות נפגעה, נתונים רגישים עלולים להיחשף."
+  },
+  {
+    "word": "Altered",
+    "meaning": "שׁוּנָּה",
+    "phonetic": "אוֹלְטֶרְד",
+    "visual": "✏️",
+    "exp": "משהו שעבר שינוי, לעיתים ללא הרשאה.",
+    "engEx": "Several customer records were altered without authorization.",
+    "hebEx": "מספר רשומות לקוחות שונו ללא הרשאה."
+  },
+  {
+    "word": "Reliable",
+    "meaning": "אָמִין",
+    "phonetic": "רִילַאיְיַבֶּל",
+    "visual": "🤝",
+    "exp": "דבר שאפשר לסמוך עליו שיפעל כנדרש.",
+    "engEx": "The data was no longer reliable after it was altered.",
+    "hebEx": "הנתונים כבר לא היו אמינים לאחר שהשתנו."
+  },
+  {
+    "word": "Accurate",
+    "meaning": "מְדוּיָק",
+    "phonetic": "אַקְיוּרֶייט",
+    "visual": "🎯",
+    "exp": "נכון ומדויק, ללא שגיאות.",
+    "engEx": "Integrity ensures that information remains accurate and unchanged.",
+    "hebEx": "שלמות מבטיחה שמידע נשאר מדויק וללא שינוי."
+  },
+  {
+    "word": "Essential",
+    "meaning": "חִיּוּנִי",
+    "phonetic": "אֶסֶנְשָׁל",
+    "visual": "❗",
+    "exp": "דבר שהכרחי ולא ניתן להסתדר בלעדיו.",
+    "engEx": "Backups are essential for maintaining data availability.",
+    "hebEx": "גיבויים הם חיוניים לשמירה על זמינות הנתונים."
+  },
+  {
+    "word": "Backup",
+    "meaning": "גִּיבּוּי",
+    "phonetic": "בַּאקְאַפּ",
+    "visual": "💾",
+    "exp": "עותק שמור של נתונים למקרה של אובדן או תקלה.",
+    "engEx": "DataSafe had recently created secure backups of its data.",
+    "hebEx": "DataSafe יצרה לאחרונה גיבויים מאובטחים של הנתונים שלה."
+  },
+  {
+    "word": "Resume",
+    "meaning": "לַחֲדֹשׁ / לְהַמְשִׁיךְ",
+    "phonetic": "רִיזְיוּם",
+    "visual": "▶️",
+    "exp": "לחזור ולהמשיך פעילות שנעצרה.",
+    "engEx": "The company was able to resume normal operations within a short time.",
+    "hebEx": "החברה הצליחה לחדש פעילות רגילה תוך זמן קצר."
+  },
+  {
+    "word": "Awareness",
+    "meaning": "מוּדָעוּת",
+    "phonetic": "אַוֶוֶרְנֶס",
+    "visual": "👁️",
+    "exp": "ידיעה והבנה של נושא או מצב מסוים.",
+    "engEx": "Protecting information is also about human awareness.",
+    "hebEx": "הגנה על מידע היא גם עניין של מודעות אנושית."
+  },
+  {
+    "word": "Responsible",
+    "meaning": "אַחְרַאי",
+    "phonetic": "רֶסְפּוֹנְסִיבֶּל",
+    "visual": "🧑‍💼",
+    "exp": "אדם שחייב בדין וחשבון ושעליו מוטלת חובה.",
+    "engEx": "Protecting information is about responsible security practices.",
+    "hebEx": "הגנה על מידע נוגעת לשיטות אבטחה אחראיות."
+  },
+  {
+    "word": "Demonstrate",
+    "meaning": "לְהַדְגִּים",
+    "phonetic": "דֶמוֹנְסְטְרֵייט",
+    "visual": "📊",
+    "exp": "להראות או להוכיח משהו בצורה ברורה.",
+    "engEx": "The story demonstrates how a phishing email can affect all three CIA elements.",
+    "hebEx": "הסיפור מדגים כיצד אימייל פישינג יכול להשפיע על שלושת אלמנטי ה-CIA."
+  },
+  {
+    "word": "Affect",
+    "meaning": "לְהַשְׁפִּיעַ",
+    "phonetic": "אַפֶקְט",
+    "visual": "📡",
+    "exp": "לגרום לשינוי או להשפיע על משהו.",
+    "engEx": "A single phishing email can affect all three elements of the CIA Triad.",
+    "hebEx": "אימייל פישינג יחיד יכול להשפיע על כל שלושת אלמנטי משולש ה-CIA."
+  },
+  {
+    "word": "Critical",
+    "meaning": "קְרִיטִי",
+    "phonetic": "קְרִיטִיקַל",
+    "visual": "🚨",
+    "exp": "חשוב ביותר, עד כדי כך שכישלון יגרום לנזק חמור.",
+    "engEx": "Critical systems became unavailable after the ransomware attack.",
+    "hebEx": "מערכות קריטיות הפכו ללא זמינות לאחר מתקפת הכופר."
+  },
+  {
+    "word": "Incident",
+    "meaning": "תַּקְרִית",
+    "phonetic": "אִינְסִידֶנְט",
+    "visual": "📍",
+    "exp": "אירוע חריג, לרוב שלילי, שדורש תגובה.",
+    "engEx": "The incident became an important lesson for both management and employees.",
+    "hebEx": "התקרית הפכה לשיעור חשוב הן להנהלה והן לעובדים."
+  },
+  {
+    "word": "Valuable",
+    "meaning": "יָקָר עֵרֶךְ",
+    "phonetic": "וַאלְיוּאַבֶּל",
+    "visual": "💎",
+    "exp": "בעל ערך רב, כספי או רוחני.",
+    "engEx": "Information is one of the most valuable resources for businesses.",
+    "hebEx": "מידע הוא אחד המשאבים יקרי הערך ביותר עבור עסקים."
+  },
+  {
+    "word": "Asset",
+    "meaning": "נֶכֶס",
+    "phonetic": "אַסֶט",
+    "visual": "🏆",
+    "exp": "משאב בעל ערך השייך לאדם או לארגון.",
+    "engEx": "Organizations must protect their most valuable digital assets.",
+    "hebEx": "ארגונים חייבים להגן על הנכסים הדיגיטליים היקרים ביותר שלהם."
+  },
+  {
+    "word": "Credentials",
+    "meaning": "פְּרָטֵי הִתְחַבְּרוּת",
+    "phonetic": "קְרֶדֶנְשַׁלְס",
+    "visual": "🪪",
+    "exp": "פרטי זיהוי כמו שם משתמש וסיסמה המשמשים להתחברות למערכת.",
+    "engEx": "Daniel entered his login credentials on the fake website.",
+    "hebEx": "דניאל הזין את פרטי ההתחברות שלו באתר המזויף."
+  },
+  {
+    "word": "Restore",
+    "meaning": "לְשַׁחְזֵר",
+    "phonetic": "רִיסְטוֹר",
+    "visual": "🔄",
+    "exp": "להחזיר משהו למצבו הקודם, כמו שחזור קבצים.",
+    "engEx": "The IT team worked to restore the systems and recover the files.",
+    "hebEx": "צוות ה-IT עבד לשחזר את המערכות ולשחזר את הקבצים."
+  },
+  {
+    "word": "Recover",
+    "meaning": "לְהִתְאוֹשֵׁשׁ / לְשַׁחְזֵר",
+    "phonetic": "רִיקַאבֶר",
+    "visual": "🛠️",
+    "exp": "לחזור לתפקוד תקין אחרי אירוע שלילי.",
+    "engEx": "The team worked to recover the affected files.",
+    "hebEx": "הצוות עבד לשחזר את הקבצים שנפגעו."
+  },
+  {
+    "word": "Disruptive",
+    "meaning": "מַשְׁבִּשׁ",
+    "phonetic": "דִיסְרַפְּטִיב",
+    "visual": "💢",
+    "exp": "דבר שגורם להפרעה משמעותית בפעילות רגילה.",
+    "engEx": "Downtime can be expensive and disruptive for businesses.",
+    "hebEx": "זמן השבתה יכול להיות יקר ומשבש עבור עסקים."
+  },
+  {
+    "word": "Measures",
+    "meaning": "אֶמְצָעִים",
+    "phonetic": "מֶזֶ'רְס",
+    "visual": "📏",
+    "exp": "פעולות או כלים שננקטים כדי להשיג מטרה או להגן.",
+    "engEx": "Confidentiality can be lost when security measures are bypassed.",
+    "hebEx": "סודיות יכולה ללכת לאיבוד כאשר עוקפים אמצעי אבטחה."
+  },
+  {
+    "word": "Practice",
+    "meaning": "תַּרְגוּל / נוֹהָג",
+    "phonetic": "פְּרַקְטִיס",
+    "visual": "🔁",
+    "exp": "פעולה חוזרת ללמידה, או שיטה מקובלת.",
+    "engEx": "Responsible security practices protect organizations from attacks.",
+    "hebEx": "נוהלי אבטחה אחראיים מגנים על ארגונים מפני מתקפות."
+  },
+  {
+    "word": "Transition",
+    "meaning": "מעבר",
+    "phonetic": "טרנזישן",
+    "visual": "🔄",
+    "exp": "תהליך של שינוי ממצב אחד לאחר.",
+    "engEx": "The transition from HTTP to HTTPS was necessary.",
+    "hebEx": "המעבר מ-HTTP ל-HTTPS היה הכרחי."
+  },
+  {
+    "word": "Information",
+    "meaning": "מידע",
+    "phonetic": "אינפורמיישן",
+    "visual": "ℹ️",
+    "exp": "נתונים או עובדות על משהו.",
+    "engEx": "They shared information with visitors.",
+    "hebEx": "הם שיתפו מידע עם מבקרים."
+  },
+  {
+    "word": "Protocol",
+    "meaning": "פרוטוקול",
+    "phonetic": "פרוטוקול",
+    "visual": "📜",
+    "exp": "אוסף חוקים המסדירים תקשורת בין מחשבים.",
+    "engEx": "HTTP is a transfer protocol.",
+    "hebEx": "HTTP הוא פרוטוקול העברה."
+  },
+  {
+    "word": "Communication",
+    "meaning": "תקשורת",
+    "phonetic": "קומיוניקיישן",
+    "visual": "💬",
+    "exp": "העברת מידע בין צדדים.",
+    "engEx": "It is a communication system.",
+    "hebEx": "זוהי מערכת תקשורת."
+  },
+  {
+    "word": "Browsers",
+    "meaning": "דפדפנים",
+    "phonetic": "בראוזרס",
+    "visual": "🌐",
+    "exp": "תוכנות המשמשות לגלישה באינטרנט.",
+    "engEx": "Browsers and servers exchange data.",
+    "hebEx": "דפדפנים ושרתים מחליפים נתונים."
+  },
+  {
+    "word": "Servers",
+    "meaning": "שרתים",
+    "phonetic": "סרברס",
+    "visual": "🖥️",
+    "exp": "מחשבים המספקים שירותים למחשבים אחרים ברשת.",
+    "engEx": "The servers hosted the website.",
+    "hebEx": "השרתים אירחו את האתר."
+  },
+  {
+    "word": "Exchange",
+    "meaning": "החלפה",
+    "phonetic": "אקסצ'יינג'",
+    "visual": "🔄",
+    "exp": "מסירה וקבלה של דברים (כמו נתונים).",
+    "engEx": "They exchange information quickly.",
+    "hebEx": "הם מחליפים מידע במהירות."
+  },
+  {
+    "word": "Weakness",
+    "meaning": "חולשה",
+    "phonetic": "וויקנס",
+    "visual": "📉",
+    "exp": "נקודת תורפה או חוסר חוזק.",
+    "engEx": "HTTP had one major weakness.",
+    "hebEx": "ל-HTTP הייתה חולשה מרכזית אחת."
+  },
+  {
+    "word": "Transmitted",
+    "meaning": "משודר / מועבר",
+    "phonetic": "טרנסמיטד",
+    "visual": "📡",
+    "exp": "משהו שנשלח או הועבר ממקום למקום.",
+    "engEx": "Data is transmitted over the network.",
+    "hebEx": "הנתונים משודרים ברשת."
+  },
+  {
+    "word": "Passwords",
+    "meaning": "סיסמאות",
+    "phonetic": "פסוורדס",
+    "visual": "🔑",
+    "exp": "מילים או רצף תווים סודיים לאימות זהות.",
+    "engEx": "Never share your passwords.",
+    "hebEx": "לעולם אל תשתף את הסיסמאות שלך."
+  },
+  {
+    "word": "Intercepting",
+    "meaning": "יירוט",
+    "phonetic": "אינטרספטינג",
+    "visual": "🕵️",
+    "exp": "תפיסת מידע בדרכו ליעד.",
+    "engEx": "Anyone intercepting the connection could read it.",
+    "hebEx": "כל מי שמיירט את החיבור יכול לקרוא את זה."
+  },
+  {
+    "word": "Connection",
+    "meaning": "חיבור",
+    "phonetic": "קונקשן",
+    "visual": "🔗",
+    "exp": "קישור בין מחשבים או רשתות.",
+    "engEx": "The connection was secured.",
+    "hebEx": "החיבור היה מאובטח."
+  },
+  {
+    "word": "Cybercriminals",
+    "meaning": "פושעי סייבר",
+    "phonetic": "סייבר-קרימינלס",
+    "visual": "🦹",
+    "exp": "אנשים המבצעים פשעים דרך האינטרנט.",
+    "engEx": "Cybercriminals steal private data.",
+    "hebEx": "פושעי סייבר גונבים נתונים פרטיים."
+  },
+  {
+    "word": "Unsecured",
+    "meaning": "לא מאובטח",
+    "phonetic": "אנסיקיורד",
+    "visual": "🔓",
+    "exp": "חסר הגנה או הצפנה.",
+    "engEx": "Unsecured connections are dangerous.",
+    "hebEx": "חיבורים לא מאובטחים הם מסוכנים."
+  },
+  {
+    "word": "Target",
+    "meaning": "מטרה",
+    "phonetic": "טרגט",
+    "visual": "🎯",
+    "exp": "יעד להתקפה או פעולה.",
+    "engEx": "HTTP connections were an easy target.",
+    "hebEx": "חיבורי HTTP היו מטרה קלה."
+  },
+  {
+    "word": "Traffic",
+    "meaning": "תעבורה",
+    "phonetic": "טראפיק",
+    "visual": "🚦",
+    "exp": "זרימת הנתונים ברשת תקשורת.",
+    "engEx": "Attackers intercept network traffic.",
+    "hebEx": "תוקפים מיירטים תעבורת רשת."
+  },
+  {
+    "word": "Scrambles",
+    "meaning": "מערבל",
+    "phonetic": "סקרמבלס",
+    "visual": "🌪️",
+    "exp": "ערבוב הנתונים לפורמט לא קריא.",
+    "engEx": "Encryption scrambles the data.",
+    "hebEx": "הצפנה מערבלת את הנתונים."
+  },
+  {
+    "word": "Intended",
+    "meaning": "מיועד",
+    "phonetic": "אינטנדד",
+    "visual": "✉️",
+    "exp": "האדם או היעד שאליו כוון המסר.",
+    "engEx": "Only the intended receiver can read it.",
+    "hebEx": "רק המקבל המיועד יכול לקרוא את זה."
+  },
+  {
+    "word": "Meaningless",
+    "meaning": "חסר משמעות",
+    "phonetic": "מינינגלס",
+    "visual": "🤷",
+    "exp": "משהו שאין לו מובן או ערך ברור.",
+    "engEx": "The intercepted code appears meaningless.",
+    "hebEx": "הקוד המיורט נראה חסר משמעות."
+  },
+  {
+    "word": "Hacker",
+    "meaning": "פצחן (האקר)",
+    "phonetic": "האקר",
+    "visual": "💻",
+    "exp": "אדם הפורץ למערכות מחשב.",
+    "engEx": "A hacker was monitoring the network.",
+    "hebEx": "האקר ניטר את הרשת."
+  },
+  {
+    "word": "Monitoring",
+    "meaning": "ניטור / מעקב",
+    "phonetic": "מוניטורינג",
+    "visual": "👁️",
+    "exp": "מעקב או השגחה על מערכת או תעבורה.",
+    "engEx": "They are monitoring the internet traffic.",
+    "hebEx": "הם מנטרים את תעבורת האינטרנט."
+  },
+  {
+    "word": "Upgrading",
+    "meaning": "שדרוג",
+    "phonetic": "אפגריידינג",
+    "visual": "⬆️",
+    "exp": "שיפור מערכת או מעבר לגרסה חדשה יותר.",
+    "engEx": "The company is upgrading to HTTPS.",
+    "hebEx": "החברה משדרגת ל-HTTPS."
+  },
+  {
+    "word": "Confidential",
+    "meaning": "סודי / חסוי",
+    "phonetic": "קונפידנשל",
+    "visual": "🤫",
+    "exp": "מידע שנועד להישאר פרטי.",
+    "engEx": "It protects confidential information.",
+    "hebEx": "זה מגן על מידע חסוי."
+  },
+  {
+    "word": "Eavesdropping",
+    "meaning": "ציתות",
+    "phonetic": "איבזדרופינג",
+    "visual": "👂",
+    "exp": "האזנה בסתר לשיחות או לתקשורת של אחרים.",
+    "engEx": "HTTPS prevents eavesdropping attacks.",
+    "hebEx": "HTTPS מונע מתקפות ציתות."
+  },
+  {
+    "word": "Transmission",
+    "meaning": "שידור / העברה",
+    "phonetic": "טרנסמישן",
+    "visual": "📤",
+    "exp": "תהליך העברת הנתונים ברשת.",
+    "engEx": "Data can be stolen during transmission.",
+    "hebEx": "נתונים יכולים להיגנב במהלך השידור."
+  },
+  {
+    "word": "Inject",
+    "meaning": "להזריק",
+    "phonetic": "אינג'קט",
+    "visual": "💉",
+    "exp": "החדרת קוד או נתונים למערכת באופן זדוני.",
+    "engEx": "Attackers inject malicious code into the traffic.",
+    "hebEx": "תוקפים מזריקים קוד זדוני לתעבורה."
+  },
+  {
+    "word": "Verifying",
+    "meaning": "אימות",
+    "phonetic": "וריפיינג",
+    "visual": "✔️",
+    "exp": "בדיקה ואישור שמשהו הוא נכון ואמיתי.",
+    "engEx": "Verifying the digital certificate builds trust.",
+    "hebEx": "אימות התעודה הדיגיטלית בונה אמון."
+  },
+  {
+    "word": "Certificate",
+    "meaning": "תעודה (דיגיטלית)",
+    "phonetic": "סרטיפיקט",
+    "visual": "📜",
+    "exp": "מסמך דיגיטלי המאשר את זהות האתר.",
+    "engEx": "The site has a valid SSL certificate.",
+    "hebEx": "לאתר יש תעודת SSL תקפה."
+  },
+  {
+    "word": "Standard",
+    "meaning": "תקן / סטנדרט",
+    "phonetic": "סטנדרט",
+    "visual": "📏",
+    "exp": "רמה או נורמה מקובלת.",
+    "engEx": "HTTPS is the modern standard.",
+    "hebEx": "HTTPS הוא התקן המודרני."
+  },
+  {
+    "word": "Configure",
+    "meaning": "להגדיר / לקנפג",
+    "phonetic": "קונפיגר",
+    "visual": "⚙️",
+    "exp": "הגדרת מערכת או תוכנה לפעולה.",
+    "engEx": "Owners had to configure their servers.",
+    "hebEx": "הבעלים נאלצו להגדיר את השרתים שלהם."
+  },
+  {
+    "word": "Adopt",
+    "meaning": "לאמץ",
+    "phonetic": "אדופט",
+    "visual": "🤝",
+    "exp": "קבלת שיטה או טכנולוגיה חדשה לשימוש.",
+    "engEx": "Millions of websites adopted HTTPS.",
+    "hebEx": "מיליוני אתרים אימצו את HTTPS."
+  },
+  {
+    "word": "Compilation",
+    "meaning": "הידור, קומפילציה",
+    "phonetic": "קומפִּילֵיישְׁן",
+    "visual": "⚙️",
+    "exp": "תהליך שבו קוד מקור מתורגם לשפת מכונה או לייצוג ביניים לפני שהתוכנית רצה. בשפות כמו C#, הקומפילציה מאפשרת לזהות שגיאות מוקדם ולייצר קוד מהיר יותר.",
+    "engEx": "The compilation process in C# converts source code into Intermediate Language before execution.",
+    "hebEx": "תהליך ההידור ב-C# ממיר קוד מקור לשפת ביניים לפני הרצה."
+  },
+  {
+    "word": "Interpretation",
+    "meaning": "פירוש, אינטרפרטציה",
+    "phonetic": "אִינטֶרפְּרֵיטֵיישְׁן",
+    "visual": "📖",
+    "exp": "מודל ביצוע שבו התוכנית נקראת ומבוצעת שורה אחר שורה בזמן אמת, בלי שלב הידור מקדים. JavaScript השתמשה במודל הזה בשנותיה הראשונות.",
+    "engEx": "JavaScript historically followed a pure interpretation model in early web browsers.",
+    "hebEx": "JavaScript היסטורית פעלה לפי מודל פירוש טהור בדפדפנים המוקדמים."
+  },
+  {
+    "word": "Source Code",
+    "meaning": "קוד מקור",
+    "phonetic": "סוֹרס קוֹד",
+    "visual": "📝",
+    "exp": "הקוד שהמתכנת כותב בשפת תכנות קריאה לאדם. המחשב לא יכול להריץ אותו ישירות — הוא חייב לעבור תרגום לפני הביצוע.",
+    "engEx": "When a programmer writes code, the source code must first be translated into machine instructions.",
+    "hebEx": "כשמתכנת כותב קוד, קוד המקור חייב קודם להיות מתורגם להוראות מכונה."
+  },
+  {
+    "word": "Execution",
+    "meaning": "ביצוע, הרצה",
+    "phonetic": "אֶקסֵקְיוּשְׁן",
+    "visual": "▶️",
+    "exp": "השלב שבו התוכנית רצה בפועל על המחשב. הביצוע יכול להתרחש אחרי הידור מלא או תוך כדי פירוש, תלוי בשפה ובסביבה.",
+    "engEx": "The compiler performs extensive analysis of the code before execution begins.",
+    "hebEx": "המהדר מבצע ניתוח מקיף של הקוד לפני שהביצוע מתחיל."
+  },
+  {
+    "word": "Compiler",
+    "meaning": "מהדר, קומפיילר",
+    "phonetic": "קוֹמפַּיְילֶר",
+    "visual": "🔨",
+    "exp": "תוכנה שמתרגמת קוד מקור שלם לצורה אחרת (כמו קוד מכונה או שפת ביניים) לפני ההרצה. המהדר בודק תחביר, סוגי נתונים ושגיאות מבניות.",
+    "engEx": "Running a compiler is the second step in the traditional compilation process.",
+    "hebEx": "הרצת מהדר היא הצעד השני בתהליך ההידור המסורתי."
+  },
+  {
+    "word": "Interpreter",
+    "meaning": "מפרש",
+    "phonetic": "אִינטֶרפְּרֶטֶר",
+    "visual": "🔄",
+    "exp": "תוכנה שקוראת קוד מקור ומבצעת את ההוראות ישירות בזמן ריצה, שורה אחר שורה, בלי לייצר קובץ הרצה נפרד. מאפשר גמישות ובדיקה מהירה של שינויים.",
+    "engEx": "Instead of compiling the entire program beforehand, an interpreter reads and executes instructions during runtime.",
+    "hebEx": "במקום להדר את כל התוכנית מראש, מפרש קורא ומבצע הוראות בזמן ריצה."
+  },
+  {
+    "word": "Translate",
+    "meaning": "לתרגם",
+    "phonetic": "טְרָנסְלֵייט",
+    "visual": "🔀",
+    "exp": "בהקשר תכנותי, לתרגם פירושו להמיר קוד מקור משפה אחת לצורה אחרת שהמחשב יכול להבין ולהריץ, כמו שפת מכונה או bytecode.",
+    "engEx": "The source code must first be translated into machine instructions before the computer can process it.",
+    "hebEx": "קוד המקור חייב קודם להיות מתורגם להוראות מכונה לפני שהמחשב יכול לעבד אותו."
+  },
+  {
+    "word": "Lightweight",
+    "meaning": "קל משקל",
+    "phonetic": "לַייטְוֵייט",
+    "visual": "🪶",
+    "exp": "מתאר משהו פשוט, יעיל וללא עומס מיותר. JavaScript תוכננה כשפת סקריפט קלת משקל שיכולה לרוץ ישירות בתוך דף אינטרנט.",
+    "engEx": "Browsers needed a lightweight scripting language that could run directly inside a web page.",
+    "hebEx": "דפדפנים היו צריכים שפת סקריפט קלת משקל שתוכל לרוץ ישירות בתוך דף אינטרנט."
+  },
+  {
+    "word": "Interactivity",
+    "meaning": "אינטראקטיביות",
+    "phonetic": "אִינטֶרָאקְטִיבִיטִי",
+    "visual": "👆",
+    "exp": "היכולת של ממשק או דף אינטרנט להגיב לפעולות המשתמש בזמן אמת — כמו לחיצות, הקלדה וגלילה — במקום להציג תוכן סטטי בלבד.",
+    "engEx": "JavaScript was designed to provide immediate interactivity on web pages.",
+    "hebEx": "JavaScript תוכננה לספק אינטראקטיביות מיידית בדפי אינטרנט."
+  },
+  {
+    "word": "Executable",
+    "meaning": "קובץ הרצה, בר-ביצוע",
+    "phonetic": "אֶקסֵקְיוּטָבְּל",
+    "visual": "📦",
+    "exp": "קובץ שמכיל הוראות מוכנות להרצה על ידי המחשב. בתהליך ההידור המסורתי, המהדר מייצר קובץ הרצה שניתן להפעיל ישירות.",
+    "engEx": "The compiler generates executable code that can be run on the target machine.",
+    "hebEx": "המהדר מייצר קוד בר-ביצוע שניתן להריץ על מכונת היעד."
+  },
+  {
+    "word": "Runtime",
+    "meaning": "זמן ריצה, סביבת הרצה",
+    "phonetic": "רָאנְטַיְים",
+    "visual": "🏃",
+    "exp": "התקופה שבה התוכנית רצה בפועל, או הסביבה שמריצה את הקוד. ב-.NET, ה-Runtime אחראי על תרגום קוד ביניים לשפת מכונה באמצעות JIT.",
+    "engEx": "When the program starts running, the .NET runtime uses a JIT compiler to translate IL into native machine code.",
+    "hebEx": "כשהתוכנית מתחילה לרוץ, סביבת ההרצה של .NET משתמשת במהדר JIT כדי לתרגם IL לקוד מכונה מקומי."
+  },
+  {
+    "word": "Performance",
+    "meaning": "ביצועים",
+    "phonetic": "פ��ּרפוֹרמָנס",
+    "visual": "📊",
+    "exp": "מדד ליעילות ולמהירות שבה תוכנית פועלת. שפות מהודרות נחשבו באופן מסורתי למהירות יותר, אך טכנולוגיות מודרניות צמצמו את הפער.",
+    "engEx": "Compilation has long been associated with higher performance compared to interpretation.",
+    "hebEx": "הידור נקשר מזה זמן רב לביצועים גבוהים יותר בהשוואה לפירוש."
+  },
+  {
+    "word": "Optimization",
+    "meaning": "אופטימיזציה, מיטוב",
+    "phonetic": "אוֹפְּטִימִיזֵיישְׁן",
+    "visual": "🚀",
+    "exp": "תהליך שיפור הקוד כדי שירוץ מהר יותר או ישתמש בפחות משאבים. מהדרי JIT מודרניים מבצעים אופטימיזציה בזמן ריצה הן ב-C# והן ב-JavaScript.",
+    "engEx": "JIT compilation allows both C# and JavaScript to benefit from runtime optimization.",
+    "hebEx": "הידור JIT מאפשר גם ל-C# וגם ל-JavaScript ליהנות ממיטוב בזמן ריצה."
+  },
+  {
+    "word": "Error Detection",
+    "meaning": "גילוי שגיאות",
+    "phonetic": "אֶרוֹר דִּיטֶקְשְׁן",
+    "visual": "🔍",
+    "exp": "תהליך זיהוי בעיות ושגיאות בקוד. ב-C# גילוי שגיאות מתרחש בעיקר בזמן הידור, לפני שהתוכנית רצה. ב-JavaScript היסטורית, בדיקות רבות נדחו לזמן ריצה.",
+    "engEx": "C# performs extensive error detection during compilation, catching problems before the program runs.",
+    "hebEx": "C# מבצעת גילוי שגיאות נרחב בזמן הידור, ותופסת בעיות לפני שהתוכנית רצה."
+  },
+  {
+    "word": "Type Checking",
+    "meaning": "בדיקת טיפוסים",
+    "phonetic": "טַיְיפּ צֵ׳קִינְג",
+    "visual": "✅",
+    "exp": "תהליך אימות שבו הקומפיילר בודק שכל משתנה וביטוי משתמשים בסוג הנתונים הנכון. ב-C# זה קורה בזמן הידור ומונע שגיאות רבות מראש.",
+    "engEx": "C# was designed with strong type checking to ensure reliability in large software systems.",
+    "hebEx": "C# תוכננה עם בדיקת טיפוסים חזקה כדי להבטיח אמינות במערכות תוכנה גדולות."
+  },
+  {
+    "word": "Intermediate",
+    "meaning": "ביניים",
+    "phonetic": "אִינטֶרמִידִיאֶט",
+    "visual": "🔗",
+    "exp": "שלב או ייצוג שנמצא בין קוד המקור לקוד המכונה הסופי. ב-C#, המהדר מייצר Intermediate Language — שפת ביניים שה-JIT ממיר אחר כך לקוד מקומי.",
+    "engEx": "The C# compiler produces an intermediate representation called Intermediate Language.",
+    "hebEx": "מהדר C# מייצר ייצוג ביניים שנקרא שפת ביניים."
+  },
+  {
+    "word": "Reliability",
+    "meaning": "אמינות",
+    "phonetic": "רִילַייאָבִּילִיטִי",
+    "visual": "🛡️",
+    "exp": "המידה שבה מערכת או תוכנה פועלת באופן עקבי ונכון לאורך זמן. הידור מקדים ובדיקת טיפוסים חזקה תורמים לאמינות גבוהה יותר.",
+    "engEx": "Compiled programs often achieve high performance and reliability thanks to early analysis.",
+    "hebEx": "תוכניות מהודרות משיגות לעיתים קרובות ביצועים ואמינות גבוהים הודות לניתוח מוקדם."
+  },
+  {
+    "word": "Validate",
+    "meaning": "לאמת, לתקף",
+    "phonetic": "וָאלִידֵייט",
+    "visual": "🔐",
+    "exp": "לבדוק שמשהו תקין ועומד בכללים הנדרשים. בתכנות, המהדר מאמת סוגי נתונים, תחביר והפניות כדי לוודא שהקוד תקין לפני ההרצה.",
+    "engEx": "The compiler validates data types and identifies many programming errors before execution.",
+    "hebEx": "המהדר מאמת סוגי נתונים ומזהה שגיאות תכנות רבות לפני הביצוע."
+  },
+  {
+    "word": "Mismatch",
+    "meaning": "אי-התאמה",
+    "phonetic": "מִיסְמָאצ׳",
+    "visual": "❌",
+    "exp": "מצב שבו שני דברים לא תואמים זה לזה. בתכנות, type mismatch מתרחש כשמנסים להשתמש בסוג נתונים שגוי — למשל להכניס מחרוזת למשתנה מספרי.",
+    "engEx": "During compilation, the C# compiler detects type mismatches and invalid references.",
+    "hebEx": "במהלך ההידור, מהדר C# מזהה אי-התאמות טיפוסים והפניות לא תקינות."
+  },
+  {
+    "word": "Type",
+    "meaning": "סוג, טיפוס (נתונים)",
+    "phonetic": "טַיְפּ",
+    "visual": "🔠",
+    "exp": "בשפות תכנות, טיפוס נתונים מגדיר איזה סוג של ערך משתנה יכול להחזיק (למשל מספר, טקסט או אובייקט).",
+    "engEx": "C# is a statically typed language where every variable has a specific type.",
+    "hebEx": "C# היא שפה בעלת טיפוסיות סטטית שבה לכל משתנה יש טיפוס ספציפי."
+  },
+  {
+    "word": "Invalid",
+    "meaning": "לא חוקי, פסול",
+    "phonetic": "אִינְוָאלִיד",
+    "visual": "❌",
+    "exp": "מתאר נתון, קוד או מצב שאינם עומדים בחוקים או בתנאים הנדרשים ולכן לא יכולים להתקבל על ידי המערכת.",
+    "engEx": "The program crashed because it tried to access an invalid memory address.",
+    "hebEx": "התוכנית קרסה משום שהיא ניסתה לגשת לכתובת זיכרון לא חוקית."
+  },
+  {
+    "word": "Reference",
+    "meaning": "הפניה, התייחסות",
+    "phonetic": "רֶפֶרֶנְס",
+    "visual": "🔗",
+    "exp": "במדעי המחשב, הפניה היא ערך המאפשר לתוכנית לגשת בעקיפין לנתון מסוים בזיכרון במקום להעתיק את הנתון עצמו.",
+    "engEx": "If an object contains an invalid reference, the program will throw an exception.",
+    "hebEx": "אם אובייקט מכיל הפניה לא חוקית, התוכנית תזרוק חריגה."
+  },
+  {
+    "word": "Object",
+    "meaning": "אובייקט, עצם",
+    "phonetic": "אוֹבְּגֶ'קְט",
+    "visual": "📦",
+    "exp": "בתכנות מונחה עצמים, אובייקט הוא מופע של מחלקה המכיל נתונים (תכונות) וקוד (פעולות).",
+    "engEx": "In C#, almost everything you interact with is an object.",
+    "hebEx": "ב-C#, כמעט כל דבר שאתה בא איתו במגע הוא אובייקט."
+  },
+  {
+    "word": "Oriented",
+    "meaning": "מוכוון, מונחה",
+    "phonetic": "אוֹרְיֶנְטֶד",
+    "visual": "🧭",
+    "exp": "מתאר גישה או פרדיגמה שמתמקדת בנושא מסוים. למשל, תכנות 'מונחה עצמים' מתמקד ביצירת אובייקטים והאינטראקציה ביניהם.",
+    "engEx": "C# is an object-oriented programming language designed for modern development.",
+    "hebEx": "C# היא שפת תכנות מונחית עצמים שעוצבה עבור פיתוח מודרני."
+  },
+  {
+    "word": "Mistake",
+    "meaning": "טעות, שגיאה",
+    "phonetic": "מִיסְטֵיְק",
+    "visual": "🤦",
+    "exp": "טעות בקוד שיכולה לגרום לתוכנית להתנהג בצורה לא צפויה. לעומת שגיאות מערכת, מדובר לרוב בטעות אנוש של המתכנת.",
+    "engEx": "The developer made a simple syntax mistake that broke the build.",
+    "hebEx": "המפתח עשה טעות תחביר פשוטה ששברה את הבנייה."
+  },
+  {
+    "word": "Catch",
+    "meaning": "לתפוס, לאתר (שגיאות)",
+    "phonetic": "קָאצ'",
+    "visual": "🪤",
+    "exp": "בתכנות, המונח משמש לרוב בהקשר של איתור שגיאות, בין אם בזמן הידור או 'תפיסת' שגיאות בזמן ריצה כדי למנוע את קריסת התוכנית.",
+    "engEx": "The strict compiler helps us catch errors before the code is executed.",
+    "hebEx": "המהדר הנוקשה עוזר לנו לאתר שגיאות לפני שהקוד מופעל."
+  },
+  {
+    "word": "Delay",
+    "meaning": "לעכב, לדחות, השהיה",
+    "phonetic": "דִּילֵיְ",
+    "visual": "⏳",
+    "exp": "השהיה או דחייה של פעולה. בשפות מפורשות, בדיקת השגיאות לרוב נדחית עד לזמן הריצה עצמו.",
+    "engEx": "JavaScript delays many checks until runtime, which can cause unexpected errors.",
+    "hebEx": "JavaScript דוחה בדיקות רבות עד לזמן הריצה, מה שיכול לגרום לשגיאות לא צפויות."
+  },
+  {
+    "word": "Browser",
+    "meaning": "דפדפן",
+    "phonetic": "בְּרָאוּזֶר",
+    "visual": "🌐",
+    "exp": "תוכנה המאפשרת גישה, ניווט והצגה של אתרי אינטרנט. הדפדפן הוא זה שמריץ את קוד ה-JavaScript בצד הלקוח.",
+    "engEx": "The code runs directly inside the web browser to provide interactivity.",
+    "hebEx": "הקוד רץ ישירות בתוך דפדפן הרשת כדי לספק אינטראקטיביות."
+  },
+  {
+    "word": "Scripting",
+    "meaning": "כתיבת תסריטים, שפת תסריט",
+    "phonetic": "סְקְרִיפְּטִינְג",
+    "visual": "📜",
+    "exp": "סוג של שפת תכנות, שלרוב מפורשת ולא מהודרת, שנועדה לבצע משימות מהירות ולשלוט בתוכנות קיימות, כמו עמודי אינטרנט.",
+    "engEx": "JavaScript was originally designed as a lightweight scripting language.",
+    "hebEx": "JavaScript עוצבה במקור כשפת סקריפטים קלת-משקל."
+  },
+  {
+    "word": "Engine",
+    "meaning": "מנוע",
+    "phonetic": "אֶנְגִ'ין",
+    "visual": "⚙️",
+    "exp": "רכיב תוכנה מרכזי המניע מערכת. בהקשר של JavaScript, המנוע (כמו V8) הוא זה שמפרש ומריץ את הקוד בדפדפן.",
+    "engEx": "Modern JavaScript engines use complex optimization techniques to run code faster.",
+    "hebEx": "מנועי JavaScript מודרניים משתמשים בטכניקות אופטימיזציה מורכבות כדי להריץ קוד מהר יותר."
+  },
+  {
+    "word": "Bytecode",
+    "meaning": "קוד ביניים (בייטקוד)",
+    "phonetic": "בַּיְט-קוֹד",
+    "visual": "🔢",
+    "exp": "קוד ביניים, קרוב לשפת מכונה, שנוצר לאחר הידור ראשוני. זהו פורמט יעיל יותר לקריאה על ידי מפרש או מהדר JIT.",
+    "engEx": "The source code is first compiled into bytecode before being executed.",
+    "hebEx": "קוד המקור קודם כל מהודר לקוד ביניים לפני שהוא מבוצע."
+  },
+  {
+    "word": "Hybrid",
+    "meaning": "היברידי, משולב",
+    "phonetic": "הַיְבְּרִיד",
+    "visual": "🧬",
+    "exp": "מערכת המשלבת שתי גישות או יותר. בתכנות, שפות מודרניות רבות משלבות הידור מראש עם פירוש בזמן אמת כמודל היברידי.",
+    "engEx": "Many programming languages now use a hybrid execution model for better performance.",
+    "hebEx": "שפות תכנות רבות כיום משתמשות במודל ריצה משולב עבור ביצועים טובים יותר."
+  },
+  {
+    "word": "Native",
+    "meaning": "טבעי, מקומי, נטיבי",
+    "phonetic": "נֵיְטִיב",
+    "visual": "💻",
+    "exp": "בתכנות, קוד 'נטיבי' הוא קוד בשפת מכונה שנוצר במיוחד כדי לרוץ ישירות על מעבד ומערכת הפעלה מסוימים ללא צורך בתיווך.",
+    "engEx": "The compiler translates the code into native machine code for the target processor.",
+    "hebEx": "המהדר מתרגם את הקוד לשפת מכונה טבעית עבור המעבד המיועד."
+  },
+  {
+    "word": "Machine",
+    "meaning": "מכונה, מחשב",
+    "phonetic": "מָאשִׁין",
+    "visual": "🤖",
+    "exp": "בהקשר של תכנות, מתייחס למחשב עצמו או לרמה הנמוכה ביותר של הקוד ('שפת מכונה') שהחומרה מסוגלת להבין ישירות.",
+    "engEx": "A compiler generates code that the underlying machine can understand.",
+    "hebEx": "מהדר מייצר קוד שהמכונה שמתחתיו יכולה להבין."
+  },
+  {
+    "word": "Web",
+    "meaning": "רשת (האינטרנט)",
+    "phonetic": "וֶבּ",
+    "visual": "🕸️",
+    "exp": "רשת האינטרנט העולמית, המשמשת כפלטפורמה המרכזית עבור אפליקציות ואתרים, שבה טכנולוגיות כמו JavaScript פועלות.",
+    "engEx": "JavaScript was created to add interactivity to web pages.",
+    "hebEx": "JavaScript נוצרה כדי להוסיף אינטראקטיביות לעמודי אינטרנט."
+  },
+  {
+    "word": "Deployment",
+    "meaning": "פריסה, הטמעה",
+    "phonetic": "דִּיפְּלוֹיְמֶנְט",
+    "visual": "🚀",
+    "exp": "השלב שבו התוכנה או האפליקציה מועברת מסביבת הפיתוח לסביבת הייצור (production), כדי שתהיה זמינה למשתמשים.",
+    "engEx": "The team prepared the web application for a successful deployment.",
+    "hebEx": "הצוות הכין את אפליקציית הרשת לקראת פריסה מוצלחת."
+  },
+  {
+    "word": "Binary",
+    "meaning": "בִּינָארִי (מְבוּסָּס עַל שְׁתַּיִם)",
+    "phonetic": "בִּינָארִי",
+    "visual": "0️⃣1️⃣",
+    "exp": "שיטת ספירה המשתמשת בשני סמלים בלבד, לרוב 0 ו-1.",
+    "engEx": "Computers use the binary system to store data.",
+    "hebEx": "מחשבים משתמשים בשיטה הבינארית כדי לאחסן נתונים."
+  },
+  {
+    "word": "Represent",
+    "meaning": "לְיַצֵּג",
+    "phonetic": "רִיפְּרֶזֶנְט",
+    "visual": "🎭",
+    "exp": "להיות סמל או סימן למשהו אחר.",
+    "engEx": "The number 1 represents an ON state.",
+    "hebEx": "המספר 1 מייצג מצב פועל."
+  },
+  {
+    "word": "Digit",
+    "meaning": "סִפְרָה",
+    "phonetic": "דִּיגִ'יט",
+    "visual": "🔢",
+    "exp": "כל אחד מהסמלים המשמשים לכתיבת מספרים.",
+    "engEx": "The binary system uses only two digits.",
+    "hebEx": "השיטה הבינארית משתמשת בשתי ספרות בלבד."
+  },
+  {
+    "word": "Symbol",
+    "meaning": "סֵמֶל",
+    "phonetic": "סִימְבּוֹל",
+    "visual": "⚜️",
+    "exp": "סימן, ציור או אות המייצגים מושג, רעיון או חפץ.",
+    "engEx": "The heart is a symbol of love.",
+    "hebEx": "הלב הוא סמל לאהבה."
+  },
+  {
+    "word": "System",
+    "meaning": "מַעֲרֶכֶת, שִׁיטָה",
+    "phonetic": "סִיסְטֶם",
+    "visual": "⚙️",
+    "exp": "אוסף של חלקים או חוקים הפועלים יחד למטרה מסוימת.",
+    "engEx": "We need a reliable system for calculating taxes.",
+    "hebEx": "אנו צריכים מערכת אמינה לחישוב מסים."
+  },
+  {
+    "word": "Century",
+    "meaning": "מֵאָה (100 שָׁנִים)",
+    "phonetic": "סֶנְצ'וּרִי",
+    "visual": "💯",
+    "exp": "תקופת זמן של מאה שנים.",
+    "engEx": "The telephone was invented in the 19th century.",
+    "hebEx": "הטלפון הומצא במאה ה-19."
+  },
+  {
+    "word": "Curiosity",
+    "meaning": "סַקְרָנוּת",
+    "phonetic": "קְיוּרִיאוֹסִיטִי",
+    "visual": "🤔",
+    "exp": "רצון עז לדעת או ללמוד משהו.",
+    "engEx": "His curiosity led him to read many books.",
+    "hebEx": "הסקרנות שלו הובילה אותו לקרוא ספרים רבים."
+  },
+  {
+    "word": "Breakthrough",
+    "meaning": "פְּרִיצַת דֶּרֶךְ",
+    "phonetic": "בְּרֵיְקְת'רוּ",
+    "visual": "🚀",
+    "exp": "התקדמות חשובה ופתאומית, גילוי משמעותי.",
+    "engEx": "The discovery of penicillin was a major medical breakthrough.",
+    "hebEx": "גילוי הפניצילין היה פריצת דרך רפואית גדולה."
+  },
+  {
+    "word": "Combine",
+    "meaning": "לְשַׁלֵּב, לְחַבֵּר",
+    "phonetic": "קוֹמְבַּיִן",
+    "visual": "🔗",
+    "exp": "לחבר שני דברים או יותר ליצירת דבר אחד.",
+    "engEx": "You can combine these simple parts to build a machine.",
+    "hebEx": "אתה יכול לשלב את החלקים הפשוטים האלה כדי לבנות מכונה."
+  },
+  {
+    "word": "Process",
+    "meaning": "לְעַבֵּד (גַּם: תַּהֲלִיךְ)",
+    "phonetic": "פְּרוֹסֶס",
+    "visual": "🔄",
+    "exp": "לבצע סדרת פעולות על נתונים או חומרים כדי לקבל תוצאה.",
+    "engEx": "The computer can process huge amounts of data quickly.",
+    "hebEx": "המחשב יכול לעבד כמויות עצומות של נתונים במהירות."
+  },
+  {
+    "word": "Voltage",
+    "meaning": "מֶתַח חַשְׁמַלִּי",
+    "phonetic": "ווֹלְטֶג'",
+    "visual": "⚡",
+    "exp": "ההפרש בפוטנציאל החשמלי שדוחף את האלקטרונים.",
+    "engEx": "The battery supplies a voltage of 1.5 volts.",
+    "hebEx": "הסוללה מספקת מתח של 1.5 וולט."
+  },
+  {
+    "word": "Current",
+    "meaning": "זֶרֶם",
+    "phonetic": "קָארֶנְט",
+    "visual": "🌊",
+    "exp": "תנועה או זרימה, למשל של אלקטרונים (זרם חשמלי).",
+    "engEx": "The electrical current flows through the wire.",
+    "hebEx": "הזרם החשמלי זורם דרך החוט."
+  },
+  {
+    "word": "Circuit",
+    "meaning": "מַעְגָּל (חַשְׁמַלִּי)",
+    "phonetic": "סִירְקוּט",
+    "visual": "🔌",
+    "exp": "מסלול סגור דרכו יכול לעבור זרם חשמלי.",
+    "engEx": "If you break the circuit, the light will turn off.",
+    "hebEx": "אם תשבור את המעגל, האור יכבה."
+  },
+  {
+    "word": "Absence",
+    "meaning": "הֵעָדְרוּת, חֹסֶר",
+    "phonetic": "אַבְּסֶנְס",
+    "visual": "🕳️",
+    "exp": "מצב שבו משהו או מישהו אינו נמצא.",
+    "engEx": "Zero often represents the absence of a signal.",
+    "hebEx": "אפס מייצג לעיתים קרובות היעדרות של אות."
+  },
+  {
+    "word": "Presence",
+    "meaning": "נוֹכְחוּת",
+    "phonetic": "פְּרֶזֶנְס",
+    "visual": "📍",
+    "exp": "מצב שבו משהו או מישהו נמצא במקום מסוים.",
+    "engEx": "The alarm detects the presence of smoke.",
+    "hebEx": "האזעקה מזהה נוכחות של עשן."
+  },
+  {
+    "word": "Fluctuation",
+    "meaning": "תְּנוּדָה, שִׁינּוּי לֹא יַצִּיב",
+    "phonetic": "פְלַקְצ'וּאֵיְשֶׁן",
+    "visual": "📈",
+    "exp": "שינוי תכוף ברמה או בערך, עליות וירידות.",
+    "engEx": "Small fluctuations in voltage can cause errors.",
+    "hebEx": "תנודות קטנות במתח יכולות לגרום לשגיאות."
+  },
+  {
+    "word": "Interference",
+    "meaning": "הַפְרָעָה",
+    "phonetic": "אִינְטֶרְפִירֶנְס",
+    "visual": "📻",
+    "exp": "מצב שבו משהו מפריע לפעולה התקינה של דבר אחר.",
+    "engEx": "The radio signal was lost due to electrical interference.",
+    "hebEx": "אות הרדיו אבד עקב הפרעה חשמלית."
+  },
+  {
+    "word": "Analogy",
+    "meaning": "אָנָלוֹגְיָה, הַקְבָּלָה",
+    "phonetic": "אָנָלוֹגְיָה",
+    "visual": "⚖️",
+    "exp": "השוואה בין שני דברים שונים כדי להסביר רעיון משותף.",
+    "engEx": "He used the analogy of a water pipe to explain electricity.",
+    "hebEx": "הוא השתמש בהקבלה של צינור מים כדי להסביר חשמל."
+  },
+  {
+    "word": "Flow",
+    "meaning": "זְרִימָה, לִזְרֹם",
+    "phonetic": "פְלוֹאוּ",
+    "visual": "〰️",
+    "exp": "תנועה חלקה ורציפה של חומר (כמו מים או חשמל).",
+    "engEx": "The water flows down the river.",
+    "hebEx": "המים זורמים במורד הנהר."
+  },
+  {
+    "word": "Gate",
+    "meaning": "שַׁעַר (לוֹגִי)",
+    "phonetic": "גֵיְט",
+    "visual": "🚪",
+    "exp": "מעגל חשמלי שמבצע פעולה לוגית פשוטה.",
+    "engEx": "An AND gate produces an output of 1 only when both inputs are 1.",
+    "hebEx": "שער AND מפיק פלט של 1 רק כאשר שני הקלטים הם 1."
+  },
+  {
+    "word": "Transistor",
+    "meaning": "טְרַנְזִיסְטוֹר",
+    "phonetic": "טְרַנְזִיסְטוֹר",
+    "visual": "📻",
+    "exp": "רכיב שמשמש כמתג ויכול לאפשר או לחסום זרם חשמלי.",
+    "engEx": "A modern processor may contain billions of transistors acting as switches.",
+    "hebEx": "מעבד מודרני עשוי להכיל מיליארדי טרנזיסטורים הפועלים כמתגים."
+  },
+  {
+    "word": "State",
+    "meaning": "מַצָּב",
+    "phonetic": "סְטֵיְט",
+    "visual": "🚦",
+    "exp": "צורה מסוימת או אופן שבו משהו נמצא בזמן נתון (כמו דלוק או כבוי).",
+    "engEx": "These two stable states made binary an ideal choice for electronic devices.",
+    "hebEx": "שני המצבים היציבים האלה הפכו את הבינארי לבחירה אידיאלית עבור מכשירים אלקטרוניים."
+  },
+  {
+    "word": "Distinguish",
+    "meaning": "לְהַבְחִין",
+    "phonetic": "דִּיסְטִינְגְוִוישׁ",
+    "visual": "🔍",
+    "exp": "היכולת לשים לב להבדל בין שני דברים או יותר.",
+    "engEx": "With only two states, devices can easily distinguish between them.",
+    "hebEx": "עם שני מצבים בלבד, מכשירים יכולים בקלות להבחין ביניהם."
+  },
+  {
+    "word": "Switch",
+    "meaning": "מֶתֶג",
+    "phonetic": "סְוִויצ'",
+    "visual": "🎚️",
+    "exp": "רכיב המאפשר להפעיל או לכבות זרימת חשמל.",
+    "engEx": "A switch can be either OFF or ON.",
+    "hebEx": "מתג יכול להיות כבוי או דלוק."
+  },
+  {
+    "word": "Input",
+    "meaning": "קֶלֶט",
+    "phonetic": "אִינְפּוּט",
+    "visual": "📥",
+    "exp": "מידע או אות שנכנס למערכת כדי לעבור עיבוד.",
+    "engEx": "Logic gates perform simple decisions based on binary inputs.",
+    "hebEx": "שערים לוגיים מבצעים החלטות פשוטות המבוססות על קלטים בינאריים."
+  },
+  {
+    "word": "Output",
+    "meaning": "פֶּלֶט",
+    "phonetic": "אָאוּטְפּוּט",
+    "visual": "📤",
+    "exp": "התוצאה או המידע שיוצא מהמערכת לאחר העיבוד.",
+    "engEx": "An OR gate produces an output of 1 when at least one input is 1.",
+    "hebEx": "שער OR מפיק פלט של 1 כאשר לפחות קלט אחד הוא 1."
+  },
+  {
+    "word": "Pitch",
+    "meaning": "גּוֹבַהּ צְלִיל",
+    "phonetic": "פִּיץ'",
+    "visual": "🎵",
+    "exp": "התכונה של צליל שקובעת אם הוא נשמע גבוה או נמוך, נקבעת על ידי התדר שלו.",
+    "engEx": "Every musical note has a specific frequency that determines its pitch.",
+    "hebEx": "לכל תו מוזיקלי יש תדר ספציפי שקובע את גובה הצליל שלו."
+  },
+  {
+    "word": "Frequency",
+    "meaning": "תֶּדֶר, תְּדִירוּת",
+    "phonetic": "פְרִיקְוֶנְסִי",
+    "visual": "〰️",
+    "exp": "מספר הפעמים שגל או רטט מתרחש בשנייה אחת, נמדד בהרץ (Hz).",
+    "engEx": "The frequency of the vocal fold vibrations is measured in Hertz.",
+    "hebEx": "תדר הרעידות של מיתרי הקול נמדד בהרץ."
+  },
+  {
+    "word": "Vibration",
+    "meaning": "רֶטֶט, תְּנוּדָה",
+    "phonetic": "וַיְבְּרֵיְשֶׁן",
+    "visual": "📳",
+    "exp": "תנועה מהירה וחוזרת קדימה ואחורה, כמו של מיתרי הקול או מיתר של גיטרה.",
+    "engEx": "The brain transforms physical vibrations into the experience we call music.",
+    "hebEx": "המוח הופך רטט פיזי לחוויה שאנחנו קוראים לה מוזיקה."
+  },
+  {
+    "word": "Larynx",
+    "meaning": "תֵּיבַת קוֹל, גָּרוֹן",
+    "phonetic": "לָארִינְקְס",
+    "visual": "🗣️",
+    "exp": "האיבר בגרון שמכיל את מיתרי הקול ומפיק את הצליל הבסיסי.",
+    "engEx": "Everything starts in the larynx, also known as the voice box.",
+    "hebEx": "הכל מתחיל בתיבת הקול, הידועה גם כקופסת הקול."
+  },
+  {
+    "word": "Tissue",
+    "meaning": "רִקְמָה",
+    "phonetic": "טִישׁוּ",
+    "visual": "🧬",
+    "exp": "קבוצה של תאים דומים שיוצרים חלק מהגוף (כמו שריר, עור או מיתרי קול).",
+    "engEx": "Inside the larynx are two flexible bands of tissue called vocal folds.",
+    "hebEx": "בתוך תיבת הקול ישנן שתי רצועות רקמה גמישות הנקראות מיתרי הקול."
+  },
+  {
+    "word": "Tension",
+    "meaning": "מֶתַח, מְתִיחוּת",
+    "phonetic": "טֶנְשֶׁן",
+    "visual": "🪢",
+    "exp": "המצב של להיות מתוח או הדוק. במיתרי הקול זה משפיע על גובה הצליל.",
+    "engEx": "The brain adjusts the tension of the vocal folds with remarkable precision.",
+    "hebEx": "המוח מתאים את המתח של מיתרי הקול בדיוק יוצא דופן."
+  },
+  {
+    "word": "Precision",
+    "meaning": "דִּיּוּק",
+    "phonetic": "פְּרִיסִיזֶ'ן",
+    "visual": "🎯",
+    "exp": "האיכות של להיות מדויק לחלוטין וללא שגיאות.",
+    "engEx": "A professional singer can control their voice with remarkable precision.",
+    "hebEx": "זמר מקצועי יכול לשלוט בקולו בדיוק יוצא דופן."
+  },
+  {
+    "word": "Elasticity",
+    "meaning": "גְּמִישׁוּת, אֶלַסְטִיּוּת",
+    "phonetic": "אֵלַסְטִיסִיטִי",
+    "visual": "🪀",
+    "exp": "היכולת של חומר לחזור לצורתו המקורית לאחר שנמתח או נדחס.",
+    "engEx": "Immediately afterward, their natural elasticity pulls them back together.",
+    "hebEx": "מיד לאחר מכן, הגמישות הטבעית שלהם מושכת אותם חזרה יחד."
+  },
+  {
+    "word": "Pressure",
+    "meaning": "לַחַץ",
+    "phonetic": "פְּרֶשֶׁר",
+    "visual": "🎈",
+    "exp": "הכוח המופעל על שטח מסוים, כמו אוויר שדוחף מלמטה כדי לפתוח את מיתרי הקול.",
+    "engEx": "The vocal folds close together while air pressure builds beneath them.",
+    "hebEx": "מיתרי הקול נסגרים יחד בזמן שלחץ אוויר נבנה תחתיהם."
+  },
+  {
+    "word": "Exceptional",
+    "meaning": "יוֹצֵא דֹּפֶן, חָרִיג",
+    "phonetic": "אֶקְסֶפְּשׁוֹנַל",
+    "visual": "🌟",
+    "exp": "משהו בלתי רגיל, מצוין או נדיר מאוד (כמו זמרת שיכולה להגיע לתדרים גבוהים במיוחד).",
+    "engEx": "Exceptional sopranos can reach notes of approximately 1,246 Hz.",
+    "hebEx": "זמרות סופרן יוצאות דופן יכולות להגיע לצלילים של כ-1,246 הרץ."
+  },
+  {
+    "word": "Burst",
+    "meaning": "פֶּרֶץ, הִתְפָּרְצוּת",
+    "phonetic": "בֶּרְסְט",
+    "visual": "💥",
+    "exp": "שחרור פתאומי ומהיר של משהו, כמו אוויר שפורץ החוצה ממיתרי הקול.",
+    "engEx": "Each time the vocal folds open, they push a small burst of air outward.",
+    "hebEx": "בכל פעם שמיתרי הקול נפתחים, הם דוחפים פרץ קטן של אוויר החוצה."
+  },
+  {
+    "word": "Compress",
+    "meaning": "לִדְחֹס",
+    "phonetic": "קוֹמְפְּרֶס",
+    "visual": "🗜️",
+    "exp": "ללחוץ משהו יחד למקום קטן יותר. בגלי קול, זה יוצר אזור של לחץ גבוה.",
+    "engEx": "This creates alternating areas of compressed and expanded air molecules.",
+    "hebEx": "זה יוצר אזורים מתחלפים של מולקולות אוויר דחוסות ומורחבות."
+  },
+  {
+    "word": "Expand",
+    "meaning": "לְהַרְחִיב, לְהִתְרַחֵב",
+    "phonetic": "אֶקְסְפֶּנְד",
+    "visual": "↔️",
+    "exp": "לגדול בנפח או להתפשט על פני שטח גדול יותר.",
+    "engEx": "Sound waves consist of areas where the air molecules expand and compress.",
+    "hebEx": "גלי קול מורכבים מאזורים שבהם מולקולות האוויר מתרחבות ונדחסות."
+  },
+  {
+    "word": "Amplitude",
+    "meaning": "מִשְׂרַעַת, אַמְפְּלִיטוּדָה",
+    "phonetic": "אָמְפְּל��יטְיוּד",
+    "visual": "📏",
+    "exp": "הגודל או הגובה של גל. בקול, המשרעת קובעת את עוצמת הקול (Loudness).",
+    "engEx": "More air creates larger sound waves with greater amplitude, making the sound louder.",
+    "hebEx": "יותר אוויר יוצר גלי קול גדולים יותר עם משרעת גדולה יותר, מה שהופך את הקול לחזק יותר."
+  },
+  {
+    "word": "Sustain",
+    "meaning": "לְהַחְזִיק (צְלִיל), לְשַׁמֵּר",
+    "phonetic": "סַסְטֵיְן",
+    "visual": "⏳",
+    "exp": "להמשיך או להחזיק משהו לאורך זמן מבלי שייפסק.",
+    "engEx": "A singer may sustain a note for several seconds without changing its pitch.",
+    "hebEx": "זמר עשוי להחזיק תו למשך מספר שניות מבלי לשנות את גובה הצליל שלו."
+  },
+  {
+    "word": "Constant",
+    "meaning": "קָבוּעַ",
+    "phonetic": "קוֹנְסְטַנְט",
+    "visual": "➖",
+    "exp": "משהו שנשאר אותו דבר ולא משתנה לאורך זמן.",
+    "engEx": "During this time, the vibration frequency stays constant.",
+    "hebEx": "במהלך הזמן הזה, תדר הרטט נשאר קבוע."
+  },
+  {
+    "word": "Octave",
+    "meaning": "אוֹקְטָבָה (מִרְוָח מוּזִיקָלִי)",
+    "phonetic": "אוֹקְטָבָה",
+    "visual": "🎹",
+    "exp": "מרווח מוזיקלי שבו התדר של התו הגבוה הוא בדיוק כפול מהתדר של התו הנמוך.",
+    "engEx": "Moving one octave higher makes the frequency exactly twice as high.",
+    "hebEx": "מעבר אוקטבה אחת למעלה הופך את התדר לגבוה פי שניים בדיוק."
+  },
+  {
+    "word": "Recognize",
+    "meaning": "לְזַהוֹת",
+    "phonetic": "רֶקוֹגְנַיְז",
+    "visual": "💡",
+    "exp": "לדעת מה משהו או מישהו מכיוון שראית או שמעת אותו בעבר.",
+    "engEx": "Our ears recognize both notes as the same musical note, just in different octaves.",
+    "hebEx": "האוזניים שלנו מזהות את שני התווים כאותו תו מוזיקלי, פשוט באוקטבות שונות."
+  },
+  {
+    "word": "Range",
+    "meaning": "טְוָח",
+    "phonetic": "רֵיְנְג'",
+    "visual": "📏",
+    "exp": "המרחק בין הגבול העליון לתחתון. למשל, הטווח הקולי של זמר (מהנמוך לגבוה ביותר).",
+    "engEx": "Notes across different vocal ranges still sound closely related.",
+    "hebEx": "תווים על פני טווחי קול שונים עדיין נשמעים קשורים זה לזה."
+  },
+  {
+    "word": "Determine",
+    "meaning": "לִקְבֹּעַ, לְהַחְלִיט",
+    "phonetic": "דִיטֶרְמִין",
+    "visual": "⚖️",
+    "exp": "לשלוט או להשפיע באופן ישיר על התוצאה של משהו.",
+    "engEx": "The frequency of the vibrations determines how close together the waves are.",
+    "hebEx": "תדר הרעידות קובע עד כמה הגלים קרובים זה לזה."
+  },
+  {
+    "word": "Spiral",
+    "meaning": "סְפִּירָלָה, לוּלְיָן",
+    "phonetic": "סְפַּיְרַל",
+    "visual": "🌀",
+    "exp": "צורה שמתעקלת בסיבובים ההולכים וקטנים או גדלים, כמו קונכייה של חילזון.",
+    "engEx": "The cochlea is a spiral-shaped organ located inside the inner ear.",
+    "hebEx": "שבלול האוזן הוא איבר בצורת ספירלה הממוקם בתוך האוזן הפנימית."
+  },
+  {
+    "word": "Fluid",
+    "meaning": "נוֹזֵל",
+    "phonetic": "פְלוּאִיד",
+    "visual": "💧",
+    "exp": "חומר שיכול לזרום ולשנות צורה, כמו מים. שבלול האוזן מלא בנוזל.",
+    "engEx": "The cochlea is filled with fluid and contains thousands of hair cells.",
+    "hebEx": "שבלול האוזן מלא בנוזל ומכיל אלפי תאי שערה."
+  },
+  {
+    "word": "Microscopic",
+    "meaning": "מִיקְרוֹסְקוֹפִּי, זָעִיר",
+    "phonetic": "מַיְקְרוֹסְקוֹפִּיק",
+    "visual": "🔬",
+    "exp": "כל כך קטן שאי אפשר לראותו בעין רגילה, אלא רק בעזרת מיקרוסקופ.",
+    "engEx": "These microscopic hair cells act like a precise biological keyboard.",
+    "hebEx": "תאי השערה המיקרוסקופיים האלה פועלים כמו מקלדת ביולוגית מדויקת."
+  },
+  {
+    "word": "Sensory",
+    "meaning": "תְּחוּשָׁתִי, חִישָׁתִי",
+    "phonetic": "סֶנְסוֹרִי",
+    "visual": "🖐️",
+    "exp": "קשור לחושים הפיזיים (ראייה, שמיעה, מגע, טעם וריח).",
+    "engEx": "Tiny sensory cells respond to different frequencies of sound.",
+    "hebEx": "תאים תחושתיים זעירים מגיבים לתדרים שונים של קול."
+  },
+  {
+    "word": "Stimulate",
+    "meaning": "לְגָרוֹת, לְעוֹרֵר",
+    "phonetic": "סְטִימְיוּלֵיְט",
+    "visual": "⚡",
+    "exp": "לגרום לפעולה או לתגובה בחלק כלשהו בגוף או במערכת.",
+    "engEx": "High-frequency sounds travel farther inside and stimulate the shorter hair cells.",
+    "hebEx": "צלילים בתדר גבוה מטיילים רחוק יותר פנימה ומגרים את תאי השערה הקצרים יותר."
+  },
+  {
+    "word": "Stiff",
+    "meaning": "נוּקְשֶׁה",
+    "phonetic": "סְטִיף",
+    "visual": "📏",
+    "exp": "קשיח ולא מתכופף בקלות. התאים שמזהים תדרים גבוהים הם קצרים ונוקשים יותר.",
+    "engEx": "The shorter, stiffer hair cells are located deeper within the cochlea.",
+    "hebEx": "תאי השערה הקצרים והנוקשים יותר ממוקמים עמוק יותר בתוך שבלול האוזן."
+  },
+  {
+    "word": "Convert",
+    "meaning": "לְהָמִיר",
+    "phonetic": "קוֹנְוֶרְט",
+    "visual": "🔄",
+    "exp": "לשנות משהו מצורה אחת לצורה אחרת (למשל תנועה פיזית לאותות חשמליים).",
+    "engEx": "When these cells move, they convert mechanical motion into electrical signals.",
+    "hebEx": "כאשר התאים האלה זזים, הם ממירים תנועה מכנית לאותות חשמליים."
+  },
+  {
+    "word": "Mechanical",
+    "meaning": "מֶכָנִי",
+    "phonetic": "מֶקָנִיקַל",
+    "visual": "⚙️",
+    "exp": "קשור לתנועה פיזית או למכונות. גלי הקול יוצרים תנועה מכנית באוזן.",
+    "engEx": "The ear transforms mechanical vibrations into information the brain can understand.",
+    "hebEx": "האוזן הופכת רעידות מכניות למידע שהמוח יכול להבין."
+  },
+  {
+    "word": "Nerve",
+    "meaning": "עָצָב",
+    "phonetic": "נֶרְב",
+    "visual": "🧠",
+    "exp": "סיבים המעבירים אותות בין המוח לבין חלקי הגוף השונים.",
+    "engEx": "The electrical signals travel through the auditory nerve to the brain.",
+    "hebEx": "האותות החשמליים נוסעים דרך עצב השמיעה אל המוח."
+  },
+  {
+    "word": "Perceive",
+    "meaning": "לִקְלֹט (בַּחוּשִׁים), לְהַבְחִין",
+    "phonetic": "פֶּרְסִיו",
+    "visual": "👁️",
+    "exp": "לשים לב או להיות מודע למשהו בעזרת החושים, או להבין אותו בצורה מסוימת.",
+    "engEx": "The article explains how humans perceive pitch.",
+    "hebEx": "המאמר מסביר כיצד בני אדם קולטים גובה צליל."
+  },
+  {
+    "word": "Interpret",
+    "meaning": "לְפָרֵשׁ",
+    "phonetic": "אִינְטֶרְפְּרֶט",
+    "visual": "🧩",
+    "exp": "להבין את המשמעות של מידע מסוים. המוח שלנו מפרש תדרים כצלילים.",
+    "engEx": "The human brain does not interpret pitch in a simple linear way.",
+    "hebEx": "המוח האנושי אינו מפרש גובה צליל בדרך ליניארית פשוטה."
+  },
+  {
+    "word": "Linear",
+    "meaning": "לִינֵאָרִי, קַוִּי",
+    "phonetic": "לִינִיאָר",
+    "visual": "📈",
+    "exp": "מתקדם בצורה ישרה וקבועה צעד אחר צעד. השמיעה שלנו לא עובדת באופן ליניארי אלא יחסית.",
+    "engEx": "A linear increase means adding the same amount every time.",
+    "hebEx": "עלייה ליניארית משמעותה הוספת אותה כמות בכל פעם."
+  },
+  {
+    "word": "Logarithmic",
+    "meaning": "לוֹגָרִיתְמִי",
+    "phonetic": "לוֹגָרִיתְמִיק",
+    "visual": "📉",
+    "exp": "דפוס המבוסס על מכפלות. בשמיעה שלנו, עלייה באוקטבה מתקבלת כשהתדר מוכפל, לא כשמוסיפים לו כמות קבועה.",
+    "engEx": "Our hearing follows a logarithmic pattern rather than a direct scale.",
+    "hebEx": "השמיעה שלנו עוקבת אחר תבנית לוגריתמית ולא סולם ישיר."
+  },
+  {
+    "word": "Scale",
+    "meaning": "סֻלָּם (מוּזִיקָלִי אוֹ מִדָּה)",
+    "phonetic": "סְקֵיְל",
+    "visual": "⚖️",
+    "exp": "סדרה של תווים מוזיקליים, או מערכת למדידה והשוואה.",
+    "engEx": "This explains why the musical scale is organized into octaves.",
+    "hebEx": "זה מסביר מדוע הסולם המוזיקלי מאורגן לאוקטבות."
+  },
+  {
+    "word": "Factor",
+    "meaning": "גוֹרֵם, מְקַדֵּם (בְּמַכְפֵּלָה)",
+    "phonetic": "פַקְטוֹר",
+    "visual": "✖️",
+    "exp": "במתמטיקה, מספר שבו מכפילים מספר אחר ('פי שתיים' = פקטור של 2).",
+    "engEx": "Frequencies that differ by a factor of two sound naturally related.",
+    "hebEx": "תדרים ששונים בפקטור של שניים נשמעים קשורים באופן טבעי."
+  },
+  {
+    "word": "Delicate",
+    "meaning": "עָדִין, שַׁבְרִירִי",
+    "phonetic": "דֶלִיקֵיְט",
+    "visual": "🌸",
+    "exp": "משהו שיכול להישבר או להיפגע בקלות רבה (כמו תאי השערה באוזן).",
+    "engEx": "As people age, the delicate hair cells gradually wear out.",
+    "hebEx": "ככל שאנשים מתבגרים, תאי השערה העדינים נשחקים בהדרגה."
+  },
+  {
+    "word": "Gradually",
+    "meaning": "בְּהַדְרָגָה",
+    "phonetic": "גְרָג'וּאָלִי",
+    "visual": "⏳",
+    "exp": "קורה לאט לאט ולאורך זמן, שלב אחר שלב.",
+    "engEx": "Our ability to detect high frequencies gradually decreases over the years.",
+    "hebEx": "היכולת שלנו לזהות תדרים גבוהים פוחתת בהדרגה לאורך השנים."
+  },
+  {
+    "word": "Wear out",
+    "meaning": "לְהִשָּׁחֵק, לִבְלוֹת",
+    "phonetic": "וֶר אַאוּט",
+    "visual": "🏚️",
+    "exp": "להפוך לישן ופגום כתוצאה משימוש רב או לאורך זמן.",
+    "engEx": "If parts in a machine wear out, they must be replaced.",
+    "hebEx": "אם חלקים במכונה נשחקים, יש להחליף אותם."
+  },
+  {
+    "word": "Regenerate",
+    "meaning": "לְהִתְחַדֵּשׁ, לְהִשְׁתַּקֵּם",
+    "phonetic": "רִיגֶ'נֶרֵיְט",
+    "visual": "🌱",
+    "exp": "לגדול מחדש או לרפא את עצמו אחרי פגיעה.",
+    "engEx": "Unfortunately, the sensory cells in our ears cannot regenerate.",
+    "hebEx": "לרוע המזל, התאים התחושתיים באוזנינו לא יכולים להתחדש."
+  },
+  {
+    "word": "Theoretical",
+    "meaning": "תֵּאוֹרֵטִי",
+    "phonetic": "תֵּאוֹרֶטִיקַל",
+    "visual": "📐",
+    "exp": "קשור לתיאוריה ולרעיונות, להבדיל משימוש מעשי.",
+    "engEx": "The binary system transformed from a theoretical concept into modern computing.",
+    "hebEx": "המערכת הבינארית הפכה ממושג תאורטי למחשוב מודרני."
+  },
+  {
+    "word": "Encode",
+    "meaning": "לְקַדֵּד",
+    "phonetic": "אִינְקוֹד",
+    "visual": "🔡",
+    "exp": "להמיר מידע (כמו טקסט) לפורמט אחר כדי שמחשב יוכל לאחסן אותו.",
+    "engEx": "We can encode text into binary data so the computer can process it.",
+    "hebEx": "אנחנו יכולים לקודד טקסט לנתונים בינאריים כדי שהמחשב יוכל לעבד אותו."
+  },
+  {
+    "word": "Execute",
+    "meaning": "לְבַצֵּעַ / ל��הוֹצִיא לַפֹּעַל",
+    "phonetic": "אֶקְזֶקְיוּט",
+    "visual": "▶️",
+    "exp": "להריץ תוכנית במחשב או לממש פקודה.",
+    "engEx": "Binary numbers enable computers to execute programs.",
+    "hebEx": "מספרים בינאריים מאפשרים למחשבים לבצע תוכניות."
+  },
+  {
+    "word": "Transform",
+    "meaning": "לְשַׁנּוֹת צוּרָה / לְהַתְמִיר",
+    "phonetic": "טְרַנְסְפוֹרְם",
+    "visual": "🦋",
+    "exp": "לשנות משהו בצורה משמעותית למשהו חדש או שונה.",
+    "engEx": "The binary system transformed from a mathematical idea into a practical technology.",
+    "hebEx": "המערכת הבינארית השתנתה מרעיון מתמטי לטכנולוגיה מעשית."
+  }
+]

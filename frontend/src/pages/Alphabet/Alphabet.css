@@ -1,0 +1,25 @@
+/* Alphabet page styles */
+.alphabet-header {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+
+.alphabet-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  font-weight: 800;
+  margin-bottom: 0.5rem;
+  background: linear-gradient(135deg, #ffffff 0%, #d8b4fe 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.alphabet-subtitle {
+  color: #c4b5fd;
+  font-size: 1.125rem;
+}
+
+.alphabet-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1.5rem;
+}

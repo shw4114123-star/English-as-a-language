@@ -1,0 +1,16 @@
+/* Layout styles with dark techno violet backdrop */
+.layout-wrapper {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background-color: #0b0720;
+  color: #f1f0fb;
+  position: relative;
+}
+
+.layout-main {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}

@@ -24,12 +24,15 @@ export async function getProgressByUserIdDAL(userId) {
 
 export async function updateProgressByUserIdDAL(userId, updateData) {
     const progress = db.collection("progress");
-    updateData.updatedAt = new Date();
+    if (!updateData.$set) {
+        updateData.$set = {};
+    }
+    updateData.$set.updatedAt = new Date();
 
     const res = await progress.findOneAndUpdate(
         { userId: new ObjectId(userId) },
         updateData,
-        { returnDocument: 'after', upsert: true }
+        { returnDocument: 'after' }
     );
     return res;
 }

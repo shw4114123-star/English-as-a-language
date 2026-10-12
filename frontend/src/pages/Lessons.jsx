@@ -23,11 +23,44 @@ export const Lessons = () => {
 
     // בדיקה האם שיעור מסוים כבר הושלם על ידי המשתמש
     const isCompleted = (lessonId) => {
-        return progress?.completedLessons?.includes(lessonId);
+        return Boolean(progress?.completedLessons?.some(id => String(id) === String(lessonId)));
     };
+
+    const completedCount = lessons.filter(l => isCompleted(l._id)).length;
+    const progressPercent = lessons.length > 0 ? Math.round((completedCount / lessons.length) * 100) : 0;
 
     return (
         <div className="container py-5 fade-in">
+            {/* Overall Course Progress Banner */}
+            {lessons.length > 0 && (
+                <div className="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)' }}>
+                    <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
+                        <div>
+                            <div className="d-flex align-items-center gap-2 mb-1">
+                                <span className="fs-5">🎯</span>
+                                <h5 className="fw-bold mb-0">Course Completion Progress</h5>
+                            </div>
+                            <p className="text-white-50 mb-0 small">
+                                You have completed <strong className="text-white">{completedCount}</strong> of <strong className="text-white">{lessons.length}</strong> lessons ({progressPercent}%)
+                            </p>
+                        </div>
+                        <div className="d-flex align-items-center gap-3" style={{ minWidth: '220px' }}>
+                            <div className="progress flex-grow-1 bg-white bg-opacity-25" style={{ height: '10px', borderRadius: '10px' }}>
+                                <div
+                                    className="progress-bar bg-warning progress-bar-striped progress-bar-animated"
+                                    role="progressbar"
+                                    style={{ width: `${progressPercent}%` }}
+                                    aria-valuenow={progressPercent}
+                                    aria-valuemin="0"
+                                    aria-valuemax="100"
+                                ></div>
+                            </div>
+                            <span className="fw-bold text-warning">{progressPercent}%</span>
+                        </div>
+                    </div>
+                </div>
+            )}
+
             <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
                 <div>
                     <h2 className="fw-bold text-dark mb-1">Interactive Lessons</h2>
@@ -61,7 +94,7 @@ export const Lessons = () => {
 
             {!loading && filteredLessons.length === 0 && (
                 <div className="card border-0 shadow-sm rounded-4 p-5 text-center text-muted">
-                    <div className="text-5xl mb-3">📚</div>
+                    <div className="text-5xl mb-3"></div>
                     <h4>No lessons found for this level</h4>
                     <p>New lessons will be added soon by teachers!</p>
                 </div>

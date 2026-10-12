@@ -150,7 +150,7 @@ export const LessonDetails = () => {
                                                 className="btn btn-outline-info btn-sm rounded-pill"
                                                 onClick={() => handleInspectWord(w.word)}
                                             >
-                                                📖 Translate
+                                                Translate
                                             </button>
                                         </div>
                                     </div>
@@ -243,13 +243,22 @@ export const LessonDetails = () => {
             {/* STEP 1: QUIZ EXERCISE */}
             {step === 1 && questions.length > 0 && (
                 <div className="card shadow-sm border-0 rounded-4 p-4 p-md-5">
-                    <div className="d-flex justify-content-between align-items-center mb-3">
+                    <div className="d-flex justify-content-between align-items-center mb-2">
                         <span className="badge bg-secondary-subtle text-secondary fw-semibold">
                             Exercise {currentQuestionIndex + 1} of {questions.length}
                         </span>
                         <span className="badge bg-info-subtle text-info fw-semibold">
                             Score: {quizScore}
                         </span>
+                    </div>
+
+                    {/* Progress Bar for Quiz */}
+                    <div className="progress mb-4" style={{ height: '6px', borderRadius: '6px' }}>
+                        <div
+                            className="progress-bar bg-primary"
+                            role="progressbar"
+                            style={{ width: `${Math.round(((currentQuestionIndex + 1) / questions.length) * 100)}%` }}
+                        ></div>
                     </div>
 
                     <h4 className="fw-bold mb-4 text-dark">

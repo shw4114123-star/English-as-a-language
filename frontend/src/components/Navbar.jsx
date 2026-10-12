@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../store/authStore';
+import { useProgressApi } from '../hooks/useProgressApi';
 
 export const Navbar = () => {
     const { isAuthenticated, currentUser, logout } = useAuthStore();
+    const { progress, fetchProgress } = useProgressApi();
     const navigate = useNavigate();
     const location = useLocation();
+
+    useEffect(() => {
+        if (isAuthenticated) {
+            fetchProgress();
+        }
+    }, [isAuthenticated, location.pathname]);
 
     const handleLogout = () => {
         logout();
@@ -71,6 +79,16 @@ export const Navbar = () => {
                 <div className="d-flex align-items-center gap-2 flex-wrap">
                     {isAuthenticated ? (
                         <>
+                            {progress && (
+                                <span
+                                    onClick={() => navigate('/dashboard')}
+                                    className="badge bg-warning text-dark px-3 py-2 rounded-pill fw-bold shadow-sm"
+                                    style={{ cursor: 'pointer' }}
+                                    title="View My Dashboard Progress"
+                                >
+                                    ⭐ {progress.xp || 0} XP
+                                </span>
+                            )}
                             <span className="badge bg-white text-primary px-3 py-2 rounded-pill fw-semibold shadow-sm">
                                 {currentUser?.userName || 'User'}
                                 {currentUser?.role && currentUser.role !== 'student' && (

@@ -1,4 +1,5 @@
 import React from 'react';
+import "./letterCard.css"
 
 export const LetterCard = ({ letter, word, imageSrc, audioSrc }) => {
     const playAudio = () => {
@@ -17,7 +18,7 @@ export const LetterCard = ({ letter, word, imageSrc, audioSrc }) => {
         <div className="card shadow-sm border-0 rounded-4 text-center overflow-hidden transition-all duration-300 hover:-translate-y-2 hover:shadow-lg h-100">
             <div className="bg-light p-4 d-flex align-items-center justify-content-center" style={{ height: '150px' }}>
                 {imageSrc ? (
-                    <img src={imageSrc} alt={`${word} drawing`} className="img-fluid max-h-full" />
+                    <img src={imageSrc} alt={`${word} drawing`} className="img" />
                 ) : (
                     <div className="text-muted small">Image for {letter}</div>
                 )}

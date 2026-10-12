@@ -1,12 +1,32 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+  
+:root {
+  --primary-color: #70FFD2;
+  --secondary-color: #FFFC8C;
+  --accent-color: #FFCC4D;
+  --background-color: #FF9137;
+  --text-color: #1e293b;
+}
+
+
 
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
+
+    background-image: url(Sleep.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-width: 100vh;
+
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }

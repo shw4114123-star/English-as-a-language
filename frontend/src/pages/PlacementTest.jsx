@@ -177,7 +177,7 @@ export const PlacementTest = () => {
         return (
             <div className="container py-5 max-w-2xl mx-auto">
                 <div className="card shadow-lg border-0 rounded-4 overflow-hidden p-5 text-center">
-                    <div className="text-6xl mb-4">🎉</div>
+                    <div className="text-6xl mb-4"></div>
                     <h2 className="fw-bold mb-3 text-dark">Placement Test Completed!</h2>
                     <p className="text-muted fs-5 mb-4">Here are your diagnostic results:</p>
 

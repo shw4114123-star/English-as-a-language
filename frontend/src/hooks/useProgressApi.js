@@ -9,11 +9,27 @@ export const useProgressApi = () => {
     const [error, setError] = useState(null);
     const { logout } = useAuthStore();
 
+    const normalizeProgress = (data) => {
+        if (!data) return null;
+        return {
+            ...data,
+            xp: typeof data.xp === 'number' ? data.xp : 0,
+            level: data.level || 'Beginner',
+            completedLessons: Array.isArray(data.completedLessons) ? data.completedLessons : [],
+            gameScores: Array.isArray(data.gameScores) ? data.gameScores : [],
+            placementTestScore: typeof data.placementTestScore === 'number' ? data.placementTestScore : 0
+        };
+    };
+
     const fetchProgress = async () => {
         setLoading(true);
         setError(null);
         try {
             const token = localStorage.getItem('token');
+            if (!token) {
+                setProgress(null);
+                return null;
+            }
             const res = await fetch(`${API_URL}/progress/me`, {
                 headers: { 'Authorization': `Bearer ${token}` }
             });
@@ -24,8 +40,9 @@ export const useProgressApi = () => {
                 throw new Error(data.error || 'Failed to fetch progress');
             }
             
-            setProgress(data.data);
-            return data.data;
+            const normalized = normalizeProgress(data.data);
+            setProgress(normalized);
+            return normalized;
         } catch (err) {
             setError(err.message);
             return null;
@@ -39,6 +56,9 @@ export const useProgressApi = () => {
         setError(null);
         try {
             const token = localStorage.getItem('token');
+            if (!token) {
+                throw new Error('You must be logged in to save progress');
+            }
             const res = await fetch(`${API_URL}/progress/me`, {
                 method: 'PATCH',
                 headers: {
@@ -54,8 +74,9 @@ export const useProgressApi = () => {
                 throw new Error(data.error || 'Failed to update progress');
             }
 
-            setProgress(data.data);
-            return data.data;
+            const normalized = normalizeProgress(data.data);
+            setProgress(normalized);
+            return normalized;
         } catch (err) {
             setError(err.message);
             return null;

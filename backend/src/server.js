@@ -10,6 +10,7 @@ await connectToDb();
 await seedLessonsIfEmpty();
 await seedAdminIfEmpty();
 
-app.listen(PORT, () => {
+app.listen(PORT, (e) => {
+  if (e) return console.log(e);
   console.log(`Server running on port ${PORT}`);
 });

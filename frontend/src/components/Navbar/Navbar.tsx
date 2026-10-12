@@ -2,6 +2,7 @@ import React, { useEffect } from 'react';
 import { useNavigate, useLocation } from 'react-router-dom';
 import { useAuthStore } from '../../store/authStore';
 import { useProgressApi } from '../../hooks/useProgressApi';
+import { UserProgress } from '../../types/progress';
 import './Navbar.css';
 
 interface NavItem {
@@ -11,7 +12,8 @@ interface NavItem {
 
 export const Navbar: React.FC = () => {
     const { isAuthenticated, currentUser, logout } = useAuthStore();
-    const { progress, fetchProgress } = useProgressApi();
+    const { progress: rawProgress, fetchProgress } = useProgressApi();
+    const progress = rawProgress as UserProgress | null;
     const navigate = useNavigate();
     const location = useLocation();
 

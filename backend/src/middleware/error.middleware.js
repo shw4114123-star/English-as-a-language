@@ -4,8 +4,13 @@ export const errorMiddleware = (err, req, res, next) => {
     
     console.error(`[Error] ${status} - ${message}`);
     
+    // Sanitize internal server, database, or connection details in client response
+    const clientError = (status === 500 || /mongo|database|econnrefused|failed to fetch/i.test(message))
+        ? "An internal server error occurred. Please try again later."
+        : message;
+
     res.status(status).json({
         success: false,
-        error: message
+        error: clientError
     });
 };

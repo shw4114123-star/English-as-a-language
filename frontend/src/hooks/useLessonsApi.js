@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { API_URL } from '../config/api';
+import { formatErrorMessage } from '../utils/errorHandler';
 
 export const useLessonsApi = () => {
     // סטייט שמחזיק את מערך כל השיעורים
@@ -30,13 +31,13 @@ export const useLessonsApi = () => {
 
             if (!res.ok) {
                 if (res.status === 401) logout();
-                throw new Error(data.error || 'Failed to fetch lessons');
+                throw new Error(data.error || 'Unable to load lessons. Please try again later.');
             }
 
             setLessons(data.data || []);
             return data.data;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to load lessons. Please try again later.'));
             return [];
         } finally {
             setLoading(false);
@@ -56,13 +57,13 @@ export const useLessonsApi = () => {
 
             if (!res.ok) {
                 if (res.status === 401) logout();
-                throw new Error(data.error || 'Failed to fetch lesson');
+                throw new Error(data.error || 'Unable to load lesson details. Please try again later.');
             }
 
             setCurrentLesson(data.data);
             return data.data;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to load lesson details. Please try again later.'));
             return null;
         } finally {
             setLoading(false);
@@ -86,12 +87,12 @@ export const useLessonsApi = () => {
             const data = await res.json();
 
             if (!res.ok) {
-                throw new Error(data.error || 'Failed to create lesson');
+                throw new Error(data.error || 'Unable to create lesson. Please try again later.');
             }
 
             return data.data;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to create lesson. Please try again later.'));
             return null;
         } finally {
             setLoading(false);

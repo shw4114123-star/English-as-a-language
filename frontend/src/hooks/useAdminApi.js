@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { API_URL } from '../config/api';
+import { formatErrorMessage } from '../utils/errorHandler';
 
 export const useAdminApi = () => {
     const [usersList, setUsersList] = useState([]);
@@ -21,13 +22,13 @@ export const useAdminApi = () => {
 
             if (!res.ok) {
                 if (res.status === 401) logout();
-                throw new Error(data.error || 'Failed to fetch users');
+                throw new Error(data.error || 'Unable to load users. Please try again later.');
             }
 
             setUsersList(data.data || []);
             return data.data;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to load users. Please try again later.'));
             return [];
         } finally {
             setLoading(false);
@@ -51,14 +52,14 @@ export const useAdminApi = () => {
             const data = await res.json();
 
             if (!res.ok) {
-                throw new Error(data.error || 'Failed to update user role');
+                throw new Error(data.error || 'Unable to update user role. Please try again later.');
             }
 
             // עדכון הסטייט המקומי
             setUsersList(prev => prev.map(u => u._id === userId ? { ...u, role: newRole } : u));
             return data.data;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to update user role. Please try again later.'));
             return null;
         } finally {
             setLoading(false);
@@ -78,14 +79,14 @@ export const useAdminApi = () => {
             const data = await res.json();
 
             if (!res.ok) {
-                throw new Error(data.error || 'Failed to delete user');
+                throw new Error(data.error || 'Unable to delete user. Please try again later.');
             }
 
             // הסרה מהסטייט המקומי
             setUsersList(prev => prev.filter(u => u._id !== userId));
             return true;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to delete user. Please try again later.'));
             return false;
         } finally {
             setLoading(false);

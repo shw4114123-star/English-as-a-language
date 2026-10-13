@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { API_URL } from '../config/api';
+import { formatErrorMessage } from '../utils/errorHandler';
 
 export const useProgressApi = () => {
     const [progress, setProgress] = useState(null);
@@ -36,14 +37,14 @@ export const useProgressApi = () => {
             
             if (!res.ok) {
                 if (res.status === 401) logout();
-                throw new Error(data.error || 'Failed to fetch progress');
+                throw new Error(data.error || 'Unable to load progress. Please try again later.');
             }
             
             const normalized = normalizeProgress(data.data);
             setProgress(normalized);
             return normalized;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to load progress. Please try again later.'));
             return null;
         } finally {
             setLoading(false);
@@ -70,14 +71,14 @@ export const useProgressApi = () => {
 
             if (!res.ok) {
                 if (res.status === 401) logout();
-                throw new Error(data.error || 'Failed to update progress');
+                throw new Error(data.error || 'Unable to update progress. Please try again later.');
             }
 
             const normalized = normalizeProgress(data.data);
             setProgress(normalized);
             return normalized;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to update progress. Please try again later.'));
             return null;
         } finally {
             setLoading(false);

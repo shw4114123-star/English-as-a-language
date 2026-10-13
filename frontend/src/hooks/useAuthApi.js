@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { useAuthStore } from '../store/authStore';
 import { API_URL } from '../config/api';
+import { formatErrorMessage } from '../utils/errorHandler';
 
 export const useAuthApi = () => {
     const [loading, setLoading] = useState(false);
@@ -20,7 +21,7 @@ export const useAuthApi = () => {
                 logout();
             }
         } catch (err) {
-            console.error("Failed to fetch user", err);
+            console.error("Failed to load user", err);
             logout();
         } finally {
             setGlobalLoading(false);
@@ -42,7 +43,7 @@ export const useAuthApi = () => {
             login(data.data.user, data.data.token);
             return true;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to sign in. Please check your credentials and try again.'));
             return false;
         } finally {
             setLoading(false);
@@ -64,7 +65,7 @@ export const useAuthApi = () => {
             login(data.data.user, data.data.token);
             return true;
         } catch (err) {
-            setError(err.message);
+            setError(formatErrorMessage(err, 'Unable to create account. Please try again later.'));
             return false;
         } finally {
             setLoading(false);

@@ -1,67 +1,107 @@
-/* Dashboard techno-purple styling */
+/* Dashboard styling crafted with palette #B1B2FF, #AAC4FF, #D2DAFF, #EEF1FF */
 .dashboard-level-badge {
-  background: linear-gradient(135deg, #a855f7 0%, #ec4899 100%);
-  color: #ffffff;
-  font-size: 1.1rem;
+  background: var(--palette-ice);
+  color: var(--color-primary);
+  border: 1.5px solid var(--palette-cloud);
+  font-size: 1rem;
   font-weight: 700;
-  padding: 0.5rem 1.5rem;
-  border-radius: 9999px;
-  box-shadow: 0 0 15px rgba(168, 85, 247, 0.4);
+  padding: 0.5rem 1.4rem;
+  border-radius: var(--radius-pill);
+  box-shadow: 0 2px 8px rgba(177, 178, 255, 0.25);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .dashboard-stat-card {
-  border-radius: 1.25rem;
+  border-radius: var(--radius-lg);
   height: 100%;
-  padding: 1.75rem 1.25rem;
+  padding: 1.85rem 1.4rem;
   text-align: center;
-  color: #ffffff;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: transform 0.25s ease;
+  box-shadow: var(--shadow-card);
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  transition: transform 0.25s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.25s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.25s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.dashboard-stat-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
 }
 
 .dashboard-stat-card:hover {
   transform: translateY(-4px);
+  box-shadow: var(--shadow-card-hover);
 }
 
 .stat-xp {
-  background: linear-gradient(135deg, #7c3aed 0%, #4f46e5 100%);
-  box-shadow: 0 0 20px rgba(124, 58, 237, 0.35);
+  border-color: var(--palette-cloud);
+}
+.stat-xp::before {
+  background: linear-gradient(90deg, #6366f1 0%, #b1b2ff 100%);
+}
+.stat-xp .stat-value {
+  color: #4f46e5;
 }
 
 .stat-lessons {
-  background: linear-gradient(135deg, #059669 0%, #0d9488 100%);
-  box-shadow: 0 0 20px rgba(5, 150, 105, 0.35);
+  border-color: #a7f3d0;
+}
+.stat-lessons::before {
+  background: linear-gradient(90deg, #10b981 0%, #6ee7b7 100%);
+}
+.stat-lessons .stat-value {
+  color: #059669;
 }
 
 .stat-games {
-  background: linear-gradient(135deg, #db2777 0%, #9333ea 100%);
-  box-shadow: 0 0 20px rgba(219, 39, 119, 0.35);
+  border-color: var(--palette-sky);
+}
+.stat-games::before {
+  background: linear-gradient(90deg, #3b82f6 0%, #aac4ff 100%);
+}
+.stat-games .stat-value {
+  color: #2563eb;
 }
 
 .stat-score {
-  background: linear-gradient(135deg, #d97706 0%, #ca8a04 100%);
-  box-shadow: 0 0 20px rgba(217, 119, 6, 0.35);
+  border-color: #fde68a;
+}
+.stat-score::before {
+  background: linear-gradient(90deg, #f59e0b 0%, #fbbf24 100%);
+}
+.stat-score .stat-value {
+  color: #d97706;
 }
 
 .stat-title {
-  color: rgba(255, 255, 255, 0.8);
-  font-size: 1rem;
+  color: var(--text-muted);
+  font-size: 0.925rem;
   font-weight: 600;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
 }
 
 .stat-value {
   font-size: 2.75rem;
   font-weight: 800;
-  line-height: 1;
+  line-height: 1.1;
+  letter-spacing: -0.03em;
 }
 
 .recent-activity-card {
-  background: #140d36;
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  border-radius: 1.25rem;
-  padding: 2rem;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem 2rem;
   text-align: center;
-  color: #c4b5fd;
+  color: var(--text-secondary);
+  box-shadow: var(--shadow-card);
 }

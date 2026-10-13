@@ -1,34 +1,43 @@
-/* TeacherDashboard dark purple theme styles */
+/* TeacherDashboard clean theme styles */
 .teacher-section-box {
-  background: #19123f;
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  border-radius: 1rem;
-  padding: 1.25rem;
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-lg);
+  padding: 1.5rem;
   margin-bottom: 1.5rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .teacher-item-row {
-  background: rgba(30, 19, 74, 0.7);
-  border: 1px solid rgba(168, 85, 247, 0.2);
-  border-radius: 0.5rem;
-  padding: 0.6rem 1rem;
-  margin-bottom: 0.5rem;
+  background: var(--palette-ice);
+  border: 1px solid var(--palette-cloud);
+  border-radius: var(--radius-sm);
+  padding: 0.75rem 1.25rem;
+  margin-bottom: 0.6rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  color: #f1f0fb;
-}
-
-.teacher-published-card {
-  background: #19123f;
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  border-radius: 0.75rem;
-  padding: 1rem;
-  margin-bottom: 0.75rem;
+  color: var(--text-main);
   transition: all 0.2s ease;
 }
 
+.teacher-item-row:hover {
+  background: #ffffff;
+  box-shadow: var(--shadow-xs);
+}
+
+.teacher-published-card {
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.25rem;
+  margin-bottom: 0.85rem;
+  transition: all 0.2s ease;
+  box-shadow: var(--shadow-xs);
+}
+
 .teacher-published-card:hover {
-  border-color: #a855f7;
+  border-color: var(--palette-indigo);
   transform: translateY(-2px);
+  box-shadow: var(--shadow-sm);
 }

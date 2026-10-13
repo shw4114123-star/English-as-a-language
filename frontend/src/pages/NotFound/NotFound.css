@@ -1,0 +1,247 @@
+/* ==========================================================================
+   404 NOT FOUND PAGE STYLES
+   Crafted with the site design palette: #B1B2FF, #AAC4FF, #D2DAFF, #EEF1FF
+   ========================================================================== */
+
+.not-found-container {
+  min-height: calc(100vh - 160px);
+  padding: 3.5rem 1.5rem 5rem;
+  position: relative;
+  overflow: hidden;
+}
+
+.not-found-card {
+  max-width: 860px;
+  margin: 0 auto;
+  background: #ffffff;
+  border: 1.5px solid var(--border-colored, #d2daff);
+  border-radius: var(--radius-xl, 1.75rem);
+  box-shadow: 0 16px 36px -6px rgba(71, 85, 135, 0.1), 0 4px 12px -2px rgba(71, 85, 135, 0.04);
+  padding: 3.5rem 2.5rem;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.not-found-glow {
+  position: absolute;
+  top: -60px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 500px;
+  height: 250px;
+  background: radial-gradient(circle, rgba(177, 178, 255, 0.35) 0%, rgba(210, 218, 255, 0.15) 55%, transparent 75%);
+  filter: blur(40px);
+  pointer-events: none;
+}
+
+.not-found-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.45rem 1.25rem;
+  border-radius: var(--radius-pill, 9999px);
+  font-weight: 700;
+  font-size: 0.875rem;
+  background: var(--palette-ice, #eef1ff);
+  border: 1.5px solid var(--palette-cloud, #d2daff);
+  color: var(--color-primary, #5457cd);
+  box-shadow: 0 2px 8px rgba(177, 178, 255, 0.2);
+  margin-bottom: 1.5rem;
+  letter-spacing: 0.02em;
+}
+
+.not-found-code {
+  font-size: clamp(3.5rem, 8vw, 6rem);
+  font-weight: 800;
+  line-height: 1;
+  margin: 0 0 0.5rem;
+  background: linear-gradient(135deg, #3730a3 0%, #6366f1 50%, #818cf8 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  letter-spacing: -0.04em;
+}
+
+.not-found-title {
+  font-size: clamp(1.5rem, 3.5vw, 2.2rem);
+  font-weight: 800;
+  color: var(--text-main, #1e2438);
+  margin-bottom: 0.85rem;
+  letter-spacing: -0.02em;
+}
+
+.not-found-desc {
+  color: var(--text-secondary, #475569);
+  font-size: 1.15rem;
+  max-width: 580px;
+  margin: 0 auto 2.25rem;
+  line-height: 1.6;
+}
+
+/* Centerpiece detective sticker image */
+.not-found-image-wrap {
+  position: relative;
+  display: inline-block;
+  margin: 0 auto 2.5rem;
+  padding: 1rem;
+}
+
+.not-found-image {
+  max-width: 290px;
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 28px rgba(71, 85, 135, 0.22));
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  will-change: transform;
+}
+
+.not-found-image-wrap:hover .not-found-image {
+  transform: scale(1.06) translateY(-4px);
+}
+
+/* Actions */
+.not-found-actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 3.5rem;
+}
+
+.not-found-btn-primary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: var(--radius-pill, 9999px);
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+  background: linear-gradient(135deg, #6366f1 0%, #5154db 100%);
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.32);
+  border: none;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.not-found-btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 22px rgba(99, 102, 241, 0.42);
+  background: linear-gradient(135deg, #5154db 0%, #4346b6 100%);
+  color: #ffffff;
+}
+
+.not-found-btn-secondary {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.85rem 2rem;
+  border-radius: var(--radius-pill, 9999px);
+  font-weight: 600;
+  font-size: 1rem;
+  color: var(--color-primary, #5457cd);
+  background: #ffffff;
+  border: 1.5px solid var(--palette-cloud, #d2daff);
+  box-shadow: 0 2px 8px rgba(71, 85, 135, 0.05);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  text-decoration: none;
+}
+
+.not-found-btn-secondary:hover {
+  transform: translateY(-2px);
+  border-color: var(--palette-indigo, #b1b2ff);
+  background: var(--palette-ice, #eef1ff);
+  color: var(--color-primary-hover, #4346b6);
+}
+
+/* --------------------------------------------------------------------------
+   Mini Alphabet Showcase on 404
+   -------------------------------------------------------------------------- */
+.not-found-abc-section {
+  border-top: 1.5px solid var(--border-subtle, #e2e8f4);
+  padding-top: 2.5rem;
+  text-align: center;
+}
+
+.not-found-abc-title {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--text-main, #1e2438);
+  margin-bottom: 0.4rem;
+  letter-spacing: -0.01em;
+}
+
+.not-found-abc-subtitle {
+  font-size: 0.95rem;
+  color: var(--text-secondary, #475569);
+  margin-bottom: 1.75rem;
+}
+
+.not-found-abc-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(110px, 1fr));
+  gap: 1rem;
+  max-width: 740px;
+  margin: 0 auto 1.5rem;
+}
+
+.not-found-mini-card {
+  background: var(--palette-ice, #eef1ff);
+  border: 1.5px solid var(--palette-cloud, #d2daff);
+  border-radius: var(--radius-md, 0.875rem);
+  padding: 0.85rem 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.45rem;
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(71, 85, 135, 0.04);
+}
+
+.not-found-mini-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  background: #ffffff;
+  border-color: var(--palette-indigo, #b1b2ff);
+  box-shadow: 0 8px 18px rgba(71, 85, 135, 0.12);
+}
+
+.not-found-mini-img {
+  width: 58px;
+  height: 58px;
+  object-fit: contain;
+  filter: drop-shadow(0 2px 6px rgba(71, 85, 135, 0.15));
+  transition: transform 0.2s ease;
+}
+
+.not-found-mini-card:hover .not-found-mini-img {
+  transform: scale(1.1);
+}
+
+.not-found-mini-letter {
+  font-size: 1rem;
+  font-weight: 800;
+  color: var(--color-primary, #5457cd);
+  line-height: 1;
+}
+
+.not-found-mini-word {
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--text-muted, #64748b);
+  line-height: 1;
+}
+
+@media (max-width: 600px) {
+  .not-found-card {
+    padding: 2.25rem 1.25rem;
+  }
+  .not-found-abc-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

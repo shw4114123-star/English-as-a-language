@@ -1,91 +1,577 @@
-/* LetterCard modern cosmic purple styles */
+/* ==========================================================================
+   LETTER CARD DESIGN SYSTEM
+   Large center stage illustration cards with palette attributes sampled
+   directly from each animal's artwork.
+   ========================================================================== */
+
+/* --------------------------------------------------------------------------
+   1. Base Card Container
+   -------------------------------------------------------------------------- */
 .letter-card-container {
-  background: #140d36;
-  border: 1px solid rgba(147, 51, 234, 0.25);
-  border-radius: 1.25rem;
-  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5), 0 0 15px rgba(121, 82, 245, 0.1);
-  text-align: center;
-  overflow: hidden;
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-  height: 100%;
+  /* Default Fallback Palette Variables */
+  --card-theme: #6366f1;
+  --card-accent: #3730a3;
+  --card-bg-light: #f6f8fd;
+  --card-bg-glow: rgba(177, 178, 255, 0.22);
+  --card-border: #d2daff;
+  --card-border-hover: #b1b2ff;
+  --card-badge-bg: #eef1ff;
+  --card-badge-color: #4346b6;
+  --card-shadow: rgba(71, 85, 135, 0.12);
+  --card-img-shadow: rgba(71, 85, 135, 0.18);
+
+  position: relative;
   display: flex;
   flex-direction: column;
+  background: #ffffff;
+  border: 2px solid var(--card-border);
+  border-radius: var(--radius-xl, 1.75rem);
+  box-shadow: 0 12px 28px -6px var(--card-shadow), 0 2px 8px -2px rgba(30, 41, 59, 0.04);
+  transition: transform 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 0.35s cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 0.25s ease;
+  cursor: pointer;
+  overflow: hidden;
+  user-select: none;
+  min-height: 440px;
 }
 
 .letter-card-container:hover {
-  transform: translateY(-8px);
-  border-color: rgba(168, 85, 247, 0.6);
-  box-shadow: 0 20px 30px -10px rgba(0, 0, 0, 0.7), 0 0 25px rgba(168, 85, 247, 0.35);
+  transform: translateY(-9px);
+  border-color: var(--card-border-hover);
+  box-shadow: 0 22px 42px -8px var(--card-shadow), 0 8px 18px -4px rgba(30, 41, 59, 0.08);
 }
 
-.letter-card-image-box {
-  background: radial-gradient(circle, rgba(91, 33, 182, 0.3) 0%, rgba(18, 11, 46, 0.8) 100%);
-  padding: 1.5rem;
+/* --------------------------------------------------------------------------
+   2. Card Header (Top floating bar)
+   -------------------------------------------------------------------------- */
+.letter-card-header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 150px;
-  border-bottom: 1px solid rgba(147, 51, 234, 0.15);
-}
-
-.letter-card-image {
-  max-height: 100%;
-  object-fit: contain;
-  filter: drop-shadow(0 4px 10px rgba(0, 0, 0, 0.4));
-}
-
-.letter-card-placeholder {
-  color: #a78bfa;
-  font-size: 0.875rem;
-}
-
-.letter-card-body {
-  display: flex;
-  flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  padding: 1.5rem;
-  flex-grow: 1;
+  padding: 1.25rem 1.4rem 0.4rem;
+  z-index: 2;
 }
 
-.letter-card-letter {
-  font-size: 3.5rem;
+.letter-card-badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 46px;
+  height: 46px;
+  border-radius: 14px;
+  font-size: 1.6rem;
   font-weight: 800;
   line-height: 1;
-  margin-bottom: 0.25rem;
-  background: linear-gradient(135deg, #ffffff 0%, #d8b4fe 50%, #a855f7 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  filter: drop-shadow(0 0 10px rgba(168, 85, 247, 0.3));
+  background: var(--card-badge-bg);
+  color: var(--card-badge-color);
+  border: 2px solid var(--card-border);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+  letter-spacing: -0.02em;
+  transition: transform 0.25s ease, background 0.25s ease;
 }
 
-.letter-card-word {
-  font-size: 1.25rem;
-  color: #c4b5fd;
-  text-transform: capitalize;
-  margin-bottom: 1rem;
-  font-weight: 500;
+.letter-card-container:hover .letter-card-badge {
+  transform: scale(1.08);
 }
 
 .letter-card-audio-btn {
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  background: rgba(126, 34, 206, 0.25);
-  border-radius: 9999px;
-  width: 48px;
-  height: 48px;
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  justify-content: center;
+  gap: 0.5rem;
+  padding: 0.5rem 1.1rem;
+  border-radius: var(--radius-pill, 9999px);
+  background: var(--card-badge-bg);
+  color: var(--card-badge-color);
+  border: 1.5px solid var(--card-border);
+  font-size: 0.875rem;
+  font-weight: 700;
   cursor: pointer;
-  font-size: 1.25rem;
-  color: #f3e8ff;
-  transition: all 0.2s ease;
-  box-shadow: 0 0 10px rgba(121, 82, 245, 0.2);
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+}
+
+.letter-card-speaker-icon {
+  width: 16px;
+  height: 16px;
+  flex-shrink: 0;
+  stroke: currentColor;
+}
+
+.letter-card-audio-text {
+  font-size: 0.85rem;
+  font-weight: 700;
+  line-height: 1;
 }
 
 .letter-card-audio-btn:hover {
-  transform: scale(1.15);
-  background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
-  border-color: #c084fc;
-  box-shadow: 0 0 16px rgba(168, 85, 247, 0.6);
+  background: var(--card-theme);
+  border-color: var(--card-theme);
+  color: #ffffff;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 14px var(--card-shadow);
+}
+
+/* --------------------------------------------------------------------------
+   3. Center Stage - The Illustration (Center of Attention)
+   -------------------------------------------------------------------------- */
+.letter-card-image-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+  min-height: 310px;
+  max-height: 340px;
+  height: 320px;
+  padding: 1rem 1.25rem;
+  margin: 0.35rem 1rem;
+  border-radius: var(--radius-lg, 1.35rem);
+  background: radial-gradient(circle at 50% 50%, var(--card-bg-glow) 0%, var(--card-bg-light) 65%, #ffffff 100%);
+  border: 1.5px solid var(--card-border);
+  overflow: hidden;
+  transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.letter-card-container:hover .letter-card-image-box {
+  border-color: var(--card-border-hover);
+  box-shadow: inset 0 0 24px var(--card-bg-glow);
+}
+
+.letter-card-image {
+  max-width: 98%;
+  max-height: 310px;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+  filter: drop-shadow(0 14px 24px var(--card-img-shadow));
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), filter 0.4s ease;
+  will-change: transform;
+}
+
+/* Dynamic prominence and hover expansion */
+.letter-card-container:hover .letter-card-image {
+  transform: scale(1.1) translateY(-6px);
+  filter: drop-shadow(0 22px 34px var(--card-img-shadow));
+}
+
+/* Fallback placeholder when artwork is coming soon */
+.letter-card-placeholder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  width: 100%;
+  height: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+
+.letter-card-placeholder-letter {
+  font-size: 6rem;
+  font-weight: 800;
+  line-height: 1;
+  color: var(--card-badge-color);
+  opacity: 0.28;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+.letter-card-container:hover .letter-card-placeholder-letter {
+  transform: scale(1.08);
+  opacity: 0.55;
+}
+
+.letter-card-placeholder-text {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  background: #ffffff;
+  padding: 0.35rem 0.95rem;
+  border-radius: var(--radius-pill);
+  border: 1px solid var(--card-border);
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.04);
+}
+
+/* --------------------------------------------------------------------------
+   4. Card Footer (Word title)
+   -------------------------------------------------------------------------- */
+.letter-card-footer {
+  padding: 0.95rem 1.4rem 1.5rem;
+  text-align: center;
+  z-index: 2;
+}
+
+.letter-card-word {
+  margin: 0;
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: var(--card-accent);
+  letter-spacing: -0.025em;
+  text-transform: capitalize;
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.letter-card-container:hover .letter-card-word {
+  transform: translateY(-2px);
+  color: var(--card-theme);
+}
+
+/* ==========================================================================
+   5. PER-LETTER COLOR ATTRIBUTES
+   Sampled directly from the artwork pixels:
+   - E.png (Elephant): #3c5a78, #1e2d3c, #5a7896, #d2d2e1
+   - P.png (Penguin):  #5a4b78, #3c1e3c, #695a87, #e1d2e1
+   - T.png (Tiger):    #a53c2d, #5a0f1e, #b45a4b, #e1871e, #c39696
+   ========================================================================== */
+
+/* --- E: ELEPHANT (Sampled from E.png) --- */
+.letter-card-e {
+  --card-theme: #3c5a78;
+  --card-accent: #1e2d3c;
+  --card-bg-light: #f0f4f9;
+  --card-bg-glow: rgba(75, 105, 135, 0.32);
+  --card-border: #b8ccdc;
+  --card-border-hover: #3c5a78;
+  --card-badge-bg: #dce7f0;
+  --card-badge-color: #1e2d3c;
+  --card-shadow: rgba(30, 45, 60, 0.2);
+  --card-img-shadow: rgba(30, 45, 60, 0.26);
+}
+
+/* --- P: PENGUIN (Sampled from P.png) --- */
+.letter-card-p {
+  --card-theme: #5a4b78;
+  --card-accent: #3c1e3c;
+  --card-bg-light: #f7f2f8;
+  --card-bg-glow: rgba(105, 90, 135, 0.3);
+  --card-border: #d8c8e0;
+  --card-border-hover: #5a4b78;
+  --card-badge-bg: #ebe0ee;
+  --card-badge-color: #3c1e3c;
+  --card-shadow: rgba(60, 30, 60, 0.2);
+  --card-img-shadow: rgba(60, 30, 60, 0.26);
+}
+
+/* --- T: TIGER (Sampled from T.png) --- */
+.letter-card-t {
+  --card-theme: #a53c2d;
+  --card-accent: #5a0f1e;
+  --card-bg-light: #fbf2f0;
+  --card-bg-glow: rgba(180, 90, 75, 0.3);
+  --card-border: #e6beb6;
+  --card-border-hover: #a53c2d;
+  --card-badge-bg: #f5ddd8;
+  --card-badge-color: #5a0f1e;
+  --card-shadow: rgba(90, 15, 30, 0.2);
+  --card-img-shadow: rgba(90, 15, 30, 0.26);
+}
+
+/* --- Cohesive Color Attributes for the rest of the 26 Letters --- */
+.letter-card-a {
+  --card-theme: #e04747;
+  --card-accent: #b02626;
+  --card-bg-light: #fff2f2;
+  --card-bg-glow: rgba(224, 71, 71, 0.22);
+  --card-border: #fed7d7;
+  --card-border-hover: #e04747;
+  --card-badge-bg: #ffe4e4;
+  --card-badge-color: #b02626;
+  --card-shadow: rgba(224, 71, 71, 0.16);
+  --card-img-shadow: rgba(224, 71, 71, 0.2);
+}
+
+.letter-card-b {
+  --card-theme: #9c6644;
+  --card-accent: #6f452a;
+  --card-bg-light: #f9f5f2;
+  --card-bg-glow: rgba(156, 102, 68, 0.22);
+  --card-border: #e6d5cb;
+  --card-border-hover: #9c6644;
+  --card-badge-bg: #ede0d8;
+  --card-badge-color: #6f452a;
+  --card-shadow: rgba(156, 102, 68, 0.16);
+  --card-img-shadow: rgba(156, 102, 68, 0.2);
+}
+
+/* --- C: CAT (Sampled from C.png - Charcoal Black, Ruby Yarn, Slate) --- */
+.letter-card-c {
+  --card-theme: #4a4552;
+  --card-accent: #2e2a36;
+  --card-bg-light: #f5f4f7;
+  --card-bg-glow: rgba(74, 69, 82, 0.22);
+  --card-border: #d0cbd6;
+  --card-border-hover: #4a4552;
+  --card-badge-bg: #e6e2eb;
+  --card-badge-color: #2e2a36;
+  --card-shadow: rgba(46, 42, 54, 0.2);
+  --card-img-shadow: rgba(46, 42, 54, 0.25);
+}
+
+/* --- D: DINOSAUR (Sampled from D.png - Neon Emerald Green, Forest Outline) --- */
+.letter-card-d {
+  --card-theme: #00b400;
+  --card-accent: #0f5a2d;
+  --card-bg-light: #f0faf3;
+  --card-bg-glow: rgba(0, 200, 80, 0.26);
+  --card-border: #a8e8bc;
+  --card-border-hover: #00b400;
+  --card-badge-bg: #d4f5de;
+  --card-badge-color: #0f5a2d;
+  --card-shadow: rgba(0, 150, 60, 0.18);
+  --card-img-shadow: rgba(0, 150, 60, 0.24);
+}
+
+.letter-card-f {
+  --card-theme: #2a9d8f;
+  --card-accent: #196f64;
+  --card-bg-light: #f0f9f8;
+  --card-bg-glow: rgba(42, 157, 143, 0.22);
+  --card-border: #bce3df;
+  --card-border-hover: #2a9d8f;
+  --card-badge-bg: #d8f1ee;
+  --card-badge-color: #196f64;
+  --card-shadow: rgba(42, 157, 143, 0.16);
+  --card-img-shadow: rgba(42, 157, 143, 0.2);
+}
+
+.letter-card-g {
+  --card-theme: #c28b38;
+  --card-accent: #8e621f;
+  --card-bg-light: #fbf6ef;
+  --card-bg-glow: rgba(194, 139, 56, 0.22);
+  --card-border: #ebd9be;
+  --card-border-hover: #c28b38;
+  --card-badge-bg: #f4e8d5;
+  --card-badge-color: #8e621f;
+  --card-shadow: rgba(194, 139, 56, 0.16);
+  --card-img-shadow: rgba(194, 139, 56, 0.2);
+}
+
+/* --- H: HOUSE (Sampled from H.png - Sky Blue Aura, Midnight Slate, Crimson Roofs) --- */
+.letter-card-h {
+  --card-theme: #0284c7;
+  --card-accent: #0f1e3c;
+  --card-bg-light: #f0f9ff;
+  --card-bg-glow: rgba(0, 195, 255, 0.26);
+  --card-border: #bae6fd;
+  --card-border-hover: #0284c7;
+  --card-badge-bg: #e0f2fe;
+  --card-badge-color: #0369a1;
+  --card-shadow: rgba(15, 30, 60, 0.18);
+  --card-img-shadow: rgba(15, 30, 60, 0.24);
+}
+
+/* --- I: ICE CREAM (Sampled from I.png - Strawberry Pink, Cherry Magenta, Cone Waffle) --- */
+.letter-card-i {
+  --card-theme: #b54a8a;
+  --card-accent: #6b2450;
+  --card-bg-light: #fcf2f7;
+  --card-bg-glow: rgba(181, 74, 138, 0.25);
+  --card-border: #f2bedb;
+  --card-border-hover: #b54a8a;
+  --card-badge-bg: #fae0ef;
+  --card-badge-color: #6b2450;
+  --card-shadow: rgba(107, 36, 80, 0.18);
+  --card-img-shadow: rgba(107, 36, 80, 0.24);
+}
+
+.letter-card-j {
+  --card-theme: #f77f00;
+  --card-accent: #b85b00;
+  --card-bg-light: #fff7ed;
+  --card-bg-glow: rgba(247, 127, 0, 0.22);
+  --card-border: #fed7aa;
+  --card-border-hover: #f77f00;
+  --card-badge-bg: #ffedd5;
+  --card-badge-color: #b85b00;
+  --card-shadow: rgba(247, 127, 0, 0.16);
+  --card-img-shadow: rgba(247, 127, 0, 0.2);
+}
+
+.letter-card-k {
+  --card-theme: #0096c7;
+  --card-accent: #006a8e;
+  --card-bg-light: #f0f9fc;
+  --card-bg-glow: rgba(0, 150, 199, 0.22);
+  --card-border: #b3e3f2;
+  --card-border-hover: #0096c7;
+  --card-badge-bg: #d4f0f8;
+  --card-badge-color: #006a8e;
+  --card-shadow: rgba(0, 150, 199, 0.16);
+  --card-img-shadow: rgba(0, 150, 199, 0.2);
+}
+
+/* --- L: LION (Sampled from L.png - Antique Gold, Bronze Lion, King Crown) --- */
+.letter-card-l {
+  --card-theme: #96783c;
+  --card-accent: #5a4014;
+  --card-bg-light: #faf6ef;
+  --card-bg-glow: rgba(150, 120, 60, 0.24);
+  --card-border: #e8d7b7;
+  --card-border-hover: #96783c;
+  --card-badge-bg: #f4e9d5;
+  --card-badge-color: #5a4014;
+  --card-shadow: rgba(90, 64, 20, 0.18);
+  --card-img-shadow: rgba(90, 64, 20, 0.24);
+}
+
+.letter-card-m {
+  --card-theme: #2d6a4f;
+  --card-accent: #1b4332;
+  --card-bg-light: #f1f8f4;
+  --card-bg-glow: rgba(45, 106, 79, 0.22);
+  --card-border: #b7e4c7;
+  --card-border-hover: #2d6a4f;
+  --card-badge-bg: #d8f3dc;
+  --card-badge-color: #1b4332;
+  --card-shadow: rgba(45, 106, 79, 0.16);
+  --card-img-shadow: rgba(45, 106, 79, 0.2);
+}
+
+.letter-card-n {
+  --card-theme: #606c38;
+  --card-accent: #3d4522;
+  --card-bg-light: #f5f6f1;
+  --card-bg-glow: rgba(96, 108, 56, 0.22);
+  --card-border: #ccd5ae;
+  --card-border-hover: #606c38;
+  --card-badge-bg: #e9edc9;
+  --card-badge-color: #3d4522;
+  --card-shadow: rgba(96, 108, 56, 0.16);
+  --card-img-shadow: rgba(96, 108, 56, 0.2);
+}
+
+/* --- O: OWL (Sampled from O.png - Deep Forest Night Teal, Cedar Brown, Candle Gold) --- */
+.letter-card-o {
+  --card-theme: #1a4d47;
+  --card-accent: #2e2014;
+  --card-bg-light: #f2f7f6;
+  --card-bg-glow: rgba(26, 77, 71, 0.25);
+  --card-border: #b8d6d2;
+  --card-border-hover: #1a4d47;
+  --card-badge-bg: #d8eae7;
+  --card-badge-color: #1a4d47;
+  --card-shadow: rgba(26, 77, 71, 0.2);
+  --card-img-shadow: rgba(26, 77, 71, 0.26);
+}
+
+.letter-card-q {
+  --card-theme: #7c3aed;
+  --card-accent: #5b21b6;
+  --card-bg-light: #f5f3ff;
+  --card-bg-glow: rgba(124, 58, 237, 0.22);
+  --card-border: #ddd6fe;
+  --card-border-hover: #7c3aed;
+  --card-badge-bg: #ede9fe;
+  --card-badge-color: #5b21b6;
+  --card-shadow: rgba(124, 58, 237, 0.16);
+  --card-img-shadow: rgba(124, 58, 237, 0.2);
+}
+
+.letter-card-r {
+  --card-theme: #b5179e;
+  --card-accent: #7209b7;
+  --card-bg-light: #fcf1f9;
+  --card-bg-glow: rgba(181, 23, 158, 0.22);
+  --card-border: #f4bee8;
+  --card-border-hover: #b5179e;
+  --card-badge-bg: #fae1f4;
+  --card-badge-color: #7209b7;
+  --card-shadow: rgba(181, 23, 158, 0.16);
+  --card-img-shadow: rgba(181, 23, 158, 0.2);
+}
+
+/* --- S: SNAKE (Sampled from S.png - Party Seafoam Teal, Mint, Magenta Flame) --- */
+.letter-card-s {
+  --card-theme: #009688;
+  --card-accent: #005a52;
+  --card-bg-light: #effaf8;
+  --card-bg-glow: rgba(0, 165, 150, 0.26);
+  --card-border: #aae0d9;
+  --card-border-hover: #009688;
+  --card-badge-bg: #d2f2ed;
+  --card-badge-color: #005a52;
+  --card-shadow: rgba(0, 90, 82, 0.18);
+  --card-img-shadow: rgba(0, 90, 82, 0.24);
+}
+
+/* --- U: UNICORN (Sampled from U.png - Dreamy Lilac, Star Violet, Deep Plum) --- */
+.letter-card-u {
+  --card-theme: #785aa5;
+  --card-accent: #432a68;
+  --card-bg-light: #f8f4fc;
+  --card-bg-glow: rgba(135, 105, 180, 0.26);
+  --card-border: #d8c8ed;
+  --card-border-hover: #785aa5;
+  --card-badge-bg: #ece0f7;
+  --card-badge-color: #432a68;
+  --card-shadow: rgba(67, 42, 104, 0.18);
+  --card-img-shadow: rgba(67, 42, 104, 0.24);
+}
+
+.letter-card-v {
+  --card-theme: #0284c7;
+  --card-accent: #0369a1;
+  --card-bg-light: #f0f9ff;
+  --card-bg-glow: rgba(2, 132, 199, 0.22);
+  --card-border: #bae6fd;
+  --card-border-hover: #0284c7;
+  --card-badge-bg: #e0f2fe;
+  --card-badge-color: #0369a1;
+  --card-shadow: rgba(2, 132, 199, 0.16);
+  --card-img-shadow: rgba(2, 132, 199, 0.2);
+}
+
+.letter-card-w {
+  --card-theme: #e11d48;
+  --card-accent: #9f1239;
+  --card-bg-light: #fff1f2;
+  --card-bg-glow: rgba(225, 29, 72, 0.22);
+  --card-border: #fecdd3;
+  --card-border-hover: #e11d48;
+  --card-badge-bg: #ffe4e6;
+  --card-badge-color: #9f1239;
+  --card-shadow: rgba(225, 29, 72, 0.16);
+  --card-img-shadow: rgba(225, 29, 72, 0.2);
+}
+
+.letter-card-x {
+  --card-theme: #0d9488;
+  --card-accent: #115e59;
+  --card-bg-light: #f0fdfa;
+  --card-bg-glow: rgba(13, 148, 136, 0.22);
+  --card-border: #99f6e4;
+  --card-border-hover: #0d9488;
+  --card-badge-bg: #ccfbf1;
+  --card-badge-color: #115e59;
+  --card-shadow: rgba(13, 148, 136, 0.16);
+  --card-img-shadow: rgba(13, 148, 136, 0.2);
+}
+
+.letter-card-y {
+  --card-theme: #8b5cf6;
+  --card-accent: #6d28d9;
+  --card-bg-light: #f5f3ff;
+  --card-bg-glow: rgba(139, 92, 246, 0.22);
+  --card-border: #ddd6fe;
+  --card-border-hover: #8b5cf6;
+  --card-badge-bg: #ede9fe;
+  --card-badge-color: #6d28d9;
+  --card-shadow: rgba(139, 92, 246, 0.16);
+  --card-img-shadow: rgba(139, 92, 246, 0.2);
+}
+
+/* --- Z: ZEBRA (Sampled from Z.png - Electric Silver Charcoal, Aura Teal) --- */
+.letter-card-z {
+  --card-theme: #4b5563;
+  --card-accent: #1f2937;
+  --card-bg-light: #f5f7f8;
+  --card-bg-glow: rgba(90, 180, 190, 0.22);
+  --card-border: #cad4db;
+  --card-border-hover: #4b5563;
+  --card-badge-bg: #e2e8ec;
+  --card-badge-color: #1f2937;
+  --card-shadow: rgba(31, 41, 55, 0.18);
+  --card-img-shadow: rgba(31, 41, 55, 0.22);
 }

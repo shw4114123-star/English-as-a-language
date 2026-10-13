@@ -1,25 +1,32 @@
-/* LessonDetails high-tech purple styles */
+/* LessonDetails styling with clean card design */
 .lesson-word-card {
-  background: #140d36;
-  border: 1px solid rgba(168, 85, 247, 0.25);
-  border-radius: 1rem;
-  padding: 1.25rem;
-  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+  background: #ffffff;
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-md);
+  padding: 1.35rem;
+  box-shadow: var(--shadow-sm);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.lesson-word-card:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-card);
+  border-color: var(--palette-cloud);
 }
 
 .lesson-word-title {
-  color: #c084fc;
+  color: var(--color-primary);
   font-weight: 700;
-  font-size: 1.2rem;
+  font-size: 1.25rem;
 }
 
 .lesson-action-icon-btn {
-  background: rgba(168, 85, 247, 0.2);
-  border: 1px solid rgba(168, 85, 247, 0.4);
-  color: #ffffff;
+  background: var(--palette-ice);
+  border: 1px solid var(--palette-cloud);
+  color: var(--color-primary);
   border-radius: 9999px;
-  width: 34px;
-  height: 34px;
+  width: 36px;
+  height: 36px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
@@ -28,25 +35,32 @@
 }
 
 .lesson-action-icon-btn:hover {
-  background: rgba(168, 85, 247, 0.5);
-  transform: scale(1.1);
+  background: var(--palette-cloud);
+  color: var(--color-primary-hover);
+  transform: scale(1.08);
 }
 
 .lesson-step-btn {
-  padding: 0.5rem 1.25rem;
-  border-radius: 9999px;
+  padding: 0.5rem 1.35rem;
+  border-radius: var(--radius-pill);
   font-weight: 600;
   font-size: 0.9rem;
-  border: 1px solid rgba(168, 85, 247, 0.3);
-  background: #19123f;
-  color: #c4b5fd;
+  border: 1px solid var(--border-subtle);
+  background: #ffffff;
+  color: var(--text-secondary);
   cursor: pointer;
   transition: all 0.2s;
 }
 
+.lesson-step-btn:hover {
+  background: var(--palette-ice);
+  color: var(--color-primary);
+}
+
 .lesson-step-btn-active {
-  background: linear-gradient(135deg, #7c3aed 0%, #9333ea 100%);
-  border-color: #c084fc;
-  color: #ffffff;
-  box-shadow: 0 0 12px rgba(168, 85, 247, 0.5);
+  background: var(--palette-ice);
+  border-color: var(--palette-cloud);
+  color: var(--color-primary);
+  font-weight: 700;
+  box-shadow: 0 2px 8px rgba(177, 178, 255, 0.2);
 }

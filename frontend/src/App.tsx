@@ -16,8 +16,7 @@ import { LessonDetails } from './pages/LessonDetails/LessonDetails';
 import { Games } from './pages/Games/Games';
 import { AdminUsers } from './pages/AdminUsers/AdminUsers';
 import { TeacherDashboard } from './pages/TeacherDashboard/TeacherDashboard';
-
-const NotFound: React.FC = () => <div className="container mt-5 text-center"><h1>404 Not Found</h1></div>;
+import { NotFound } from './pages/NotFound/NotFound';
 
 export const App: React.FC = () => {
   const { fetchUser } = useAuthApi();

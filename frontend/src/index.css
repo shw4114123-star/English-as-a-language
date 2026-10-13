@@ -10,9 +10,9 @@
 :root {
   /* Core Palette Tokens */
   --palette-primary: #6366f1;       /* Deep Indigo accent for high readability */
-  --palette-indigo: #b1b2ff;        /* Palette 1: Periwinkle / Slate Indigo */
-  --palette-sky: #aac4ff;           /* Palette 2: Soft Sky Blue */
-  --palette-cloud: #d2daff;         /* Palette 3: Mist / Light Periwinkle */
+  --palette-indigo: #9fa2fc;        /* Palette 1: Periwinkle / Slate Indigo (darkened for better contrast) */
+  --palette-sky: #4f80f3;           /* Palette 2: Rich Sky Blue (darkened from pale #aac4ff for strong visibility) */
+  --palette-cloud: #b6c5f7;         /* Palette 3: Crisp Periwinkle / Border Mist (darkened from pale #d2daff) */
   --palette-ice: #eef1ff;           /* Palette 4: Soft Powder White / Lavender Tint */
 
   /* Semantic Theme Roles */
@@ -22,8 +22,8 @@
   --color-primary-soft: rgba(177, 178, 255, 0.22);
   --color-primary-glow: rgba(99, 102, 241, 0.18);
 
-  --color-secondary: #5a78c9;
-  --color-secondary-soft: rgba(170, 196, 255, 0.25);
+  --color-secondary: #385ec2;       /* Darkened secondary blue for better readability */
+  --color-secondary-soft: rgba(79, 128, 243, 0.18);
 
   --color-accent: #e09f3e;          /* Warm honey amber for stars/xp */
   --color-accent-soft: rgba(224, 159, 62, 0.15);
@@ -42,7 +42,7 @@
   --bg-glass: rgba(255, 255, 255, 0.85);
 
   /* Text & Typography */
-  --text-main: #1e2438;
+  --text-main: #2b3650;             /* Softened/lightened from harsh midnight #1e2438 */
   --text-secondary: #475569;
   --text-muted: #64748b;
   --text-dim: #94a3b8;
@@ -51,8 +51,8 @@
   /* Borders & Dividers */
   --border-subtle: #e2e8f4;
   --border-medium: #cbd5e1;
-  --border-colored: #d2daff;
-  --border-focus: #b1b2ff;
+  --border-colored: #b6c5f7;
+  --border-focus: #9fa2fc;
 
   /* Shadows (Crafted multi-layer, soft natural ambient lighting) */
   --shadow-xs: 0 1px 2px rgba(30, 41, 59, 0.04);
@@ -362,7 +362,7 @@ p {
   font-size: 1.35rem;
   font-weight: 800;
   cursor: pointer;
-  color: #1e2438;
+  color: var(--text-main);
   letter-spacing: -0.025em;
   display: inline-flex;
   align-items: center;

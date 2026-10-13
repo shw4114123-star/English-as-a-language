@@ -102,7 +102,7 @@ export const LessonDetails: React.FC = () => {
     if (loading) {
         return (
             <div className="container py-5 text-center">
-                <div style={{ color: '#c4b5fd', fontSize: '1.2rem' }}>Loading lesson details...</div>
+                <div style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.2rem' }}>Loading lesson details...</div>
             </div>
         );
     }
@@ -132,10 +132,10 @@ export const LessonDetails: React.FC = () => {
                 </span>
             </div>
 
-            <h2 className="fw-bold mb-2 text-white" style={{ fontSize: '2rem' }}>{currentLesson.title}</h2>
-            <p style={{ color: '#c4b5fd', fontSize: '1.1rem', marginBottom: '1.5rem' }}>{currentLesson.description}</p>
+            <h2 className="fw-bold mb-2" style={{ fontSize: '2rem', color: 'var(--text-main, #2b3650)' }}>{currentLesson.title}</h2>
+            <p style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.1rem', marginBottom: '1.5rem' }}>{currentLesson.description}</p>
 
-            <div className="d-flex gap-2 mb-4 pb-3" style={{ borderBottom: '1px solid rgba(168, 85, 247, 0.2)' }}>
+            <div className="d-flex gap-2 mb-4 pb-3" style={{ borderBottom: '1px solid var(--border-subtle, #e2e8f4)' }}>
                 <button
                     className={`lesson-step-btn ${step === 0 ? 'lesson-step-btn-active' : ''}`}
                     onClick={() => setStep(0)}
@@ -153,7 +153,7 @@ export const LessonDetails: React.FC = () => {
 
             {step === 0 && (
                 <div>
-                    <h4 className="fw-bold mb-3 text-white">Key Vocabulary for this Lesson</h4>
+                    <h4 className="fw-bold mb-3" style={{ color: 'var(--text-main, #2b3650)' }}>Key Vocabulary for this Lesson</h4>
                     <div className="row g-3 mb-4">
                         {words.map((w, index) => (
                             <div key={index} className="col-md-6">
@@ -170,18 +170,18 @@ export const LessonDetails: React.FC = () => {
                                             </button>
                                             <button
                                                 className="btn btn-outline-secondary btn-sm rounded-pill"
-                                                style={{ borderColor: 'rgba(168, 85, 247, 0.4)', color: '#c084fc', fontSize: '0.8rem' }}
+                                                style={{ borderColor: 'var(--border-colored, #b6c5f7)', color: 'var(--color-primary, #5457cd)', fontSize: '0.8rem' }}
                                                 onClick={() => handleInspectWord(w.word)}
                                             >
                                                 Translate
                                             </button>
                                         </div>
                                     </div>
-                                    <p style={{ color: '#c4b5fd', marginBottom: '0.25rem', fontSize: '0.95rem' }}>
+                                    <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '0.25rem', fontSize: '0.95rem' }}>
                                         <strong>Meaning:</strong> {w.translation || w.meaning}
                                     </p>
                                     {w.example && (
-                                        <p style={{ color: '#a78bfa', fontSize: '0.85rem', fontStyle: 'italic', margin: 0 }}>
+                                        <p style={{ color: 'var(--text-muted, #64748b)', fontSize: '0.85rem', fontStyle: 'italic', margin: 0 }}>
                                             "{w.example}"
                                         </p>
                                     )}
@@ -207,48 +207,48 @@ export const LessonDetails: React.FC = () => {
                                 </div>
                                 <button
                                     onClick={() => setInspectedWord(null)}
-                                    style={{ background: 'transparent', border: 'none', color: '#c4b5fd', fontSize: '1.25rem', cursor: 'pointer' }}
+                                    style={{ background: 'transparent', border: 'none', color: 'var(--text-muted, #64748b)', fontSize: '1.25rem', cursor: 'pointer' }}
                                 >
                                     &times;
                                 </button>
                             </div>
                             {wordLoading ? (
-                                <div style={{ color: '#c4b5fd', padding: '0.5rem 0' }}>
+                                <div style={{ color: 'var(--text-secondary, #475569)', padding: '0.5rem 0' }}>
                                     <span>מתרגם ומחפש מידע...</span>
                                 </div>
                             ) : wordData ? (
                                 <div className="row g-3">
                                     {wordData.translation && (
                                         <div className="col-12">
-                                            <div style={{ padding: '0.75rem', background: 'rgba(147, 51, 234, 0.15)', borderRadius: '0.5rem' }}>
-                                                <span style={{ color: '#a78bfa', fontSize: '0.8rem', display: 'block' }}>תרגום לעברית:</span>
-                                                <strong style={{ fontSize: '1.2rem', color: '#ffffff' }}>{wordData.translation}</strong>
+                                            <div style={{ padding: '0.75rem', background: 'var(--palette-ice, #eef1ff)', border: '1px solid var(--border-colored, #b6c5f7)', borderRadius: '0.5rem' }}>
+                                                <span style={{ color: 'var(--text-secondary, #475569)', fontSize: '0.8rem', display: 'block' }}>תרגום לעברית:</span>
+                                                <strong style={{ fontSize: '1.2rem', color: 'var(--text-main, #2b3650)' }}>{wordData.translation}</strong>
                                             </div>
                                         </div>
                                     )}
                                     {wordData.phonetic && (
                                         <div className="col-md-6">
-                                            <span style={{ color: '#a78bfa', fontSize: '0.8rem', display: 'block' }}>הגייה פונטית (Phonetic):</span>
-                                            <span style={{ fontWeight: 600, color: '#f1f0fb' }}>{wordData.phonetic}</span>
+                                            <span style={{ color: 'var(--text-secondary, #475569)', fontSize: '0.8rem', display: 'block' }}>הגייה פונטית (Phonetic):</span>
+                                            <span style={{ fontWeight: 600, color: 'var(--text-main, #2b3650)' }}>{wordData.phonetic}</span>
                                         </div>
                                     )}
                                     {wordData.partOfSpeech && (
                                         <div className="col-md-6">
-                                            <span style={{ color: '#a78bfa', fontSize: '0.8rem', display: 'block' }}>חלק דיבר (Part of Speech):</span>
-                                            <span style={{ background: 'rgba(168, 85, 247, 0.2)', color: '#c084fc', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.85rem' }}>
+                                            <span style={{ color: 'var(--text-secondary, #475569)', fontSize: '0.8rem', display: 'block' }}>חלק דיבר (Part of Speech):</span>
+                                            <span style={{ background: 'var(--palette-ice, #eef1ff)', color: 'var(--color-primary, #5457cd)', border: '1px solid var(--border-colored, #b6c5f7)', padding: '0.2rem 0.5rem', borderRadius: '4px', fontSize: '0.85rem', fontWeight: 600 }}>
                                                 {wordData.partOfSpeech}
                                             </span>
                                         </div>
                                     )}
                                     {wordData.definition && (
                                         <div className="col-12">
-                                            <span style={{ color: '#a78bfa', fontSize: '0.8rem', display: 'block' }}>הגדרה באנגלית (English Definition):</span>
-                                            <p style={{ margin: 0, color: '#c4b5fd' }}>{wordData.definition}</p>
+                                            <span style={{ color: 'var(--text-secondary, #475569)', fontSize: '0.8rem', display: 'block' }}>הגדרה באנגלית (English Definition):</span>
+                                            <p style={{ margin: 0, color: 'var(--text-secondary, #475569)' }}>{wordData.definition}</p>
                                         </div>
                                     )}
                                 </div>
                             ) : (
-                                <p style={{ color: '#8b7cb8', margin: 0 }}>לא נמצא מידע עבור מילה זו.</p>
+                                <p style={{ color: 'var(--text-muted, #64748b)', margin: 0 }}>לא נמצא מידע עבור מילה זו.</p>
                             )}
                         </div>
                     )}
@@ -268,12 +268,12 @@ export const LessonDetails: React.FC = () => {
             )}
 
             {step === 1 && questions.length > 0 && (
-                <div className="card p-4 p-md-5" style={{ background: '#140d36', borderColor: 'rgba(168, 85, 247, 0.3)' }}>
+                <div className="card p-4 p-md-5" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)', boxShadow: 'var(--shadow-card)' }}>
                     <div className="d-flex justify-content-between align-items-center mb-2">
-                        <span style={{ color: '#a78bfa', fontWeight: 600 }}>
+                        <span style={{ color: 'var(--text-secondary, #475569)', fontWeight: 600 }}>
                             Exercise {currentQuestionIndex + 1} of {questions.length}
                         </span>
-                        <span style={{ color: '#c084fc', fontWeight: 600 }}>
+                        <span style={{ color: 'var(--color-primary, #5457cd)', fontWeight: 700 }}>
                             Score: {quizScore}
                         </span>
                     </div>
@@ -286,7 +286,7 @@ export const LessonDetails: React.FC = () => {
                         ></div>
                     </div>
 
-                    <h4 className="fw-bold mb-4 text-white">
+                    <h4 className="fw-bold mb-4" style={{ color: 'var(--text-main, #2b3650)' }}>
                         {questions[currentQuestionIndex].question}
                     </h4>
 
@@ -296,20 +296,17 @@ export const LessonDetails: React.FC = () => {
                                 key={idx}
                                 type="button"
                                 onClick={() => handleSelectOption(idx)}
-                                className={`w-100 text-start p-3 rounded-3 mb-2 transition-all ${
-                                    selectedOption === idx
-                                        ? 'bg-purple-900 border-purple-400 text-white font-semibold'
-                                        : 'bg-gray-900 border-gray-700 text-gray-200'
-                                }`}
+                                className="w-100 text-start p-3 rounded-3 mb-2 transition-all"
                                 style={{
                                     display: 'block',
-                                    border: selectedOption === idx ? '1.5px solid #c084fc' : '1px solid rgba(168, 85, 247, 0.3)',
-                                    background: selectedOption === idx ? 'rgba(147, 51, 234, 0.4)' : '#19123f',
-                                    color: '#ffffff',
+                                    border: selectedOption === idx ? '2px solid var(--color-primary, #5457cd)' : '1px solid var(--border-subtle, #e2e8f4)',
+                                    background: selectedOption === idx ? 'var(--palette-ice, #eef1ff)' : '#ffffff',
+                                    color: 'var(--text-main, #2b3650)',
+                                    fontWeight: selectedOption === idx ? 600 : 500,
                                     cursor: 'pointer'
                                 }}
                             >
-                                <span style={{ marginRight: '0.75rem', fontWeight: 700, color: '#c084fc' }}>{String.fromCharCode(65 + idx)}.</span>
+                                <span style={{ marginRight: '0.75rem', fontWeight: 700, color: 'var(--color-primary, #5457cd)' }}>{String.fromCharCode(65 + idx)}.</span>
                                 {opt}
                             </button>
                         ))}
@@ -317,8 +314,8 @@ export const LessonDetails: React.FC = () => {
 
                     <div className="d-flex justify-content-end">
                         <button
-                            className="btn btn-primary px-4 py-2 rounded-pill"
-                            style={{ background: 'linear-gradient(135deg, #9333ea 0%, #ec4899 100%)', border: 'none', fontWeight: 700 }}
+                            className="btn btn-primary px-4 py-2 rounded-pill fw-bold"
+                            style={{ background: 'linear-gradient(135deg, #5457cd 0%, #4338ca 100%)', border: 'none' }}
                             disabled={selectedOption === null}
                             onClick={handleNextQuestion}
                         >
@@ -329,34 +326,34 @@ export const LessonDetails: React.FC = () => {
             )}
 
             {step === 2 && (
-                <div className="card p-5 text-center" style={{ background: '#140d36', borderColor: 'rgba(168, 85, 247, 0.3)' }}>
+                <div className="card p-5 text-center" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)', boxShadow: 'var(--shadow-card)' }}>
                     <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎓</div>
-                    <h2 className="fw-bold mb-2 text-white">Lesson Completed!</h2>
-                    <p style={{ color: '#c4b5fd', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
+                    <h2 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Lesson Completed!</h2>
+                    <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
                         Great job finishing "{currentLesson.title}".
                     </p>
 
-                    <div style={{ background: '#19123f', padding: '1.5rem', borderRadius: '1rem', maxWidth: '380px', margin: '0 auto 1.5rem' }}>
+                    <div style={{ background: 'var(--palette-ice, #eef1ff)', border: '1.5px solid var(--border-colored, #b6c5f7)', padding: '1.5rem', borderRadius: '1rem', maxWidth: '380px', margin: '0 auto 1.5rem' }}>
                         <div style={{ fontSize: '2.5rem', fontWeight: 800, color: '#10b981', marginBottom: '0.5rem' }}>
                             {quizScore} / {questions.length}
                         </div>
-                        <div style={{ color: '#c4b5fd' }}>Correct Answers in Practice</div>
-                        <hr style={{ borderColor: 'rgba(168, 85, 247, 0.2)', margin: '1rem 0' }} />
+                        <div style={{ color: 'var(--text-secondary, #475569)' }}>Correct Answers in Practice</div>
+                        <hr style={{ borderColor: 'var(--border-colored, #b6c5f7)', margin: '1rem 0' }} />
                         <span style={{ background: '#f59e0b', color: '#0b0720', padding: '0.35rem 0.85rem', borderRadius: '9999px', fontWeight: 700 }}>
                             + {50 + (quizScore * 10)} XP Earned!
                         </span>
                     </div>
 
                     {completedNotice && (
-                        <div className="alert" style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#6ee7b7', border: '1px solid rgba(16, 185, 129, 0.4)', maxWidth: '380px', margin: '0 auto 1.5rem' }}>
+                        <div className="alert alert-success" style={{ maxWidth: '380px', margin: '0 auto 1.5rem' }}>
                             ✓ Your lesson progress and XP were saved to your dashboard!
                         </div>
                     )}
 
                     <div className="d-flex justify-content-center gap-3">
                         <button
-                            className="btn btn-primary px-4 py-2 rounded-pill"
-                            style={{ background: 'linear-gradient(135deg, #9333ea 0%, #ec4899 100%)', border: 'none', fontWeight: 700 }}
+                            className="btn btn-primary px-4 py-2 rounded-pill fw-bold"
+                            style={{ background: 'linear-gradient(135deg, #5457cd 0%, #4338ca 100%)', border: 'none' }}
                             onClick={() => navigate('/lessons')}
                         >
                             Back to All Lessons

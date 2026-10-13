@@ -159,8 +159,8 @@ export const Games: React.FC = () => {
                         <span className="games-hub-badge">
                             🎮 Interactive Practice
                         </span>
-                        <h2 className="display-5 fw-bold mb-2 text-white">English Learning Games</h2>
-                        <p style={{ color: '#c4b5fd', fontSize: '1.2rem' }}>
+                        <h2 className="display-5 fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>English Learning Games</h2>
+                        <p style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.2rem' }}>
                             Play fun mini-games with dynamic, random vocabulary from our 370+ word bank to reinforce your English!
                         </p>
                     </div>
@@ -169,8 +169,8 @@ export const Games: React.FC = () => {
                         <div className="col-md-6">
                             <div className="games-card">
                                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🃏</div>
-                                <h4 className="fw-bold mb-2 text-white">Word Match Challenge</h4>
-                                <p style={{ color: '#c4b5fd', marginBottom: '1.5rem', flexGrow: 1 }}>
+                                <h4 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Word Match Challenge</h4>
+                                <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', flexGrow: 1 }}>
                                     Match English words with their Hebrew translations. Every round draws random words from the full vocabulary database!
                                 </p>
                                 <button
@@ -185,8 +185,8 @@ export const Games: React.FC = () => {
                         <div className="col-md-6">
                             <div className="games-card">
                                 <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔤</div>
-                                <h4 className="fw-bold mb-2 text-white">Missing Letter Spelling</h4>
-                                <p style={{ color: '#c4b5fd', marginBottom: '1.5rem', flexGrow: 1 }}>
+                                <h4 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Missing Letter Spelling</h4>
+                                <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', flexGrow: 1 }}>
                                     Find the missing letter from dynamically generated words, listen to pronunciation, and master spellings!
                                 </p>
                                 <button
@@ -214,7 +214,7 @@ export const Games: React.FC = () => {
 
                     {!matchFinished ? (
                         <div>
-                            <h3 className="fw-bold text-center mb-4 text-white">Find Matching Pairs</h3>
+                            <h3 className="fw-bold text-center mb-4" style={{ color: 'var(--text-main, #2b3650)' }}>Find Matching Pairs</h3>
                             <div className="row g-3">
                                 {matchCards.map((card) => {
                                     const isMatched = matchedPairs.includes(card.pairId);
@@ -241,16 +241,16 @@ export const Games: React.FC = () => {
                     ) : (
                         <div className="games-card text-center p-5">
                             <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🏆</div>
-                            <h2 className="fw-bold mb-2 text-white">Awesome Memory!</h2>
-                            <p style={{ color: '#c4b5fd', marginBottom: '1.5rem' }}>You matched all word pairs successfully!</p>
+                            <h2 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Awesome Memory!</h2>
+                            <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem' }}>You matched all word pairs successfully!</p>
 
-                            <div style={{ background: '#19123f', padding: '1.5rem', borderRadius: '1rem', maxWidth: '350px', margin: '0 auto 1.5rem' }}>
+                            <div style={{ background: 'var(--palette-ice, #eef1ff)', border: '1.5px solid var(--border-colored, #b6c5f7)', padding: '1.5rem', borderRadius: '1rem', maxWidth: '350px', margin: '0 auto 1.5rem' }}>
                                 <h3 className="fw-bold text-success mb-1">Score: {matchScore}</h3>
                                 <span className="badge" style={{ background: '#f59e0b', color: '#0b0720', fontWeight: 700, padding: '0.4rem 0.8rem', borderRadius: '9999px' }}>+60 XP Earned</span>
                             </div>
 
                             {saveNotice && (
-                                <div className="alert" style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#6ee7b7', border: '1px solid rgba(16, 185, 129, 0.4)', maxWidth: '350px', margin: '0 auto 1.5rem' }}>
+                                <div className="alert alert-success" style={{ maxWidth: '350px', margin: '0 auto 1.5rem' }}>
                                     Score and XP saved to your profile!
                                 </div>
                             )}
@@ -281,12 +281,12 @@ export const Games: React.FC = () => {
 
                     {!spellingFinished && spellingWords[spellingIndex] ? (
                         <div className="games-card text-center p-5">
-                            <span style={{ color: '#c4b5fd', fontSize: '1.1rem', marginBottom: '0.5rem' }}>Meaning: "{spellingWords[spellingIndex].translation}"</span>
-                            <div style={{ fontSize: '3.5rem', fontWeight: 800, letterSpacing: '0.25em', margin: '1.5rem 0', color: '#c084fc' }}>
+                            <span style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.1rem', marginBottom: '0.5rem' }}>Meaning: "{spellingWords[spellingIndex].translation}"</span>
+                            <div style={{ fontSize: '3.5rem', fontWeight: 800, letterSpacing: '0.25em', margin: '1.5rem 0', color: 'var(--color-primary, #5457cd)' }}>
                                 {spellingWords[spellingIndex].display}
                             </div>
 
-                            <p style={{ color: '#c4b5fd', marginBottom: '1.5rem' }}>Which letter completes the word?</p>
+                            <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem' }}>Which letter completes the word?</p>
 
                             <div className="d-flex justify-content-center gap-3 mb-4 flex-wrap">
                                 {getLetterChoices().map((letter, idx) => (
@@ -310,16 +310,16 @@ export const Games: React.FC = () => {
                     ) : (
                         <div className="games-card text-center p-5">
                             <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🌟</div>
-                            <h2 className="fw-bold mb-2 text-white">Spelling Challenge Completed!</h2>
-                            <p style={{ color: '#c4b5fd', marginBottom: '1.5rem' }}>You've mastered these words!</p>
+                            <h2 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Spelling Challenge Completed!</h2>
+                            <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem' }}>You've mastered these words!</p>
 
-                            <div style={{ background: '#19123f', padding: '1.5rem', borderRadius: '1rem', maxWidth: '350px', margin: '0 auto 1.5rem' }}>
+                            <div style={{ background: 'var(--palette-ice, #eef1ff)', border: '1.5px solid var(--border-colored, #b6c5f7)', padding: '1.5rem', borderRadius: '1rem', maxWidth: '350px', margin: '0 auto 1.5rem' }}>
                                 <h3 className="fw-bold text-success mb-1">Score: {spellingScore}</h3>
                                 <span className="badge" style={{ background: '#f59e0b', color: '#0b0720', fontWeight: 700, padding: '0.4rem 0.8rem', borderRadius: '9999px' }}>+{spellingScore} XP Earned</span>
                             </div>
 
                             {saveNotice && (
-                                <div className="alert" style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#6ee7b7', border: '1px solid rgba(16, 185, 129, 0.4)', maxWidth: '350px', margin: '0 auto 1.5rem' }}>
+                                <div className="alert alert-success" style={{ maxWidth: '350px', margin: '0 auto 1.5rem' }}>
                                     Spelling score and XP saved to your dashboard!
                                 </div>
                             )}

@@ -51,8 +51,8 @@ export const Home: React.FC = () => {
             {/* Feature Cards Section */}
             <div className="container py-5">
                 <div className="text-center mb-5">
-                    <h2 className="fw-bold mb-2 text-white" style={{ fontSize: '2rem' }}>Everything You Need to Succeed</h2>
-                    <p style={{ color: '#c4b5fd' }}>A step-by-step path designed for all proficiency levels</p>
+                    <h2 className="fw-bold mb-2" style={{ fontSize: '2rem', color: 'var(--text-main, #2b3650)' }}>Everything You Need to Succeed</h2>
+                    <p style={{ color: 'var(--text-secondary, #475569)' }}>A step-by-step path designed for all proficiency levels</p>
                 </div>
 
                 <div className="row g-4">

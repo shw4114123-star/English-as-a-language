@@ -48,7 +48,7 @@ export const Login: React.FC = () => {
                     </button>
                 </form>
                 <div className="mt-4 text-center">
-                    <span style={{ color: '#c4b5fd' }}>Don't have an account? </span>
+                    <span style={{ color: 'var(--text-secondary, #475569)' }}>Don't have an account? </span>
                     <span onClick={() => navigate('/register')} className="auth-switch-link">Register here</span>
                 </div>
             </div>

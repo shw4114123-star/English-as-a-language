@@ -43,7 +43,7 @@ export const Lessons: React.FC = () => {
         <div className="container py-5 fade-in">
             {/* Overall Course Progress Banner */}
             {typedLessons.length > 0 && (
-                <div className="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white" style={{ background: 'linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%)' }}>
+                <div className="card border-0 shadow-sm rounded-4 p-4 mb-4 text-white" style={{ background: 'linear-gradient(135deg, #2563eb 0%, #3b82f6 100%)' }}>
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
                         <div>
                             <div className="d-flex align-items-center gap-2 mb-1">
@@ -74,7 +74,7 @@ export const Lessons: React.FC = () => {
             <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3 mb-4">
                 <div>
                     <h2 className="lessons-title mb-1">Interactive Lessons</h2>
-                    <p style={{ color: '#c4b5fd', marginBottom: 0 }}>Learn vocabulary, grammar rules, and complete practice exercises.</p>
+                    <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: 0 }}>Learn vocabulary, grammar rules, and complete practice exercises.</p>
                 </div>
 
                 <div style={{ display: 'inline-flex' }} role="group">
@@ -93,7 +93,7 @@ export const Lessons: React.FC = () => {
 
             {loading && (
                 <div className="text-center py-5">
-                    <div style={{ color: '#c4b5fd', fontSize: '1.2rem' }}>Loading Lessons...</div>
+                    <div style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.2rem' }}>Loading Lessons...</div>
                 </div>
             )}
 
@@ -102,10 +102,10 @@ export const Lessons: React.FC = () => {
             )}
 
             {!loading && filteredLessons.length === 0 && (
-                <div className="card p-5 text-center text-muted" style={{ background: '#140d36' }}>
+                <div className="card p-5 text-center text-muted" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)' }}>
                     <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📚</div>
-                    <h4 style={{ color: '#ffffff' }}>No lessons found for this level</h4>
-                    <p style={{ color: '#c4b5fd' }}>New lessons will be added soon by teachers!</p>
+                    <h4 style={{ color: 'var(--text-main, #2b3650)' }}>No lessons found for this level</h4>
+                    <p style={{ color: 'var(--text-secondary, #475569)' }}>New lessons will be added soon by teachers!</p>
                 </div>
             )}
 
@@ -119,7 +119,7 @@ export const Lessons: React.FC = () => {
                                     <div className="d-flex justify-content-between align-items-center mb-3">
                                         <span className={`px-3 py-1 rounded-full text-xs font-semibold ${
                                             lesson.level === 'Beginner' ? 'badge-beginner' :
-                                            lesson.level === 'Intermediate' ? 'badge-intermediate' :
+                                             lesson.level === 'Intermediate' ? 'badge-intermediate' :
                                             'badge-advanced'
                                         }`}>
                                             {lesson.level}
@@ -131,13 +131,13 @@ export const Lessons: React.FC = () => {
                                         )}
                                     </div>
 
-                                    <h4 className="fw-bold mb-2 text-white" style={{ fontSize: '1.25rem' }}>{lesson.title}</h4>
-                                    <p style={{ color: '#c4b5fd', flexGrow: 1, fontSize: '0.9rem', marginBottom: '1.5rem' }}>
+                                    <h4 className="fw-bold mb-2" style={{ fontSize: '1.25rem', color: 'var(--text-main, #2b3650)' }}>{lesson.title}</h4>
+                                    <p style={{ color: 'var(--text-secondary, #475569)', flexGrow: 1, fontSize: '0.9rem', marginBottom: '1.5rem' }}>
                                         {lesson.description || 'Step-by-step English exercises with words and practice quiz.'}
                                     </p>
 
-                                    <div className="d-flex justify-content-between align-items-center pt-3" style={{ borderTop: '1px solid rgba(168, 85, 247, 0.2)' }}>
-                                        <span style={{ color: '#a78bfa', fontSize: '0.85rem' }}>
+                                    <div className="d-flex justify-content-between align-items-center pt-3" style={{ borderTop: '1px solid var(--border-subtle, #e2e8f4)' }}>
+                                        <span style={{ color: 'var(--text-muted, #64748b)', fontSize: '0.85rem' }}>
                                             {lesson.words?.length || 0} Words • {lesson.questions?.length || 0} Questions
                                         </span>
                                         <button

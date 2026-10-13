@@ -10,7 +10,7 @@
 .letter-card-container {
   /* Default Fallback Palette Variables */
   --card-theme: #6366f1;
-  --card-accent: #3730a3;
+  --card-accent: #4f46e5;
   --card-bg-light: #f6f8fd;
   --card-bg-glow: rgba(177, 178, 255, 0.22);
   --card-border: #d2daff;

@@ -52,13 +52,13 @@ export const AdminUsers: React.FC = () => {
                 <div>
                     <h2 className="fw-bold mb-1" style={{
                         fontSize: '2rem',
-                        background: 'linear-gradient(135deg, #ffffff 0%, #d8b4fe 100%)',
+                        background: 'linear-gradient(135deg, #2b3650 0%, #4338ca 100%)',
                         WebkitBackgroundClip: 'text',
                         WebkitTextFillColor: 'transparent'
                     }}>
                         User Management & Permissions
                     </h2>
-                    <p style={{ color: '#c4b5fd', margin: 0 }}>Control roles, inspect accounts, and manage students and staff.</p>
+                    <p style={{ color: 'var(--text-secondary, #475569)', margin: 0 }}>Control roles, inspect accounts, and manage students and staff.</p>
                 </div>
 
                 <div style={{ maxWidth: '320px', width: '100%' }}>
@@ -74,7 +74,7 @@ export const AdminUsers: React.FC = () => {
             </div>
 
             {actionMessage && (
-                <div className="alert" style={{ background: 'rgba(16, 185, 129, 0.2)', color: '#6ee7b7', border: '1px solid rgba(16, 185, 129, 0.4)' }}>
+                <div className="alert alert-success">
                     {actionMessage}
                 </div>
             )}
@@ -98,13 +98,13 @@ export const AdminUsers: React.FC = () => {
                         <tbody>
                             {loading ? (
                                 <tr>
-                                    <td colSpan={5} style={{ textAlign: 'center', padding: '3rem', color: '#c4b5fd' }}>
+                                    <td colSpan={5} style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted, #64748b)' }}>
                                         Loading users...
                                     </td>
                                 </tr>
                             ) : filteredUsers.length === 0 ? (
                                 <tr>
-                                    <td colSpan={5} style={{ textAlign: 'center', padding: '3rem', color: '#8b7cb8' }}>
+                                    <td colSpan={5} style={{ textAlign: 'center', padding: '3rem', color: 'var(--text-muted, #64748b)' }}>
                                         No users found.
                                     </td>
                                 </tr>
@@ -112,19 +112,19 @@ export const AdminUsers: React.FC = () => {
                                 filteredUsers.map((user) => (
                                     <tr key={user._id}>
                                         <td>
-                                            <div style={{ fontWeight: 700, color: '#ffffff' }}>{user.fullName || user.userName}</div>
-                                            <small style={{ color: '#a78bfa' }}>@{user.userName}</small>
+                                            <div style={{ fontWeight: 700, color: 'var(--text-main, #2b3650)' }}>{user.fullName || user.userName}</div>
+                                            <small style={{ color: 'var(--text-muted, #64748b)' }}>@{user.userName}</small>
                                         </td>
-                                        <td style={{ color: '#c4b5fd' }}>{user.email}</td>
+                                        <td style={{ color: 'var(--text-secondary, #475569)' }}>{user.email}</td>
                                         <td>
                                             <span style={{
                                                 padding: '0.25rem 0.75rem',
                                                 borderRadius: '9999px',
                                                 fontSize: '0.8rem',
                                                 fontWeight: 600,
-                                                background: user.role === 'admin' ? 'rgba(239, 68, 68, 0.25)' : user.role === 'teacher' ? 'rgba(124, 58, 237, 0.35)' : 'rgba(59, 130, 246, 0.25)',
-                                                color: user.role === 'admin' ? '#fca5a5' : user.role === 'teacher' ? '#c084fc' : '#93c5fd',
-                                                border: '1px solid currentColor'
+                                                background: user.role === 'admin' ? '#fef2f2' : user.role === 'teacher' ? 'var(--palette-ice, #eef1ff)' : '#eff6ff',
+                                                color: user.role === 'admin' ? '#dc2626' : user.role === 'teacher' ? 'var(--color-primary, #5457cd)' : '#2563eb',
+                                                border: user.role === 'admin' ? '1px solid #fecaca' : user.role === 'teacher' ? '1px solid var(--border-colored, #b6c5f7)' : '1px solid #bfdbfe'
                                             }}>
                                                 {user.role}
                                             </span>

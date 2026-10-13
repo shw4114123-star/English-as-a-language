@@ -14,7 +14,7 @@ export const Dashboard: React.FC = () => {
     if (loading) {
         return (
             <div className="container mt-5 text-center">
-                <div style={{ color: '#c4b5fd', fontSize: '1.2rem' }}>Loading Dashboard...</div>
+                <div style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.2rem' }}>Loading Dashboard...</div>
             </div>
         );
     }
@@ -26,7 +26,7 @@ export const Dashboard: React.FC = () => {
             <div className="d-flex justify-content-between align-items-center mb-5 flex-wrap gap-3">
                 <h2 className="fw-bold mb-0" style={{
                     fontSize: '2rem',
-                    background: 'linear-gradient(135deg, #ffffff 0%, #d8b4fe 100%)',
+                    background: 'linear-gradient(135deg, #2b3650 0%, #4338ca 100%)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent'
                 }}>

@@ -118,13 +118,13 @@ export const TeacherDashboard: React.FC = () => {
             <div className="mb-4">
                 <h2 className="fw-bold mb-1" style={{
                     fontSize: '2rem',
-                    background: 'linear-gradient(135deg, #ffffff 0%, #d8b4fe 100%)',
+                    background: 'linear-gradient(135deg, #2b3650 0%, #4338ca 100%)',
                     WebkitBackgroundClip: 'text',
                     WebkitTextFillColor: 'transparent'
                 }}>
                     Teacher Studio & Curriculum Creator
                 </h2>
-                <p style={{ color: '#c4b5fd' }}>Author new English lessons, create vocabulary lists, and publish interactive quizzes.</p>
+                <p style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.05rem' }}>Author new English lessons, create vocabulary lists, and publish interactive quizzes.</p>
             </div>
 
             {statusMessage && <div className="alert alert-success">{statusMessage}</div>}
@@ -132,12 +132,12 @@ export const TeacherDashboard: React.FC = () => {
 
             <div className="row g-4">
                 <div className="col-lg-7">
-                    <div className="card p-4 p-md-5" style={{ background: '#140d36', borderColor: 'rgba(168, 85, 247, 0.25)' }}>
-                        <h4 className="fw-bold mb-4 text-white">Create New Lesson</h4>
+                    <div className="card p-4 p-md-5" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)', boxShadow: 'var(--shadow-card)' }}>
+                        <h4 className="fw-bold mb-4" style={{ color: 'var(--text-main, #2b3650)' }}>Create New Lesson</h4>
 
                         <form onSubmit={handleCreateLessonSubmit}>
                             <div className="mb-3">
-                                <label className="form-label">Lesson Title</label>
+                                <label className="form-label" style={{ color: 'var(--text-main, #2b3650)', fontWeight: 600 }}>Lesson Title</label>
                                 <input
                                     type="text"
                                     className="form-control"
@@ -149,7 +149,7 @@ export const TeacherDashboard: React.FC = () => {
                             </div>
 
                             <div className="mb-3">
-                                <label className="form-label">Description</label>
+                                <label className="form-label" style={{ color: 'var(--text-main, #2b3650)', fontWeight: 600 }}>Description</label>
                                 <textarea
                                     className="form-control"
                                     rows={2}
@@ -160,7 +160,7 @@ export const TeacherDashboard: React.FC = () => {
                             </div>
 
                             <div className="mb-4">
-                                <label className="form-label">Target Level</label>
+                                <label className="form-label" style={{ color: 'var(--text-main, #2b3650)', fontWeight: 600 }}>Target Level</label>
                                 <select
                                     className="form-control"
                                     value={level}
@@ -173,7 +173,7 @@ export const TeacherDashboard: React.FC = () => {
                             </div>
 
                             <div className="teacher-section-box">
-                                <h6 className="fw-bold mb-3" style={{ color: '#c084fc' }}>Add Vocabulary Words ({wordsList.length})</h6>
+                                <h6 className="fw-bold mb-3" style={{ color: 'var(--color-primary, #5457cd)' }}>Add Vocabulary Words ({wordsList.length})</h6>
                                 <div className="row g-2 mb-2">
                                     <div className="col-md-6">
                                         <input
@@ -214,8 +214,8 @@ export const TeacherDashboard: React.FC = () => {
                                 </div>
                                 <button
                                     type="button"
-                                    className="btn btn-outline-secondary rounded-pill px-3 py-1 btn-sm"
-                                    style={{ borderColor: '#a855f7', color: '#e9d5ff' }}
+                                    className="btn btn-sm rounded-pill px-3 py-1 fw-bold"
+                                    style={{ border: '1.5px solid var(--color-primary, #5457cd)', color: 'var(--color-primary, #5457cd)', background: '#ffffff' }}
                                     onClick={handleAddWord}
                                 >
                                     + Add Word to Lesson
@@ -228,7 +228,7 @@ export const TeacherDashboard: React.FC = () => {
                                                 <span><strong>{w.word}</strong> - {w.translation}</span>
                                                 <button
                                                     type="button"
-                                                    style={{ background: 'none', border: 'none', color: '#fca5a5', cursor: 'pointer' }}
+                                                    style={{ background: 'none', border: 'none', color: '#dc2626', fontWeight: 600, cursor: 'pointer' }}
                                                     onClick={() => handleRemoveWord(idx)}
                                                 >
                                                     Remove
@@ -240,7 +240,7 @@ export const TeacherDashboard: React.FC = () => {
                             </div>
 
                             <div className="teacher-section-box">
-                                <h6 className="fw-bold mb-3" style={{ color: '#c084fc' }}>Add Quiz Questions ({questionsList.length})</h6>
+                                <h6 className="fw-bold mb-3" style={{ color: 'var(--color-primary, #5457cd)' }}>Add Quiz Questions ({questionsList.length})</h6>
                                 <div className="mb-2">
                                     <input
                                         type="text"
@@ -289,7 +289,7 @@ export const TeacherDashboard: React.FC = () => {
                                     </div>
                                 </div>
                                 <div className="d-flex align-items-center gap-2 mb-2">
-                                    <label style={{ fontSize: '0.85rem', color: '#c4b5fd' }}>Correct Answer:</label>
+                                    <label style={{ fontSize: '0.875rem', color: 'var(--text-secondary, #475569)', fontWeight: 600 }}>Correct Answer:</label>
                                     <select
                                         className="form-control"
                                         style={{ width: 'auto', display: 'inline-block' }}
@@ -304,8 +304,8 @@ export const TeacherDashboard: React.FC = () => {
                                 </div>
                                 <button
                                     type="button"
-                                    className="btn btn-outline-secondary rounded-pill px-3 py-1 btn-sm"
-                                    style={{ borderColor: '#a855f7', color: '#e9d5ff' }}
+                                    className="btn btn-sm rounded-pill px-3 py-1 fw-bold"
+                                    style={{ border: '1.5px solid var(--color-primary, #5457cd)', color: 'var(--color-primary, #5457cd)', background: '#ffffff' }}
                                     onClick={handleAddQuestion}
                                 >
                                     + Add Question to Quiz
@@ -318,7 +318,7 @@ export const TeacherDashboard: React.FC = () => {
                                                 <span><strong>Q{idx + 1}:</strong> {q.question}</span>
                                                 <button
                                                     type="button"
-                                                    style={{ background: 'none', border: 'none', color: '#fca5a5', cursor: 'pointer' }}
+                                                    style={{ background: 'none', border: 'none', color: '#dc2626', fontWeight: 600, cursor: 'pointer' }}
                                                     onClick={() => handleRemoveQuestion(idx)}
                                                 >
                                                     Remove
@@ -333,11 +333,12 @@ export const TeacherDashboard: React.FC = () => {
                                 type="submit"
                                 className="w-100 py-3 rounded-3 fw-bold"
                                 style={{
-                                    background: 'linear-gradient(135deg, #9333ea 0%, #ec4899 100%)',
+                                    background: 'linear-gradient(135deg, #5457cd 0%, #4338ca 100%)',
                                     color: '#ffffff',
                                     border: 'none',
                                     fontSize: '1rem',
-                                    cursor: 'pointer'
+                                    cursor: 'pointer',
+                                    boxShadow: '0 4px 14px rgba(84, 87, 205, 0.35)'
                                 }}
                                 disabled={loading}
                             >
@@ -348,19 +349,19 @@ export const TeacherDashboard: React.FC = () => {
                 </div>
 
                 <div className="col-lg-5">
-                    <div className="card p-4" style={{ background: '#140d36', borderColor: 'rgba(168, 85, 247, 0.25)' }}>
-                        <h4 className="fw-bold mb-3 text-white">Published Lessons ({(lessons as LessonItem[] || []).length})</h4>
+                    <div className="card p-4" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)', boxShadow: 'var(--shadow-card)' }}>
+                        <h4 className="fw-bold mb-3" style={{ color: 'var(--text-main, #2b3650)' }}>Published Lessons ({(lessons as LessonItem[] || []).length})</h4>
                         <div>
                             {(lessons as LessonItem[] || []).map((lesson) => (
                                 <div key={lesson._id} className="teacher-published-card">
                                     <div className="d-flex justify-content-between align-items-center mb-1">
-                                        <h6 className="fw-bold mb-0 text-white">{lesson.title}</h6>
-                                        <span style={{ background: 'rgba(168, 85, 247, 0.25)', color: '#c084fc', padding: '0.2rem 0.5rem', borderRadius: '9999px', fontSize: '0.75rem' }}>
+                                        <h6 className="fw-bold mb-0" style={{ color: 'var(--text-main, #2b3650)' }}>{lesson.title}</h6>
+                                        <span style={{ background: 'var(--palette-ice, #eef1ff)', color: 'var(--color-primary, #5457cd)', border: '1px solid var(--border-colored, #b6c5f7)', padding: '0.2rem 0.6rem', borderRadius: '9999px', fontSize: '0.75rem', fontWeight: 700 }}>
                                             {lesson.level}
                                         </span>
                                     </div>
-                                    <p style={{ fontSize: '0.85rem', color: '#c4b5fd', marginBottom: '0.5rem' }}>{lesson.description}</p>
-                                    <div style={{ fontSize: '0.8rem', color: '#a78bfa' }}>
+                                    <p style={{ fontSize: '0.875rem', color: 'var(--text-secondary, #475569)', marginBottom: '0.5rem' }}>{lesson.description}</p>
+                                    <div style={{ fontSize: '0.8rem', color: 'var(--text-muted, #64748b)', fontWeight: 500 }}>
                                         {lesson.words?.length || 0} words • {lesson.questions?.length || 0} questions
                                     </div>
                                 </div>

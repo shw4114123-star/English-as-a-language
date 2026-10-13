@@ -64,7 +64,7 @@
   border-color: var(--palette-sky);
 }
 .stat-games::before {
-  background: linear-gradient(90deg, #3b82f6 0%, #aac4ff 100%);
+  background: linear-gradient(90deg, #3b82f6 0%, #60a5fa 100%);
 }
 .stat-games .stat-value {
   color: #2563eb;

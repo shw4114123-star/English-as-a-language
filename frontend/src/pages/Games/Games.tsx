@@ -157,7 +157,7 @@ export const Games: React.FC = () => {
                 <div>
                     <div className="games-hub-header">
                         <span className="games-hub-badge">
-                            🎮 Interactive Practice
+                            Interactive Practice
                         </span>
                         <h2 className="display-5 fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>English Learning Games</h2>
                         <p style={{ color: 'var(--text-secondary, #475569)', fontSize: '1.2rem' }}>
@@ -168,7 +168,13 @@ export const Games: React.FC = () => {
                     <div className="row g-4">
                         <div className="col-md-6">
                             <div className="games-card">
-                                <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🃏</div>
+                                <div style={{ width: '60px', height: '60px', margin: '0 auto 1rem', background: 'var(--palette-ice)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                        <rect x="3" y="3" width="18" height="18" rx="2" ry="2" />
+                                        <line x1="3" y1="9" x2="21" y2="9" />
+                                        <line x1="9" y1="21" x2="9" y2="9" />
+                                    </svg>
+                                </div>
                                 <h4 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Word Match Challenge</h4>
                                 <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', flexGrow: 1 }}>
                                     Match English words with their Hebrew translations. Every round draws random words from the full vocabulary database!
@@ -184,7 +190,12 @@ export const Games: React.FC = () => {
 
                         <div className="col-md-6">
                             <div className="games-card">
-                                <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>🔤</div>
+                                <div style={{ width: '60px', height: '60px', margin: '0 auto 1rem', background: 'var(--palette-ice)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                                    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                        <path d="M4 20h4l2-6h4l2 6h4" />
+                                        <path d="m10 14 2-6 2 6" />
+                                    </svg>
+                                </div>
                                 <h4 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Missing Letter Spelling</h4>
                                 <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', flexGrow: 1 }}>
                                     Find the missing letter from dynamically generated words, listen to pronunciation, and master spellings!
@@ -240,7 +251,16 @@ export const Games: React.FC = () => {
                         </div>
                     ) : (
                         <div className="games-card text-center p-5">
-                            <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🏆</div>
+                            <div style={{ width: '64px', height: '64px', margin: '0 auto 1.25rem', background: 'var(--palette-ice)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                    <path d="M6 9H4.5a2.5 2.5 0 0 1 0-5H6" />
+                                    <path d="M18 9h1.5a2.5 2.5 0 0 0 0-5H18" />
+                                    <path d="M4 22h16" />
+                                    <path d="M10 14.66V17c0 .55-.45 1-1 1H7" />
+                                    <path d="M14 14.66V17c0 .55.45 1 1 1h2" />
+                                    <path d="M18 2H6v7a6 6 0 0 0 12 0V2Z" />
+                                </svg>
+                            </div>
                             <h2 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Awesome Memory!</h2>
                             <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem' }}>You matched all word pairs successfully!</p>
 
@@ -303,13 +323,17 @@ export const Games: React.FC = () => {
 
                             {spellingFeedback && (
                                 <div className={`alert ${spellingFeedback.correct ? 'alert-success' : 'alert-danger'}`} style={{ maxWidth: '350px', margin: '0 auto' }}>
-                                    {spellingFeedback.correct ? '✓ Correct!' : '✗ Try again!'}
+                                    {spellingFeedback.correct ? 'Correct!' : 'Try again!'}
                                 </div>
                             )}
                         </div>
                     ) : (
                         <div className="games-card text-center p-5">
-                            <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🌟</div>
+                            <div style={{ width: '64px', height: '64px', margin: '0 auto 1.25rem', background: 'var(--palette-ice)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: '#e09f3e' }}>
+                                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                    <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                </svg>
+                            </div>
                             <h2 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Spelling Challenge Completed!</h2>
                             <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem' }}>You've mastered these words!</p>
 

@@ -315,7 +315,11 @@ export const PlacementTest: React.FC = () => {
         return (
             <div className="container py-5 max-w-2xl mx-auto fade-in">
                 <div className="test-card text-center">
-                    <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎉</div>
+                    <div style={{ width: '64px', height: '64px', margin: '0 auto 1.25rem', background: 'var(--palette-ice, #eef1ff)', border: '1.5px solid var(--border-colored, #b6c5f7)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary, #5457cd)' }}>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
+                            <polyline points="20 6 9 17 4 12" />
+                        </svg>
+                    </div>
                     <h2 className="fw-bold mb-3" style={{ color: 'var(--text-main, #2b3650)' }}>Placement Test Completed!</h2>
                     <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>Here are your diagnostic results:</p>
 

@@ -34,6 +34,7 @@ export const Navbar: React.FC = () => {
         { label: 'Lessons', path: '/lessons' },
         { label: 'Games', path: '/games' },
         { label: 'Placement Test', path: '/placement-test' },
+        { label: 'Resources', path: '/resources' },
         { label: 'Dashboard', path: '/dashboard' },
     ];
 
@@ -83,7 +84,10 @@ export const Navbar: React.FC = () => {
                                     className="navbar-xp-badge"
                                     title="View My Dashboard Progress"
                                 >
-                                    ⭐ {progress.xp || 0} XP
+                                    <svg width="14" height="14" viewBox="0 0 24 24" fill="#e09f3e" stroke="#e09f3e" strokeWidth="1.5" style={{ display: 'inline-block', verticalAlign: '-1px', marginRight: '4px' }}>
+                                        <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2" />
+                                    </svg>
+                                    {progress.xp || 0} XP
                                 </span>
                             )}
                             <span className="navbar-user-badge">

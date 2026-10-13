@@ -1,0 +1,2 @@
+/api/*  https://english-as-a-language.onrender.com/api/:splat  200
+/*      /index.html                                            200

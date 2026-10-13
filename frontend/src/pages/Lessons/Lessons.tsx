@@ -47,7 +47,11 @@ export const Lessons: React.FC = () => {
                     <div className="d-flex flex-column flex-md-row justify-content-between align-items-md-center gap-3">
                         <div>
                             <div className="d-flex align-items-center gap-2 mb-1">
-                                <span className="fs-5">🎯</span>
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                    <circle cx="12" cy="12" r="10" />
+                                    <circle cx="12" cy="12" r="6" />
+                                    <circle cx="12" cy="12" r="2" />
+                                </svg>
                                 <h5 className="fw-bold mb-0">Course Completion Progress</h5>
                             </div>
                             <p className="text-white-50 mb-0 small">
@@ -103,7 +107,12 @@ export const Lessons: React.FC = () => {
 
             {!loading && filteredLessons.length === 0 && (
                 <div className="card p-5 text-center text-muted" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)' }}>
-                    <div style={{ fontSize: '3rem', marginBottom: '1rem' }}>📚</div>
+                    <div style={{ width: '60px', height: '60px', margin: '0 auto 1rem', background: 'var(--palette-ice)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                        <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20" />
+                            <path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z" />
+                        </svg>
+                    </div>
                     <h4 style={{ color: 'var(--text-main, #2b3650)' }}>No lessons found for this level</h4>
                     <p style={{ color: 'var(--text-secondary, #475569)' }}>New lessons will be added soon by teachers!</p>
                 </div>
@@ -126,7 +135,7 @@ export const Lessons: React.FC = () => {
                                         </span>
                                         {completed && (
                                             <span className="badge-completed px-2 py-1 rounded-full text-xs font-semibold">
-                                                ✓ Completed
+                                                Completed
                                             </span>
                                         )}
                                     </div>

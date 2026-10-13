@@ -16,6 +16,7 @@ import { LessonDetails } from './pages/LessonDetails/LessonDetails';
 import { Games } from './pages/Games/Games';
 import { AdminUsers } from './pages/AdminUsers/AdminUsers';
 import { TeacherDashboard } from './pages/TeacherDashboard/TeacherDashboard';
+import { Resources } from './pages/Resources/Resources';
 import { NotFound } from './pages/NotFound/NotFound';
 
 export const App: React.FC = () => {
@@ -39,6 +40,7 @@ export const App: React.FC = () => {
         <Route path="/register" element={<Register />} />
         <Route path="/alphabet" element={<Alphabet />} />
         <Route path="/placement-test" element={<PlacementTest />} />
+        <Route path="/resources" element={<Resources />} />
         
         {/* Protected Routes */}
         <Route path="/lessons" element={

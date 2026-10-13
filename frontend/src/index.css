@@ -87,7 +87,7 @@ html, body {
   margin: 0;
   padding: 0;
   min-height: 100vh;
-  font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  font-family: 'Rubik', 'Varela Round', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--bg-page);
@@ -928,6 +928,28 @@ div.games-card > div:first-child[style*="fontSize: '3rem'"] {
   font-size: 0.875rem;
   font-weight: 700;
   color: var(--color-primary);
+}
+
+/* ==========================================================================
+   BIDI TEXT DIRECTION UTILITIES (מניעת שיבושי כיוון בין עברית ואנגלית)
+   ========================================================================== */
+.ltr-isolate,
+.en-token {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-block;
+  text-align: left;
+  font-family: 'Rubik', system-ui, sans-serif;
+}
+
+.en-badge {
+  direction: ltr !important;
+  unicode-bidi: isolate !important;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-family: 'Rubik', system-ui, sans-serif;
+  letter-spacing: normal;
 }
 
 

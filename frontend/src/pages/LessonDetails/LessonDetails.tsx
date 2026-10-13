@@ -166,7 +166,11 @@ export const LessonDetails: React.FC = () => {
                                                 onClick={() => handlePronounce(w.word)}
                                                 title="Listen to pronunciation"
                                             >
-                                                🔊
+                                                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                                    <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                                    <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                                                    <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                                                </svg>
                                             </button>
                                             <button
                                                 className="btn btn-outline-secondary btn-sm rounded-pill"
@@ -202,7 +206,11 @@ export const LessonDetails: React.FC = () => {
                                         onClick={() => handlePronounce(inspectedWord)}
                                         title="Listen to pronunciation"
                                     >
-                                        🔊
+                                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                                            <polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5" />
+                                            <path d="M15.54 8.46a5 5 0 0 1 0 7.07" />
+                                            <path d="M19.07 4.93a10 10 0 0 1 0 14.14" />
+                                        </svg>
                                     </button>
                                 </div>
                                 <button
@@ -327,7 +335,12 @@ export const LessonDetails: React.FC = () => {
 
             {step === 2 && (
                 <div className="card p-5 text-center" style={{ background: '#ffffff', border: '1.5px solid var(--border-colored, #b6c5f7)', boxShadow: 'var(--shadow-card)' }}>
-                    <div style={{ fontSize: '4rem', marginBottom: '1rem' }}>🎓</div>
+                    <div style={{ width: '64px', height: '64px', margin: '0 auto 1.25rem', background: 'var(--palette-ice)', borderRadius: '50%', display: 'flex', alignItems: 'center', justifyContent: 'center', color: 'var(--color-primary)' }}>
+                        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.2" strokeLinecap="round" strokeLinejoin="round">
+                            <path d="M22 10v6M2 10l10-5 10 5-10 5z" />
+                            <path d="M6 12v5c0 2 3 3 6 3s6-1 6-3v-5" />
+                        </svg>
+                    </div>
                     <h2 className="fw-bold mb-2" style={{ color: 'var(--text-main, #2b3650)' }}>Lesson Completed!</h2>
                     <p style={{ color: 'var(--text-secondary, #475569)', marginBottom: '1.5rem', fontSize: '1.1rem' }}>
                         Great job finishing "{currentLesson.title}".
@@ -346,7 +359,7 @@ export const LessonDetails: React.FC = () => {
 
                     {completedNotice && (
                         <div className="alert alert-success" style={{ maxWidth: '380px', margin: '0 auto 1.5rem' }}>
-                            ✓ Your lesson progress and XP were saved to your dashboard!
+                            Your lesson progress and XP were saved to your dashboard!
                         </div>
                     )}
 

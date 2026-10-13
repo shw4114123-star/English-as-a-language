@@ -1,0 +1,16 @@
+# Render Blueprint Configuration
+# Documentation: https://render.com/docs/blueprint-spec
+
+services:
+  # Unified Web Service (Express API + Vite React Frontend)
+  - type: web
+    name: english-as-a-language
+    env: node
+    plan: free
+    buildCommand: npm run build
+    startCommand: npm start
+    autoDeploy: true
+    envVars:
+      - key: NODE_ENV
+        value: production
+      # MONGO_URI and JWT_SECRET should be configured in Render Dashboard under Environment

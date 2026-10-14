@@ -9,7 +9,7 @@ interface AlphabetItem {
 }
 
 const ALPHABET_DATA: AlphabetItem[] = [
-    { letter: 'A', word: 'Apple', imageSrc: '/A.png' },
+    { letter: 'A', word: 'Alligator', imageSrc: '/A.png' },
     { letter: 'B', word: 'Bear', imageSrc: '/B.png' },
     { letter: 'C', word: 'Cat', imageSrc: '/C.png' },
     { letter: 'D', word: 'Dinosaur', imageSrc: '/D.png' },
@@ -18,11 +18,11 @@ const ALPHABET_DATA: AlphabetItem[] = [
     { letter: 'G', word: 'Giraffe', imageSrc: '/G.png' },
     { letter: 'H', word: 'House', imageSrc: '/H.png' },
     { letter: 'I', word: 'Ice cream', imageSrc: '/I.png' },
-    { letter: 'J', word: 'Juice', imageSrc: '/J.png' },
-    { letter: 'K', word: 'Kite', imageSrc: '/K.png' },
+    { letter: 'J', word: 'Jellyfish', imageSrc: '/J.png' },
+    { letter: 'K', word: 'Key', imageSrc: '/K.png' },
     { letter: 'L', word: 'Lion', imageSrc: '/L.png' },
-    { letter: 'M', word: 'Monkey', imageSrc: '/M.png' },
-    { letter: 'N', word: 'Nest', imageSrc: '/N.png' },
+    { letter: 'M', word: 'Mountains', imageSrc: '/M.png' },
+    { letter: 'N', word: 'Ninja', imageSrc: '/N.png' },
     { letter: 'O', word: 'Owl', imageSrc: '/O.png' },
     { letter: 'P', word: 'Penguin', imageSrc: '/P.png' },
     { letter: 'Q', word: 'Queen', imageSrc: '/Q.png' },
@@ -30,10 +30,10 @@ const ALPHABET_DATA: AlphabetItem[] = [
     { letter: 'S', word: 'Snake', imageSrc: '/S.png' },
     { letter: 'T', word: 'Tiger', imageSrc: '/T.png' },
     { letter: 'U', word: 'Unicorn', imageSrc: '/U.png' },
-    { letter: 'V', word: 'Van', imageSrc: '/V.png' },
+    { letter: 'V', word: 'Vase', imageSrc: '/V.png' },
     { letter: 'W', word: 'Watermelon', imageSrc: '/W.png' },
     { letter: 'X', word: 'X-ray', imageSrc: '/X.png' },
-    { letter: 'Y', word: 'Yoyo', imageSrc: '/Y.png' },
+    { letter: 'Y', word: 'Yak', imageSrc: '/Y.png' },
     { letter: 'Z', word: 'Zebra', imageSrc: '/Z.png' }
 ];
 

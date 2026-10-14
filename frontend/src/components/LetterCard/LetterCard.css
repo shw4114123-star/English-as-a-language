@@ -267,31 +267,34 @@
   --card-img-shadow: rgba(90, 15, 30, 0.26);
 }
 
-/* --- Cohesive Color Attributes for the rest of the 26 Letters --- */
+/* --- Cohesive Color Attributes for the 26 Alphabet Cards Sampled from Drawings --- */
+
+/* --- A: ALLIGATOR (Sampled from A.png - Emerald Mint Green, Forest Scales, Aqua Glow) --- */
 .letter-card-a {
-  --card-theme: #e04747;
-  --card-accent: #b02626;
-  --card-bg-light: #fff2f2;
-  --card-bg-glow: rgba(224, 71, 71, 0.22);
-  --card-border: #fed7d7;
-  --card-border-hover: #e04747;
-  --card-badge-bg: #ffe4e4;
-  --card-badge-color: #b02626;
-  --card-shadow: rgba(224, 71, 71, 0.16);
-  --card-img-shadow: rgba(224, 71, 71, 0.2);
+  --card-theme: #059669;
+  --card-accent: #064e3b;
+  --card-bg-light: #f0fdf4;
+  --card-bg-glow: rgba(16, 185, 129, 0.28);
+  --card-border: #a7f3d0;
+  --card-border-hover: #059669;
+  --card-badge-bg: #d1fae5;
+  --card-badge-color: #064e3b;
+  --card-shadow: rgba(6, 78, 59, 0.18);
+  --card-img-shadow: rgba(6, 78, 59, 0.24);
 }
 
+/* --- B: BEAR (Sampled from B.png - Warm Honey Amber, Chocolate Fur, Bee Gold) --- */
 .letter-card-b {
-  --card-theme: #9c6644;
-  --card-accent: #6f452a;
-  --card-bg-light: #f9f5f2;
-  --card-bg-glow: rgba(156, 102, 68, 0.22);
-  --card-border: #e6d5cb;
-  --card-border-hover: #9c6644;
-  --card-badge-bg: #ede0d8;
-  --card-badge-color: #6f452a;
-  --card-shadow: rgba(156, 102, 68, 0.16);
-  --card-img-shadow: rgba(156, 102, 68, 0.2);
+  --card-theme: #b45309;
+  --card-accent: #451a03;
+  --card-bg-light: #fffbeb;
+  --card-bg-glow: rgba(245, 158, 11, 0.28);
+  --card-border: #fde68a;
+  --card-border-hover: #b45309;
+  --card-badge-bg: #fef3c7;
+  --card-badge-color: #78350f;
+  --card-shadow: rgba(120, 53, 15, 0.18);
+  --card-img-shadow: rgba(120, 53, 15, 0.25);
 }
 
 /* --- C: CAT (Sampled from C.png - Charcoal Black, Ruby Yarn, Slate) --- */
@@ -322,30 +325,32 @@
   --card-img-shadow: rgba(0, 150, 60, 0.24);
 }
 
+/* --- F: FISH (Sampled from F.png - Copper Orange, Electric Ocean Blue, Coral Amber) --- */
 .letter-card-f {
-  --card-theme: #2a9d8f;
-  --card-accent: #196f64;
-  --card-bg-light: #f0f9f8;
-  --card-bg-glow: rgba(42, 157, 143, 0.22);
-  --card-border: #bce3df;
-  --card-border-hover: #2a9d8f;
-  --card-badge-bg: #d8f1ee;
-  --card-badge-color: #196f64;
-  --card-shadow: rgba(42, 157, 143, 0.16);
-  --card-img-shadow: rgba(42, 157, 143, 0.2);
+  --card-theme: #ea580c;
+  --card-accent: #1e3a8a;
+  --card-bg-light: #fff7ed;
+  --card-bg-glow: rgba(234, 88, 12, 0.26);
+  --card-border: #fed7aa;
+  --card-border-hover: #2563eb;
+  --card-badge-bg: #eff6ff;
+  --card-badge-color: #1e40af;
+  --card-shadow: rgba(194, 65, 12, 0.18);
+  --card-img-shadow: rgba(30, 58, 138, 0.24);
 }
 
+/* --- G: GIRAFFE (Sampled from G.png - Caramel Chestnut, Warm Vanilla, Golden Glow) --- */
 .letter-card-g {
-  --card-theme: #c28b38;
-  --card-accent: #8e621f;
-  --card-bg-light: #fbf6ef;
-  --card-bg-glow: rgba(194, 139, 56, 0.22);
-  --card-border: #ebd9be;
-  --card-border-hover: #c28b38;
-  --card-badge-bg: #f4e8d5;
-  --card-badge-color: #8e621f;
-  --card-shadow: rgba(194, 139, 56, 0.16);
-  --card-img-shadow: rgba(194, 139, 56, 0.2);
+  --card-theme: #b45309;
+  --card-accent: #78350f;
+  --card-bg-light: #fefce8;
+  --card-bg-glow: rgba(217, 119, 6, 0.24);
+  --card-border: #fef08a;
+  --card-border-hover: #b45309;
+  --card-badge-bg: #fef9c3;
+  --card-badge-color: #78350f;
+  --card-shadow: rgba(120, 53, 15, 0.16);
+  --card-img-shadow: rgba(120, 53, 15, 0.22);
 }
 
 /* --- H: HOUSE (Sampled from H.png - Sky Blue Aura, Midnight Slate, Crimson Roofs) --- */
@@ -376,30 +381,32 @@
   --card-img-shadow: rgba(107, 36, 80, 0.24);
 }
 
+/* --- J: JELLYFISH (Sampled from J.png - Amethyst Violet, Electric Cyan Tentacles) --- */
 .letter-card-j {
-  --card-theme: #f77f00;
-  --card-accent: #b85b00;
-  --card-bg-light: #fff7ed;
-  --card-bg-glow: rgba(247, 127, 0, 0.22);
-  --card-border: #fed7aa;
-  --card-border-hover: #f77f00;
-  --card-badge-bg: #ffedd5;
-  --card-badge-color: #b85b00;
-  --card-shadow: rgba(247, 127, 0, 0.16);
-  --card-img-shadow: rgba(247, 127, 0, 0.2);
+  --card-theme: #7c3aed;
+  --card-accent: #0e7490;
+  --card-bg-light: #f8fafc;
+  --card-bg-glow: rgba(124, 58, 237, 0.22);
+  --card-border: #cbd5e1;
+  --card-border-hover: #7c3aed;
+  --card-badge-bg: #ede9fe;
+  --card-badge-color: #5b21b6;
+  --card-shadow: rgba(124, 58, 237, 0.18);
+  --card-img-shadow: rgba(14, 116, 144, 0.24);
 }
 
+/* --- K: KEY (Sampled from K.png - Gradient Cobalt Blue, Violet 3D, Water Ripple) --- */
 .letter-card-k {
-  --card-theme: #0096c7;
-  --card-accent: #006a8e;
-  --card-bg-light: #f0f9fc;
-  --card-bg-glow: rgba(0, 150, 199, 0.22);
-  --card-border: #b3e3f2;
-  --card-border-hover: #0096c7;
-  --card-badge-bg: #d4f0f8;
-  --card-badge-color: #006a8e;
-  --card-shadow: rgba(0, 150, 199, 0.16);
-  --card-img-shadow: rgba(0, 150, 199, 0.2);
+  --card-theme: #3b82f6;
+  --card-accent: #1e3a8a;
+  --card-bg-light: #eff6ff;
+  --card-bg-glow: rgba(59, 130, 246, 0.26);
+  --card-border: #bfdbfe;
+  --card-border-hover: #2563eb;
+  --card-badge-bg: #dbeafe;
+  --card-badge-color: #1e40af;
+  --card-shadow: rgba(30, 58, 138, 0.18);
+  --card-img-shadow: rgba(30, 58, 138, 0.24);
 }
 
 /* --- L: LION (Sampled from L.png - Antique Gold, Bronze Lion, King Crown) --- */
@@ -416,30 +423,32 @@
   --card-img-shadow: rgba(90, 64, 20, 0.24);
 }
 
+/* --- M: MOUNTAINS (Sampled from M.png - Vibrant Mountain Fuchsia, Alpine Slate, Snow White) --- */
 .letter-card-m {
-  --card-theme: #2d6a4f;
-  --card-accent: #1b4332;
-  --card-bg-light: #f1f8f4;
-  --card-bg-glow: rgba(45, 106, 79, 0.22);
-  --card-border: #b7e4c7;
-  --card-border-hover: #2d6a4f;
-  --card-badge-bg: #d8f3dc;
-  --card-badge-color: #1b4332;
-  --card-shadow: rgba(45, 106, 79, 0.16);
-  --card-img-shadow: rgba(45, 106, 79, 0.2);
+  --card-theme: #c026d3;
+  --card-accent: #334155;
+  --card-bg-light: #faf5ff;
+  --card-bg-glow: rgba(192, 38, 211, 0.24);
+  --card-border: #f0abfc;
+  --card-border-hover: #c026d3;
+  --card-badge-bg: #fdf4ff;
+  --card-badge-color: #86198f;
+  --card-shadow: rgba(51, 65, 85, 0.18);
+  --card-img-shadow: rgba(192, 38, 211, 0.24);
 }
 
+/* --- N: NINJA (Sampled from N.png - Stealth Indigo, Electric Blue Blade, Midnight Shadow) --- */
 .letter-card-n {
-  --card-theme: #606c38;
-  --card-accent: #3d4522;
-  --card-bg-light: #f5f6f1;
-  --card-bg-glow: rgba(96, 108, 56, 0.22);
-  --card-border: #ccd5ae;
-  --card-border-hover: #606c38;
-  --card-badge-bg: #e9edc9;
-  --card-badge-color: #3d4522;
-  --card-shadow: rgba(96, 108, 56, 0.16);
-  --card-img-shadow: rgba(96, 108, 56, 0.2);
+  --card-theme: #4f46e5;
+  --card-accent: #1e1b4b;
+  --card-bg-light: #f5f3ff;
+  --card-bg-glow: rgba(79, 70, 229, 0.26);
+  --card-border: #c7d2fe;
+  --card-border-hover: #4f46e5;
+  --card-badge-bg: #e0e7ff;
+  --card-badge-color: #312e81;
+  --card-shadow: rgba(30, 27, 75, 0.2);
+  --card-img-shadow: rgba(30, 27, 75, 0.28);
 }
 
 /* --- O: OWL (Sampled from O.png - Deep Forest Night Teal, Cedar Brown, Candle Gold) --- */
@@ -456,30 +465,32 @@
   --card-img-shadow: rgba(26, 77, 71, 0.26);
 }
 
+/* --- Q: QUEEN (Sampled from Q.png - Royal Ice Cyan, Mint Turquoise Glow, Crown Silver) --- */
 .letter-card-q {
-  --card-theme: #7c3aed;
-  --card-accent: #5b21b6;
-  --card-bg-light: #f5f3ff;
-  --card-bg-glow: rgba(124, 58, 237, 0.22);
-  --card-border: #ddd6fe;
-  --card-border-hover: #7c3aed;
-  --card-badge-bg: #ede9fe;
-  --card-badge-color: #5b21b6;
-  --card-shadow: rgba(124, 58, 237, 0.16);
-  --card-img-shadow: rgba(124, 58, 237, 0.2);
+  --card-theme: #0284c7;
+  --card-accent: #0f766e;
+  --card-bg-light: #f0fdfa;
+  --card-bg-glow: rgba(14, 165, 233, 0.25);
+  --card-border: #99f6e4;
+  --card-border-hover: #0284c7;
+  --card-badge-bg: #ccfbf1;
+  --card-badge-color: #0f766e;
+  --card-shadow: rgba(15, 118, 110, 0.18);
+  --card-img-shadow: rgba(15, 118, 110, 0.24);
 }
 
+/* --- R: RABBIT (Sampled from R.png - Cute Bunny Rose, Carrot Coral, Silver Slate) --- */
 .letter-card-r {
-  --card-theme: #b5179e;
-  --card-accent: #7209b7;
-  --card-bg-light: #fcf1f9;
-  --card-bg-glow: rgba(181, 23, 158, 0.22);
-  --card-border: #f4bee8;
-  --card-border-hover: #b5179e;
-  --card-badge-bg: #fae1f4;
-  --card-badge-color: #7209b7;
-  --card-shadow: rgba(181, 23, 158, 0.16);
-  --card-img-shadow: rgba(181, 23, 158, 0.2);
+  --card-theme: #f43f5e;
+  --card-accent: #334155;
+  --card-bg-light: #fff1f2;
+  --card-bg-glow: rgba(244, 63, 94, 0.24);
+  --card-border: #fecdd3;
+  --card-border-hover: #f43f5e;
+  --card-badge-bg: #ffe4e6;
+  --card-badge-color: #9f1239;
+  --card-shadow: rgba(71, 85, 105, 0.18);
+  --card-img-shadow: rgba(71, 85, 105, 0.24);
 }
 
 /* --- S: SNAKE (Sampled from S.png - Party Seafoam Teal, Mint, Magenta Flame) --- */
@@ -510,56 +521,60 @@
   --card-img-shadow: rgba(67, 42, 104, 0.24);
 }
 
+/* --- V: VASE (Sampled from V.png - Botanical Olive Sage, Floral Rose, Porcelain Glaze) --- */
 .letter-card-v {
-  --card-theme: #0284c7;
-  --card-accent: #0369a1;
-  --card-bg-light: #f0f9ff;
-  --card-bg-glow: rgba(2, 132, 199, 0.22);
-  --card-border: #bae6fd;
-  --card-border-hover: #0284c7;
-  --card-badge-bg: #e0f2fe;
-  --card-badge-color: #0369a1;
-  --card-shadow: rgba(2, 132, 199, 0.16);
-  --card-img-shadow: rgba(2, 132, 199, 0.2);
+  --card-theme: #15803d;
+  --card-accent: #9f1239;
+  --card-bg-light: #f0fdf4;
+  --card-bg-glow: rgba(22, 101, 52, 0.24);
+  --card-border: #bbf7d0;
+  --card-border-hover: #15803d;
+  --card-badge-bg: #dcfce7;
+  --card-badge-color: #14532d;
+  --card-shadow: rgba(20, 83, 45, 0.18);
+  --card-img-shadow: rgba(20, 83, 45, 0.24);
 }
 
+/* --- W: WATERMELON (Sampled from W.png - Sweet Ruby Red, Emerald Rind, Fresh Mint Glow) --- */
 .letter-card-w {
   --card-theme: #e11d48;
-  --card-accent: #9f1239;
-  --card-bg-light: #fff1f2;
-  --card-bg-glow: rgba(225, 29, 72, 0.22);
-  --card-border: #fecdd3;
+  --card-accent: #166534;
+  --card-bg-light: #f0fdf4;
+  --card-bg-glow: rgba(225, 29, 72, 0.24);
+  --card-border: #bbf7d0;
   --card-border-hover: #e11d48;
   --card-badge-bg: #ffe4e6;
   --card-badge-color: #9f1239;
-  --card-shadow: rgba(225, 29, 72, 0.16);
-  --card-img-shadow: rgba(225, 29, 72, 0.2);
+  --card-shadow: rgba(22, 101, 52, 0.18);
+  --card-img-shadow: rgba(225, 29, 72, 0.22);
 }
 
+/* --- X: X-RAY (Sampled from X.png - Radioactive Electric Lime, Glow Green, Shadow Forest) --- */
 .letter-card-x {
-  --card-theme: #0d9488;
-  --card-accent: #115e59;
-  --card-bg-light: #f0fdfa;
-  --card-bg-glow: rgba(13, 148, 136, 0.22);
-  --card-border: #99f6e4;
-  --card-border-hover: #0d9488;
-  --card-badge-bg: #ccfbf1;
-  --card-badge-color: #115e59;
-  --card-shadow: rgba(13, 148, 136, 0.16);
-  --card-img-shadow: rgba(13, 148, 136, 0.2);
+  --card-theme: #65a30d;
+  --card-accent: #365314;
+  --card-bg-light: #f7fee7;
+  --card-bg-glow: rgba(132, 204, 22, 0.32);
+  --card-border: #bef264;
+  --card-border-hover: #65a30d;
+  --card-badge-bg: #ecfccb;
+  --card-badge-color: #365314;
+  --card-shadow: rgba(54, 83, 20, 0.2);
+  --card-img-shadow: rgba(54, 83, 20, 0.26);
 }
 
+/* --- Y: YAK (Sampled from Y.png - Golden Horn Ochre, Deep Tawny Yak, Himalayan Warmth) --- */
 .letter-card-y {
-  --card-theme: #8b5cf6;
-  --card-accent: #6d28d9;
-  --card-bg-light: #f5f3ff;
-  --card-bg-glow: rgba(139, 92, 246, 0.22);
-  --card-border: #ddd6fe;
-  --card-border-hover: #8b5cf6;
-  --card-badge-bg: #ede9fe;
-  --card-badge-color: #6d28d9;
-  --card-shadow: rgba(139, 92, 246, 0.16);
-  --card-img-shadow: rgba(139, 92, 246, 0.2);
+  --card-theme: #ca8a04;
+  --card-accent: #713f12;
+  --card-bg-light: #fefce8;
+  --card-bg-glow: rgba(202, 138, 4, 0.26);
+  --card-border: #fde047;
+  --card-border-hover: #ca8a04;
+  --card-badge-bg: #fef9c3;
+  --card-badge-color: #713f12;
+  --card-shadow: rgba(113, 63, 18, 0.18);
+  --card-img-shadow: rgba(113, 63, 18, 0.25);
 }
 
 /* --- Z: ZEBRA (Sampled from Z.png - Electric Silver Charcoal, Aura Teal) --- */
